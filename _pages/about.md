@@ -12,7 +12,8 @@ Hi! My name is Mattéo Lanoë and I am a first-year Sociology PhD Candidate betw
 What Am I Interested In? 
 ======
 
-**Dissertation Title: When the Virus Strains: Life Course, Dispositions and Illness Trajectories of Post-Acute Infectious Syndromes**(provisional title). 
+**Dissertation Title:** 
+_**When the Virus Strains: Life Course, Dispositions and Illness Trajectories of Post-Acute Infectious Syndromes**_ (provisional title). 
 
 My PhD research project lies at the intersection of sociology of health and illness, medical sociology, sociology of socialization and dispositionnalist sociology. I am interested in the social-biological interactions which produce unequal health and social outcomes. My particular focus is on what is called 'post-acute infectious syndrome', that is a subtype of chronic illness and symptoms resulting from the infection of an infectious disease (such as, Covid-19, for instance). My main interest relies on studying how embodied and socialized dispositions are getting used in the health context and how, in turn, the health context shape the late socialization—modeling and modifying the primary one, previously incorporated. 
 
@@ -20,4 +21,4 @@ Besides, I also dive into issues related to political science, electoral sociolo
 
 For more info
 ------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+If you have any question on my research, or if you want to initiate a collaboration, please reach out! My two email adresses are: [matteo.lanoe@sciencespo.fr](matteo.lanoe@sciencespo.fr) and [matteo.lanoe@ined.fr](matteo.lanoe@ined.fr).
