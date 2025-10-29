@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2014-spring-teaching-1
 venue: "Sciences Po Undergraduate College"
-date: 2026
+date: 2026-01-01
 location: "Poitiers Campus, France"
 ---
 
