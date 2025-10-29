@@ -13,7 +13,8 @@ What Am I Interested In?
 ======
 
 **Dissertation Title:** 
-_**When the Virus Strains: Life Course, Dispositions and Illness Trajectories of Post-Acute Infectious Syndromes**_ (provisional title). 
+
+_**When the Virus Strains: Life Course, Dispositions and Illness Trajectories of Post-Acute Infectious Syndromes**_ (provisional). 
 
 My PhD research project lies at the intersection of sociology of health and illness, medical sociology, sociology of socialization and dispositionnalist sociology. I am interested in the social-biological interactions which produce unequal health and social outcomes. My particular focus is on what's called 'post-acute infectious syndrome,' a subtype of chronic illness and symptoms resulting from the infection of an infectious disease (such as, Covid-19, for instance). My main interest relies on studying how embodied and socialized dispositions are getting used in the health context and how, in turn, the health outcomes shape the late socialization—modeling and modify the primary one, previously incorporated. 
 
