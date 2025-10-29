@@ -19,6 +19,13 @@ My PhD research project lies at the intersection of sociology of health and illn
 
 Besides, I also dive into issues related to political science, electoral sociology, sociology of education, and the use of methods (either qualitative or quantitative) for social inquiry.
 
+My side projects
+======
+
+For five years up to now, I have been a member of the editorial board of the [Electoral Bulletin of the European Union (BLUE)](https://geopolitique.eu/numeros/elections-en-europe-2024/), a review published by the Groupe d'études géopolitiques based at the ENS. We publish bi-annual issues, covering elections taking place within the European continent. The publication process is done under the merry guidance of [François Hublet](https://hblt.eu), our great editor-in-chief!
+
+Last year, along with my cohort comrade [Éloi Bitri](https://www.linkedin.com/in/éloi-bitri-893b77338/?originalSubdomain=fr) (School of Research '25; please read his [amazing thesis here!](https://www.sciencespo.fr/ecole-recherche/sites/sciencespo.fr.ecole-recherche/files/BITRI-Eloi.pdf)), we started the project of a graduate review based in the School of Research -- that is now entitled the **Sciences Po Graduate Review (SPGR)**. After having recruited a wonderful and dedicated team of editors, we launched our first [call for submissions](https://www.sciencespo.fr/ecole-recherche/en/news/call-for-contributions-sciences-po-graduate-review/), on the School of Research website! If you are a master's or doctoral student enrolled at the School of Research, do not hesitate to submit a piece :)
+
 For more info
 ------
 If you have any question on my research, or if you want to initiate a collaboration, please reach out! My two email adresses are: [matteo.lanoe@sciencespo.fr](matteo.lanoe@sciencespo.fr) and [matteo.lanoe@ined.fr](matteo.lanoe@ined.fr).
