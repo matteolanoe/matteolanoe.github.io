@@ -1,13 +1,13 @@
 ---
-title: "A Tale of Three Cleavages Quantifier le rôle des démarcations sociales dans l’élection présidentielle française de 2022"
+title: "Spelling out the European center-right’s dilemma: Renewal of the Grand coalition or National-Conservative Alliance?"
 collection: publications
-category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'L’élection présidentielle française de 2022 s’est déroulée dans un contexte de réalignement qui a vu l’émergence d’une compétition assez équilibrée entre gauche, centre-droit et extrême droite. Pour cerner les clivages sous-jacents, nous analysons un vaste ensemble de données socio-démographiques à l’échelle des bureaux de vote. Nos résultats vont dans le sens des théories des « nouveaux clivages » tout en montrant que les variables socio-économiques demeurent des facteurs déterminants du comportement électoral. Nous identifions trois démarcations structurantes socio-économique, éducative et migratoire qui fondent un système de clivages croisés entre les quatre principales options de vote (votes Mélenchon, Macron, Le Pen et abstention).'
-date: 2025-10-27
-venue: 'Revue française de science politique'
-paperurl: 'https://shs.cairn.info/revue-revue-francaise-de-science-politique-2025-2-page-215?lang=fr&tab=premieres-lignes'
-bibtexurl: 'https://matteolanoe.github.io/files/bibtex1.bib'
-citation: 'HUBLET, François et LANOË, Mattéo. (2025). "A Tale of Three Cleavages : Quantifier le rôle des démarcations sociales dans l’élection présidentielle française de 2022." <i>Revue française de science politique</i>, 2025/2 n°75, p.215–260.'
+category: reports
+permalink: /publication/geg_paper
+excerpt: 'One year ahead of the next European election, the European center-right and right-wing parties can feel both confident about their success and worried about their future. On the one hand, conservative and nationalist forces are enjoying undeniable momentum. By increasing their overall vote share only slightly, the three political groups ranging from the center-right to the far-right could secure a parliamentary majority, a fact unprecedented in EU history. At the same time, however, the prospect of a right-wing coalition raises existential questions among centrist parties hostile to such an alliance for ideological or tactical reasons [...].'
+date: 2023-01-01
+venue: 'Groupe d'études géopolitiques Reports'
+paperurl: 'https://matteolanoe.github.io/files/Rapport-Hublet-EN.pdf'
+bibtexurl: 'https://matteolanoe.github.io/files/geg_paper.bib'
+citation: 'HUBLET, François, LANOË, Mattéo et SCHLEYER, Johanna. (2023, June). "<i>Spelling Out the European Center-Right’s Dilemma: Renewal of the Grand Coalition or National-Conservative Alliance?</i>" Groupe d’Études Géopolitiques, Report.'
 ---
-L’élection présidentielle française de 2022 s’est déroulée dans un contexte de réalignement qui a vu l’émergence d’une compétition assez équilibrée entre gauche, centre-droit et extrême droite. Pour cerner les clivages sous-jacents, nous analysons un vaste ensemble de données socio-démographiques à l’échelle des bureaux de vote. Nos résultats vont dans le sens des théories des « nouveaux clivages » tout en montrant que les variables socio-économiques demeurent des facteurs déterminants du comportement électoral. Nous identifions trois démarcations structurantes socio-économique, éducative et migratoire qui fondent un système de clivages croisés entre les quatre principales options de vote (votes Mélenchon, Macron, Le Pen et abstention).
+One year ahead of the next European election, the European center-right and right-wing parties can feel both confident about their success and worried about their future. On the one hand, conservative and nationalist forces are enjoying undeniable momentum. By increasing their overall vote share only slightly, the three political groups ranging from the center-right to the far-right could secure a parliamentary majority, a fact unprecedented in EU history. At the same time, however, the prospect of a right-wing coalition raises existential questions among centrist parties hostile to such an alliance for ideological or tactical reasons [...].
