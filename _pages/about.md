@@ -31,5 +31,5 @@ For more info
 ------
 If you have any question on my research, or if you want to initiate a collaboration, please reach out! My two email adresses are: [matteo.lanoe@sciencespo.fr](matteo.lanoe@sciencespo.fr) and [matteo.lanoe@ined.fr](matteo.lanoe@ined.fr).
 
-![Illustration of labs logo](/images/github_logo.png){: align-center width="800px"}
+![Illustration of labs logo](/images/github_logo_updated.png){: align-center width="800px"}
 
