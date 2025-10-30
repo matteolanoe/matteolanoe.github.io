@@ -30,3 +30,8 @@ Last year, along with my cohort comrade [Éloi Bitri](https://www.linkedin.com/i
 For more info
 ------
 If you have any question on my research, or if you want to initiate a collaboration, please reach out! My two email adresses are: [matteo.lanoe@sciencespo.fr](matteo.lanoe@sciencespo.fr) and [matteo.lanoe@ined.fr](matteo.lanoe@ined.fr).
+
+<p style="text-align:center;">
+  <img src="{{ '/assets/images/github_logo.png' | relative_url }}" alt="Mattéo Lanoë" style="max-width:300px; height:auto; border-radius:6px;">
+</p>
+
