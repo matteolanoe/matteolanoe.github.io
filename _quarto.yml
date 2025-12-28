@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Mattéo Lanoë | Doctoral Candidate in Sociology"
+  site-url: "https://matteolanoe.github.io"
+  description: >
+    Doctorant en sociologie au CRIS (Sciences Po) & à l'INED. PhD Candidate in Sociology.
+    Recherches / Research : Syndrome post-infectieux (Post-infectious syndromes), Covid long (Long Covid),
+    Post-Covid-19 Symptoms, Sociologie de la santé (Medical Sociology, Sociology of Health and Illness, Sociology of Diseases), 
+    Inégalités sociales de santé (Social inequalities in health),
+    Corps & Maladies (Body & Illness), Virus, Sociologie économique (Economic Sociology),
+    Dispositions, Épidémiologie sociale (Social Epidemiology), Méthodes qualitatives (Qualitative methods),
+    Cohorte ComPaRe.
+  favicon: images/favicon.png
+  
+  # --- RECHERCHE (Doit être indenté sous website) ---
+  search:
+    location: navbar
+    type: textbox
+
+  # --- BARRE DE NAVIGATION ---
+  navbar:
+    title: "Mattéo Lanoë"
+    favicon: images/favicon.png
+    background: primary
+    # MENU GAUCHE
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Research"
+        href: about.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Projects"
+        href: projects.qmd
+      - text: "Invited Talks & Conferences"
+        href: talks.qmd
+      - text: "Socials"
+        href: socials.qmd
+
+    # MENU DROITE (ICÔNES)
+    right:
+      - icon: envelope
+        href: mailto:matteo.lanoe@sciencespo.fr
+        aria-label: "Mail"
+      - icon: twitter-x
+        href: https://twitter.com/MatteoLanoe_
+        aria-label: "Twitter"
+      - icon: clouds
+        href: https://bsky.app/profile/matteolanoe.bsky.social
+        aria-label: "BlueSky"
+
+  # --- PIED DE PAGE ---
+  page-footer:
+    background: "#285e3a"
+    left: "© 2025 Mattéo Lanoë"
+    right:
+      - text: "Made with 💚Quarto"
+        href: https://quarto.org
+    center: |
+      <div class="custom-footer-links">
+        <a href="mailto:matteo.lanoe@sciencespo.fr">
+          <i class="bi bi-envelope"></i><span class="reveal-text">matteo.lanoe@sciencespo.fr</span>
+        </a>
+        <a href="https://twitter.com/MatteoLanoe_" target="_blank">
+          <i class="bi bi-twitter-x"></i><span class="reveal-text">@MatteoLanoe_</span>
+        </a>
+        <a href="https://bsky.app/profile/matteolanoe.bsky.social" target="_blank">
+          <i class="bi bi-clouds"></i><span class="reveal-text">@matteolanoe.bsky.social</span>
+        </a>
+      </div>
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

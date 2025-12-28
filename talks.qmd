@@ -1,0 +1,24 @@
+---
+title: "Invited Talks & Conferences"
+---
+
+## 2025
+
+### Invited Talks
+
+* **CRIS Scientific Seminar** (Sciences Po, Paris, November 28)
+
+### Conferences
+
+* **Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** (American Sociological Association Annual Meeting, Chicago, 2025)
+    * *Role:* Speaker (Health & Illness Roundtable)
+    * [Link to program](https://convention2.allacademic.com/one/asa/asa25/)
+
+<div style="margin-left: 40px; margin-top: 10px; margin-bottom: 30px;">
+  <details>
+  <summary>Abstract</summary>
+  <div>
+  Chronic illness research has extensively explored biographical disruptions and identity reconstruction but has often overlooked the role of social background in illness management. This study investigates how class-related attributes shape the ways individuals cope with chronic conditions by examining Long Covid as a case study. Drawing on sociology of socialization methodology, this research shifts from interpretive approaches toward a materialist perspective on illness as a socially differentiated experience.
+  </div>
+  </details>
+</div>

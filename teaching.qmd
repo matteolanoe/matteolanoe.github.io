@@ -1,0 +1,76 @@
+---
+title: "Teaching Activities"
+---
+
+Here is an overview of my courses. Click on a course card to reveal the full syllabus and sessions.
+
+## 2025
+
+
+<details class="course-spoiler">
+<summary class="course-summary">
+<div class="summary-text">
+<h3>Quantitative Methods for Social Sciences</h3>
+<p>**1A Sciences Po - 2025/2026 Winter Semester**. Introduction to quantitative methods in the social sciences and some very basic concepts to handle them.</p>
+</div>
+<div class="summary-icon">+</div>
+</summary>
+<div class="course-details-full">
+
+<br>
+
+**Course description:** This course seeks to introduce first-year students to the very principles of quantatives methods and ways to interpret and handle their descriptive tools. At the end, students should be able to understand how to use basic statistical concepts with real-world data. 
+
+- [Course syllabus (not available yet)](files/teaching/session1.pdf)
+
+#### Sessions schedule
+
+::: {.callout-note collapse="true"}
+## Session 1: What is Quantifying in the Social Sciences
+- More to come soon.
+- [Download Slides (PDF) (not available yet)](files/teaching/session1.pdf)
+:::
+
+::: {.callout-note collapse="true"}
+## Session 2: NA
+- More to come soon.
+- [Download Slides (PDF) (not available yet)](files/teaching/session1.pdf)
+:::
+
+</div>
+</details>
+
+<!--
+<details class="course-spoiler">
+<summary class="course-summary">
+<div class="summary-text">
+<h3>Statistiques Appliquées</h3>
+<p>M1 - Printemps. Analyse quantitative et pratique du logiciel R pour les sciences sociales.</p>
+</div>
+<div class="summary-icon">+</div>
+</summary>
+<div class="course-details-full">
+
+<br>
+
+**Description complète :** Ce cours propose une introduction avancée à l'analyse de données quantitatives. L'objectif est de maîtriser l'ensemble de la chaîne de traitement, du nettoyage des données à la modélisation statistique.
+
+#### Plan des séances
+
+::: {.callout-note collapse="true"}
+## Séance 1 : Introduction à R et au Tidyverse
+- Installation de R et RStudio
+- Logique du Tidyverse (dplyr, tidyr)
+- Importation des bases de données
+:::
+
+::: {.callout-note collapse="true"}
+## Séance 2 : La visualisation de données (ggplot2)
+- Grammaire des graphiques
+- Choisir la bonne représentation visuelle
+- Exercices pratiques sur la base *gapminder*
+:::
+
+</div>
+</details>
+-->

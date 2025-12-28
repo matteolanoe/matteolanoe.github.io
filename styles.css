@@ -1,0 +1,541 @@
+/* On garde Roboto pour le corps du texte car cela reste très lisible */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+/* 1. La couleur principale (Barre de navigation) */
+.navbar {
+  background-color: #1a472a !important; /* Vert foncé académique */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ton nom dans la barre de menu en TeX Gyre Pagella */
+.navbar-brand {
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* 2. Typographie générale */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Tes titres (dont ton nom principal) en TeX Gyre Pagella et en vert */
+h1, h2, h3 {
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+  color: #1a472a; /* Vert foncé */
+}
+
+/* 3. Style des liens */
+a {
+  color: #1a472a; /* Les liens prennent aussi la couleur verte */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #0e2a18; /* Une version encore plus sombre du vert au survol */
+  text-decoration: underline;
+}
+
+/* 4. Style de l'image de profil */
+.profile-pic {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 280px; /* Réduit de 350px à 280px */
+  display: block;   /* Sécurité pour le centrage si besoin */
+  margin-bottom: 20px; /* Un peu d'espace sous la photo sur mobile */
+}
+
+/* --- Style pour le bouton Abstract --- */
+
+/* 1. L'apparence du bouton (balise summary) */
+details > summary {
+  background-color: #1a472a; /* Ton vert foncé */
+  color: white;
+  padding: 6px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block; /* Pour qu'il ait la taille du texte */
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 8px;
+  list-style: none; /* Enlève la flèche par défaut (standard) */
+  transition: background-color 0.2s;
+}
+
+/* Enlève la flèche par défaut sur Safari/Chrome */
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Changement de couleur au survol */
+details > summary:hover {
+  background-color: #0e2a18;
+}
+
+/* 2. L'apparence du texte qui s'ouvre (balise div à l'intérieur) */
+details > div {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 3px solid #1a472a; /* Une petite ligne verte élégante sur le côté */
+  border-radius: 0 5px 5px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Ombre très légère */
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* =========================================
+   ANIMATION DE LA BARRE DE NAVIGATION
+   ========================================= */
+
+/* =========================================
+   ANIMATION DE LA BARRE DE NAVIGATION
+   ========================================= */
+
+.navbar-nav .nav-link {
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+  /* La ligne magique pour enlever le soulignement par défaut : */
+  text-decoration: none !important; 
+}
+
+/* Le reste ne change pas */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* =========================================
+   STYLE DU PIED DE PAGE (FOOTER)
+   ========================================= */
+
+.footer {
+  background-color: #285e3a !important; /* Ton vert */
+  color: #ffffff !important;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  padding: 30px 0;
+  border-top: none;
+}
+
+/* On cible nos liens personnalisés */
+.custom-footer-links a {
+  color: #ffffff !important;
+  text-decoration: none;
+  display: inline-flex; /* Pour aligner icône et texte */
+  align-items: center;
+  margin: 0 15px; /* Espace entre les blocs */
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Style des icônes */
+.custom-footer-links i {
+  font-size: 1.4rem;
+  transition: transform 0.3s ease;
+}
+
+/* Le texte caché (Animation Reveal) */
+.reveal-text {
+  max-width: 0;           /* Largeur nulle au début */
+  opacity: 0;             /* Invisible */
+  overflow: hidden;       /* Cache ce qui dépasse */
+  white-space: nowrap;    /* Une seule ligne */
+  transition: all 0.5s ease; /* Animation fluide */
+  font-size: 1rem;
+  font-weight: 300;
+  margin-left: 0;
+}
+
+/* L'ACTION au survol */
+.custom-footer-links a:hover .reveal-text {
+  max-width: 300px;       /* On ouvre l'espace */
+  opacity: 1;             /* On affiche */
+  margin-left: 10px;      /* On décolle le texte de l'icône */
+}
+
+/* Petit effet de zoom sur l'icône */
+.custom-footer-links a:hover i {
+  transform: scale(1.1);
+}
+
+/* Lien "Made with Quarto" et Copyright */
+.footer-left, .footer-right, .footer-right a {
+   color: rgba(255,255,255, 0.8) !important;
+   font-size: 0.9rem;
+}
+
+/* =========================================
+   STYLE DES CARTES "SOCIALS" (VERSION CORRIGÉE)
+   ========================================= */
+
+/* 1. Le cadre global de la carte */
+.social-card {
+  display: block;
+  text-decoration: none !important;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 40px 20px;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* 2. Le contenu interne : C'est ici qu'on gère le centrage parfait */
+.card-content {
+  display: flex;             /* Active le mode Flexbox */
+  flex-direction: column;    /* Empile les éléments verticalement (Icône sur Titre) */
+  align-items: center;       /* Centre tout horizontalement par rapport à l'axe central */
+  justify-content: center;   /* Centre verticalement si besoin */
+  text-align: center;        /* Sécurité pour le texte multi-lignes */
+}
+
+/* 3. L'icône */
+.card-content i {
+  font-size: 3.5rem;         /* Icône un peu plus grosse */
+  margin-bottom: 15px;
+  color: #1a472a;            /* Ton vert */
+  transition: color 0.3s ease;
+  line-height: 1;            /* Évite les décalages invisibles */
+}
+
+/* 4. Le Titre (Github, HAL, ORCID) en TeX Gyre Pagella */
+.card-content h3 {
+  font-family: Source Sans Pro, Helvetica, sans-serif; /* La police demandée */
+  color: #222;
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;          /* Un peu plus gras pour le style */
+}
+
+/* 5. Le sous-titre (Repositories, etc.) */
+.card-content p {
+  font-family: 'Roboto', sans-serif;
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* --- EFFETS AU SURVOL (HOVER) --- */
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Github : Noir au survol */
+.social-card.github-card:hover { border-color: #333; }
+.social-card.github-card:hover i { color: #333; }
+
+/* Google Scholar : Bleu Google (#4285F4) au survol */
+.social-card.scholar-card:hover { border-color: #4285F4; }
+.social-card.scholar-card:hover i { color: #4285F4; }
+
+/* ORCID : Vert pomme au survol */
+.social-card.orcid-card:hover { border-color: #a6ce39; }
+.social-card.orcid-card:hover i { color: #a6ce39; }
+
+/* --- COULEURS DES NOUVELLES CARTES --- */
+
+/* Institution : Rouge Sciences Po au survol */
+.social-card.institution-card:hover { border-color: #e2001a; }
+.social-card.institution-card:hover i { color: #e2001a; }
+
+/* X (Twitter) : Noir au survol */
+.social-card.x-card:hover { border-color: #000000; }
+.social-card.x-card:hover i { color: #000000; }
+
+/* BlueSky : Bleu Ciel au survol */
+.social-card.bsky-card:hover { border-color: #0560ff; }
+.social-card.bsky-card:hover i { color: #0560ff; }
+
+/* =========================================
+   STYLE SUPER-ACCORDÉON (VERSION FINALE - LAYOUT & COULEURS)
+   ========================================= */
+
+/* 1. LA BOÎTE GLOBALE */
+details.course-spoiler {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/* 2. LE SURVOL DE LA BOÎTE */
+details.course-spoiler:hover {
+  background-color: #f0f7f2 !important; /* Vert très pâle */
+  border-color: #1a472a !important;     /* Bordure verte */
+  box-shadow: 0 4px 12px rgba(26, 71, 42, 0.15);
+}
+
+/* 3. L'EN-TÊTE (La zone cliquable) */
+summary.course-summary {
+  list-style: none;
+  padding: 25px;
+  background: transparent !important;
+  
+  /* MOTEUR D'ALIGNEMENT */
+  display: flex;
+  justify-content: space-between; /* Ecarte le texte (gauche) de la croix (droite) */
+  align-items: flex-start;        /* Aligne tout en haut */
+}
+
+summary.course-summary::-webkit-details-marker { display: none; }
+
+/* 4. LE BLOC DE TEXTE (Titre + Description) */
+.summary-text {
+  display: flex;
+  flex-direction: column; /* TRES IMPORTANT : Empile le titre et le texte verticalement */
+  text-align: left;       /* Tout aligné à gauche */
+  padding-right: 20px;    /* Marge pour ne pas toucher la croix */
+  width: 100%;            /* Prend toute la largeur dispo */
+}
+
+/* FORCE LA POLICE DU TITRE */
+.summary-text h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #1a472a;
+  /* On met important pour écraser tout le reste */
+  font-family: Source Sans Pro, Helvetica, sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* La Description (CORRECTION COULEUR) */
+.summary-text p {
+  color: #555555 !important; /* Gris foncé FORCÉ (fini le blanc illisible) */
+  margin-bottom: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Au survol, on fonce légèrement le texte pour le contraste, mais on reste lisible */
+details.course-spoiler:hover .summary-text p {
+  color: #2e4d36 !important; /* Un vert gris foncé élégant */
+}
+
+/* 5. L'ICÔNE (+ / Croix) */
+.summary-icon {
+  font-size: 2rem;
+  color: #1a472a;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.3s ease;
+  min-width: 30px;
+  margin-top: -5px; /* Petit ajustement optique pour l'aligner avec le haut du titre */
+}
+
+details.course-spoiler[open] .summary-icon {
+  transform: rotate(45deg);
+}
+
+/* 6. LE CONTENU DÉROULÉ */
+.course-details-full {
+  padding: 0 25px 25px 25px;
+  border-top: 1px solid rgba(26, 71, 42, 0.1); /* Ligne de séparation subtile */
+  background-color: #ffffff; 
+  animation: fadeIn 0.3s ease;
+}
+
+/* Styles des séances (Callouts) */
+.course-details-full .callout-note { border-left-color: #1a472a !important; }
+.course-details-full .callout-header { background-color: #f0f7f2 !important; color: #1a472a !important; }
+.course-details-full .callout-icon::before { color: #1a472a !important; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- RÉDUIRE LA HAUTEUR DU FOOTER --- */
+
+footer.footer {
+  margin-top: 0;
+  padding-top: 10px !important;    /* Réduit l'espace au-dessus du texte */
+  padding-bottom: 10px !important; /* Réduit l'espace en dessous du texte */
+}
+
+/* On s'assure que les paragraphes dans le footer ne rajoutent pas de hauteur inutile */
+footer.footer p {
+  margin-bottom: 0 !important;
+}
+
+/* Si tu as des icônes ou du texte custom, on réduit leurs marges aussi */
+.custom-footer-links {
+  margin: 0 !important;
+  line-height: 1.2 !important; /* Resserre un peu les lignes si elles sont sur 2 étages */
+}
+
+/* --- COULEUR DU MENU DE DROITE (TOC) --- */
+
+/* Couleur du lien actif (la section que tu es en train de lire) */
+#TOC .nav-link.active {
+  color: #285e3a !important;            /* Le texte devient vert */
+  border-left-color: #285e3a !important; /* La barre verticale à gauche devient verte */
+}
+
+/* Couleur au survol de la souris */
+#TOC .nav-link:hover {
+  color: #285e3a !important;
+}
+
+/* --- GESTION INTELLIGENTE DES PUCES (NIVEAU 1 vs NIVEAU 2) --- */
+
+/* 1. NIVEAU 1 : On enlève la puce par défaut pour mettre la flèche */
+main ul {
+  list-style-type: none !important; /* Cache le point rond standard */
+  padding-left: 1.5em;
+}
+
+main ul li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+/* On ajoute la flèche verte */
+main ul li::before {
+  content: "➔";
+  color: #285e3a;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5em;
+}
+
+/* 2. NIVEAU 2 (Sous-listes) : On annule la flèche et on remet le point */
+main ul ul {
+  list-style-type: disc !important; /* Remet le point rond classique */
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* On supprime la flèche verte qu'on avait ajoutée au niveau 1 */
+main ul ul li::before {
+  content: none !important; 
+}
+
+/* 3. EXCEPTIONS (Pour ne pas casser les menus) */
+.navbar ul, .navbar li::before, #TOC ul, #TOC li::before, .nav-tabs li::before {
+  content: none !important;
+  list-style-type: none !important;
+}
+
+/* =========================================
+   OPTIMISATION MOBILE (STYLE "SITE NOIR")
+   ========================================= */
+
+@media (max-width: 768px) {
+  
+  /* 1. On rend le footer beaucoup plus compact */
+  .footer {
+    padding: 15px 0 !important; /* Réduit drastiquement l'épaisseur */
+    font-size: 0.85rem !important; /* Texte un peu plus petit */
+  }
+
+  /* 2. On cache le texte "déroulant" (l'email écrit) pour gagner de la place */
+  .reveal-text {
+    display: none !important; 
+  }
+
+  /* 3. On force les icônes à s'aligner horizontalement */
+  .custom-footer-links {
+    display: flex !important;
+    justify-content: center !important; /* Bien centré */
+    gap: 25px; /* Espace entre les icônes */
+    margin: 10px 0; /* Un peu d'air en haut et en bas */
+  }
+
+  /* 4. On s'assure que les liens ne prennent pas toute la largeur */
+  .custom-footer-links a {
+    margin: 0 !important;
+    width: auto !important;
+  }
+  
+  /* 5. On agrandit un peu les icônes pour qu'elles soient faciles à toucher */
+  .custom-footer-links i {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* =========================================
+   STYLE FINAL : HAUTEUR FIXE + SCROLL (News)
+   ========================================= */
+
+/* 1. On force les deux boîtes à avoir EXACTEMENT la même taille */
+.news-card, .contact-box {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 25px;
+  height: 380px;          /* HAUTEUR FIXE : Change ce chiffre si tu veux plus/moins haut */
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+/* 2. Le Titre reste fixe en haut */
+.news-card h3, .contact-box h3 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-family: Source Sans Pro, Helvetica, sans-serif;
+  color: #1a472a;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #1a472a;
+  padding-bottom: 10px;
+  margin-bottom: 20px !important;
+  flex-shrink: 0;         /* Interdit au titre de s'écraser */
+}
+
+/* 3. LA ZONE MAGIQUE : Le conteneur qui scroll */
+.news-scroll-zone {
+  flex-grow: 1;           /* Prend tout l'espace restant */
+  overflow-y: auto;       /* Active le SCROLL vertical si besoin */
+  padding-right: 10px;    /* Espace pour ne pas coller à la barre de scroll */
+}
+
+/* --- Design de la barre de scroll (Webkit/Chrome/Safari) --- */
+.news-scroll-zone::-webkit-scrollbar {
+  width: 6px;             /* Barre fine */
+}
+.news-scroll-zone::-webkit-scrollbar-thumb {
+  background-color: #1a472a; /* Couleur verte */
+  border-radius: 10px;
+}
+.news-scroll-zone::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* --- Le reste ne change pas --- */
+.contact-item { margin-bottom: 15px; display: flex; align-items: center; gap: 12px; color: #444; }
+.contact-item i { color: #1a472a; font-size: 1.3rem; }
+.contact-item a { color: #444; text-decoration: none; }
+
+.news-item { display: flex; align-items: flex-start; margin-bottom: 20px; gap: 15px; }
+.date-badge { background-color: #ffffff; border: 1px solid #1a472a; color: #1a472a; border-radius: 6px; min-width: 50px; text-align: center; padding: 5px 0; }
+.date-badge .month { display: block; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
+.date-badge .day { display: block; font-size: 1.2rem; font-weight: 700; }
+.news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
