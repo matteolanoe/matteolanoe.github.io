@@ -540,38 +540,31 @@ main ul ul li::before {
 .date-badge .day { display: block; font-size: 1.2rem; font-weight: 700; }
 .news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
 
-
-/* =========================================
-   OPTIMISATION MOBILE (CORRECTIONS FINALES)
-   ========================================= */
-
-@media (max-width: 768px) {
-
-  /* 1. CENTRAGE DE LA PHOTO D'ACCUEIL */
-  /* On cible l'image dans le bloc "about" et on force les marges auto */
-  .about-image {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  
-  /* On centre aussi le texte (nom et bio) pour que ce soit cohérent */
-  .about-entity {
-    text-align: center !important;
-  }
-
-  /* 2. FOOTER : ESPACEMENT DES ICÔNES */
-  .custom-footer-links {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 40px !important; /* Augmenté (c'était 25px avant), pour qu'elles respirent */
-    margin: 15px 0 !important;
-  }
-  
-  .custom-footer-links i {
-    font-size: 1.6rem !important; /* Un tout petit peu plus gros */
-  }
-
-  .footer {
-    padding: 20px 0 !important;
-  }
+$/* =========================================
+$   FORCE BRUTE : CENTRAGE MOBILE
+$   ========================================= */
+$@media (max-width: 768px) {
+$
+$  /* On cible le conteneur principal de la page About */
+$  .quarto-about-jolla, 
+$  .quarto-about-trestles, 
+$  .quarto-about-solana {
+$    text-align: center !important;
+$    display: flex !important;
+$    flex-direction: column !important;
+$    align-items: center !important;
+$  }
+$
+$  /* On force l'image à se centrer */
+$  .about-image {
+$    margin-left: auto !important;
+$    margin-right: auto !important;
+$    display: block !important;
+$    max-width: 200px !important; /* Ajuste si tu la trouves trop grosse */
+$  }
+$
+$  /* On force le texte (Bio) à se centrer */
+$  .about-entity, .about-contents {
+$    text-align: center !important;
+$    width: 100% !important;
+$  }
