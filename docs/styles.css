@@ -541,51 +541,70 @@ main ul ul li::before {
 .news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
 
 /* =========================================
-   MOBILE : CORRECTIF FINAL (Centrage + Espacement)
+   MOBILE : BLOC FINAL (Layout + Watermark ajusté)
    ========================================= */
 @media (max-width: 768px) {
 
-  /* 1. FOOTER : Espacement maximal */
-  .custom-footer-links {
-    display: flex !important;
-    justify-content: center !important;
-    gap: 15vw !important; /* Utilise 15% de la largeur de l'écran : s'adapte à tous les téléphones */
-    margin: 20px 0 !important;
+  /* 1. LE FILIGRANE (WATERMARK) PLUS PETIT */
+  body::before {
+    background-size: 250px !important; /* 250px sur mobile vs 500px sur PC */
+    opacity: 0.12 !important; /* Légèrement moins opaque pour ne pas gêner la photo */
+  }
+
+  /* 2. LE FOOTER (ESPACEMENT) */
+  .footer, footer {
+    padding: 30px 0 !important;
   }
   
-  .custom-footer-links i {
-    font-size: 1.8rem !important; /* Icônes bien visibles */
+  body .custom-footer-links,
+  div.custom-footer-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-evenly !important; /* Espacement équitable */
+    align-items: center !important;
+    width: 90% !important; /* Un peu plus large pour laisser de la place */
+    margin: 20px auto !important;
+    gap: 0 !important;
+  }
+  
+  body .custom-footer-links i {
+    font-size: 2.2rem !important;
+    padding: 10px !important;
   }
 
-  /* 2. CENTRAGE TOTAL (Image + Bio "Doctoral Candidate") */
-  /* On cible le conteneur global de la partie "About" */
-  .about-entity, 
-  .quarto-about-jolla .about-entity, 
-  .quarto-about-trestles .about-entity,
-  .quarto-about-solana .about-entity {
+  /* 3. LE CENTRAGE (PHOTO & BIO) */
+  #quarto-content .quarto-about-trestles {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important; /* Centre horizontalement les éléments flexibles */
-    text-align: center !important;  /* Centre le texte */
-    width: 100% !important;
-  }
-
-  /* L'image spécifiquement */
-  img.about-image {
-    display: block !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    margin-bottom: 15px !important; /* Petit espace sous la photo */
-  }
-
-  /* Le texte de la bio */
-  .about-contents {
+    align-items: center !important;
     text-align: center !important;
   }
 
-  /* Cache les icônes doublons dans le menu burger */
-  .navbar-nav .nav-item:has(.bi) {
-    display: none !important;
+  #quarto-content .about-entity {
+    width: 100% !important;
+    padding-right: 0 !important;
+    margin-bottom: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  #quarto-content img.about-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    max-width: 50% !important; /* Photo un peu plus petite aussi pour l'équilibre */
+    height: auto !important;
+  }
+
+  #quarto-content .about-contents {
+    width: 100% !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  
+  #quarto-content .about-contents h1,
+  #quarto-content .about-contents p {
+    text-align: center !important;
   }
 }
 
