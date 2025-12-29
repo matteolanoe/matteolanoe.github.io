@@ -547,8 +547,8 @@ main ul ul li::before {
 
   /* 1. LE FILIGRANE (WATERMARK) PLUS PETIT */
   body::before {
-    background-size: 250px !important; /* 250px sur mobile vs 500px sur PC */
-    opacity: 0.12 !important; /* Légèrement moins opaque pour ne pas gêner la photo */
+    background-size: 800px !important; /* 250px sur mobile vs 500px sur PC */
+    opacity: 0.10 !important; /* Légèrement moins opaque pour ne pas gêner la photo */
   }
 
   /* 2. LE FOOTER (ESPACEMENT) */
