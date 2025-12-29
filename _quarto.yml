@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+    - images/favicon.png
 
 website:
   title: "Mattéo Lanoë | Doctoral Candidate in Sociology"
@@ -14,8 +16,6 @@ website:
     Dispositions, Épidémiologie sociale (Social Epidemiology), Méthodes qualitatives (Qualitative methods),
     Cohorte ComPaRe.
   favicon: images/favicon.png
-  resources:
-    - images/favicon.png
   
   # --- RECHERCHE (Doit être indenté sous website) ---
   search:
