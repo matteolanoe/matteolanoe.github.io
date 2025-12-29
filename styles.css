@@ -539,3 +539,39 @@ main ul ul li::before {
 .date-badge .month { display: block; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
 .date-badge .day { display: block; font-size: 1.2rem; font-weight: 700; }
 .news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
+
+
+/* =========================================
+   OPTIMISATION MOBILE (CORRECTIONS FINALES)
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  /* 1. CENTRAGE DE LA PHOTO D'ACCUEIL */
+  /* On cible l'image dans le bloc "about" et on force les marges auto */
+  .about-image {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  /* On centre aussi le texte (nom et bio) pour que ce soit cohérent */
+  .about-entity {
+    text-align: center !important;
+  }
+
+  /* 2. FOOTER : ESPACEMENT DES ICÔNES */
+  .custom-footer-links {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 40px !important; /* Augmenté (c'était 25px avant), pour qu'elles respirent */
+    margin: 15px 0 !important;
+  }
+  
+  .custom-footer-links i {
+    font-size: 1.6rem !important; /* Un tout petit peu plus gros */
+  }
+
+  .footer {
+    padding: 20px 0 !important;
+  }
