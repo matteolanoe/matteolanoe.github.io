@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: docs
   resources:
-    - images/favicon.png
+    - images/logo-site.png
 
 website:
   title: "Mattéo Lanoë | Doctoral Candidate in Sociology"
@@ -15,7 +15,7 @@ website:
     Corps & Maladies (Body & Illness), Virus, Sociologie économique (Economic Sociology),
     Dispositions, Épidémiologie sociale (Social Epidemiology), Méthodes qualitatives (Qualitative methods),
     Cohorte ComPaRe.
-  favicon: images/favicon.png
+  favicon: images/logo-site.png
   
   # --- RECHERCHE (Doit être indenté sous website) ---
   search:
@@ -79,3 +79,4 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
+    include-in-header: header.html

@@ -540,31 +540,86 @@ main ul ul li::before {
 .date-badge .day { display: block; font-size: 1.2rem; font-weight: 700; }
 .news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
 
-$/* =========================================
-$   FORCE BRUTE : CENTRAGE MOBILE
-$   ========================================= */
-$@media (max-width: 768px) {
-$
-$  /* On cible le conteneur principal de la page About */
-$  .quarto-about-jolla, 
-$  .quarto-about-trestles, 
-$  .quarto-about-solana {
-$    text-align: center !important;
-$    display: flex !important;
-$    flex-direction: column !important;
-$    align-items: center !important;
-$  }
-$
-$  /* On force l'image à se centrer */
-$  .about-image {
-$    margin-left: auto !important;
-$    margin-right: auto !important;
-$    display: block !important;
-$    max-width: 200px !important; /* Ajuste si tu la trouves trop grosse */
-$  }
-$
-$  /* On force le texte (Bio) à se centrer */
-$  .about-entity, .about-contents {
-$    text-align: center !important;
-$    width: 100% !important;
-$  }
+/* =========================================
+   MOBILE : CORRECTIF FINAL (Centrage + Espacement)
+   ========================================= */
+@media (max-width: 768px) {
+
+  /* 1. FOOTER : Espacement maximal */
+  .custom-footer-links {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 15vw !important; /* Utilise 15% de la largeur de l'écran : s'adapte à tous les téléphones */
+    margin: 20px 0 !important;
+  }
+  
+  .custom-footer-links i {
+    font-size: 1.8rem !important; /* Icônes bien visibles */
+  }
+
+  /* 2. CENTRAGE TOTAL (Image + Bio "Doctoral Candidate") */
+  /* On cible le conteneur global de la partie "About" */
+  .about-entity, 
+  .quarto-about-jolla .about-entity, 
+  .quarto-about-trestles .about-entity,
+  .quarto-about-solana .about-entity {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important; /* Centre horizontalement les éléments flexibles */
+    text-align: center !important;  /* Centre le texte */
+    width: 100% !important;
+  }
+
+  /* L'image spécifiquement */
+  img.about-image {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 15px !important; /* Petit espace sous la photo */
+  }
+
+  /* Le texte de la bio */
+  .about-contents {
+    text-align: center !important;
+  }
+
+  /* Cache les icônes doublons dans le menu burger */
+  .navbar-nav .nav-item:has(.bi) {
+    display: none !important;
+  }
+}
+
+/* =========================================
+   FOND DE SITE : WATERMARK (LOGO EN FOND)
+   ========================================= */
+
+body::before {
+  content: "";
+  position: fixed; /* L'image reste fixe quand on scrolle */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  /* L'image à utiliser (mets bien le bon nom de fichier !) */
+  background-image: url('images/logo-site.png'); 
+  
+  /* Mise en page : centré et pas répété */
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  /* Taille du logo en fond (Ajuste selon tes goûts) */
+  /* 40% de la largeur de l'écran, ou mets une taille fixe comme 500px */
+  background-size: 1800px; 
+  
+  /* La transparence : Le secret pour que ce soit joli */
+  /* 1 = totalement visible, 0 = invisible. */
+  /* 0.05 ou 0.1 est idéal pour un effet subtil. */
+  opacity: 0.10; 
+  
+  /* Pour s'assurer que ça reste bien DERRIÈRE le texte */
+  z-index: -1;
+  
+  /* Petit filtre gris pour éviter que les couleurs du logo ne jurent avec le texte */
+  filter: grayscale(100%); 
+}
