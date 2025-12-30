@@ -21,6 +21,8 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 
 **Course description:** This course seeks to introduce first-year students to the very principles of quantatives methods and ways to interpret and handle their descriptive tools. At the end, students should be able to understand how to use basic statistical concepts with real-world data. 
 
+🇫🇷 Course given in French, therefore the course's materials are in French. 
+
 - [Course syllabus (not available yet)](files/teaching/session1.pdf)
 
 #### Sessions schedule
