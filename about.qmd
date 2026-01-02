@@ -31,15 +31,31 @@ Besides, I also dive into issues related to political science, electoral sociolo
 Hublet, François et **Lanoë, Mattéo**, 2025. "A Tale of Three Cleavages: Quantifying the Role of Social Demarcations in the 2022 French Presidential Election". *Revue française de science politique*, 2025/2 n° 75, p.215-260. [DOI : 10.3917/rfsp.752.0215](https://shs.cairn.info/revue-revue-francaise-de-science-politique-2025-2-page-215?lang=fr)
 
 <details>
-
 <summary>Abstract</summary>
 
 <div>
-
 The 2022 French presidential election unfolded during a phase of political realignment marked by the emergence of a relatively balanced tripolar competition among left-wing, center-right, and far-right parties. To analyze the underlying social and electoral cleavages, we conducted a large-scale, precinct-level quantitative study of socio-demographic variables. While our findings broadly support neo-cleavage theories, they also underscore the enduring explanatory power of socio-economic predictors in shaping electoral behavior. We identify three main cleavage dimensions—socio-economic, educational, and migratory—that produce a system of cross-cutting cleavages among the four main electoral choices: Mélenchon, Macron, Le Pen, and abstention.
+</div>
+</details>
+
+<details>
+<summary>BibTeX Citation</summary>
+
+<div>
+
+* BibTeX citation:
+
+```bibtex
+@article{hublet_lanoe_2025,
+ author = {Hublet, François and Lanoë, Mattéo},  title = {A Tale of Three Cleavages: Quantifying the Role of Social Demarcations in the 2022 French Presidential Election},
+ journal = {Revue française de science politique},  volume = {75},
+ number = {2},  year = {2025},
+ pages = {215--260},  doi = {10.3917/rfsp.752.0215},
+  url = {[https://shs.cairn.info/revue-revue-francaise-de-science-politique-2025-2-page-215?lang=fr](https://shs.cairn.info/revue-revue-francaise-de-science-politique-2025-2-page-215?lang=fr)}
+}
+```
 
 </div>
-
 </details>
 ::::
 
@@ -56,5 +72,26 @@ One year ahead of the next European election, the European center-right and righ
 
 </div>
 
+</details>
+
+<details>
+<summary>BibTeX Citation</summary>
+
+<div>
+
+* BibTeX citation:
+
+```bibtex
+@article{hublet_lanoe_schleyer_2023,
+  author = {Hublet, François and Lanoë, Mattéo and Schleyer, Johanna},
+  title = {Spelling out the European center-right’s dilemma: Renewal of the Grand coalition or National-Conservative Alliance?},
+  journal = {Groupe d'études géopolitiques},
+  month = {jun},
+  year = {2023},
+  url = {https://geopolitique.eu/en/2023/06/19/spelling-out-the-european-center-rights-dilemma-renewal-of-the-grand-coalition-or-national-conservative-alliance/}
+}
+```
+
+</div>
 </details>
 ::::

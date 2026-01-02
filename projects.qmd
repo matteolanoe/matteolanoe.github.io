@@ -52,6 +52,16 @@ Post-COVID-19 symptoms (PACS-19), or “long COVID,” are a major public health
 
 Lanoë, M. (2025). Corps et âmes ? Dispositions, socialisation(s) et contrôle de la trajectoire des symptômes post-Covid-19 \[Mémoire de master, École de la recherche, Institut d’études politiques de Paris\]. Sous la direction d’Anne Revillard.
 
+* BibTeX citation:
+
+```bibtex
+@mastersthesis{lanoe2025corps,
+ title = {Corps et âmes ? {Dispositions}, socialisation(s) et contrôle de la trajectoire des symptômes post-{Covid}-19},  author = {Lanoë, Mattéo},
+ year = {2025},  school = {École de la recherche, Institut d’études politiques de Paris},
+  note = {Sous la direction d’Anne Revillard}
+}
+```
+
 </div>
 
 </details>
@@ -83,6 +93,18 @@ In this master's thesis, we examine the impact of the grandes écoles system on 
 <div>
 
 Lanoë, M. (2023). Le politique chez les heureux du monde. Dispositions et socialisation politiques des élèves des grandes écoles \[Mémoire de master, Institut d’études politiques de Lyon\]. Sous la direction d’Anthéa Chenini et de Sébastien Michon.
+
+* BibTeX citation:
+
+```bibtex
+@mastersthesis{lanoe2023politique,
+  title = {Le politique chez les heureux du monde. {Dispositions} et socialisation politiques des élèves des grandes écoles},
+  author = {Lanoë, Mattéo},
+  year = {2023},
+  school = {Institut d'études politiques de Lyon},
+  note = {Sous la direction d’Anthéa Chenini et de Sébastien Michon}
+}
+```
 
 </div>
 
