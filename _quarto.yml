@@ -17,6 +17,13 @@ website:
     Cohorte ComPaRe.
   favicon: images/logo-site.png
   
+  open-graph:
+    description: "Mattéo Lanoë | Doctoral Candidate in Sociology"
+    image: images/logo-site.png  # Ou une image spécifique format rectangulaire
+  twitter-card:
+    image: images/logo-site.png
+    card-style: summary_large_image
+  
   # --- RECHERCHE (Doit être indenté sous website) ---
   search:
     location: navbar
