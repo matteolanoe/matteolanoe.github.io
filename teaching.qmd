@@ -10,8 +10,8 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 <details class="course-spoiler">
 <summary class="course-summary">
 <div class="summary-text">
-<h3>Quantitative Methods for Social Sciences</h3>
-<p>**1A Sciences Po - 2025/2026 Winter Semester**. Introduction to quantitative methods in the social sciences and some very basic concepts to handle them.</p>
+<h3>Méthodes quantitatives en sciences sociales</h3>
+<p>**1A Sciences Po - 2025/2026 Semestre de printemps**. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.</p>
 </div>
 <div class="summary-icon">+</div>
 </summary>
@@ -19,24 +19,27 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 
 <br>
 
-**Course description:** This course seeks to introduce first-year students to the very principles of quantatives methods and ways to interpret and handle their descriptive tools. At the end, students should be able to understand how to use basic statistical concepts with real-world data. 
+**Description du cours:** Ce cours de première année a plusieurs objectifs. Le principal est d'introduire les étudiants aux usages et à la lecture des sciences sociales quantitatives -- comprises de manière large, avec la sociologie, la science politique, l'économie, l'histoire et le droit. Le second objectif est d'introduire les étudiants aux bases de l'analyse de données en utilisant des concepts statistiques simples, afin de mieux saisir comment décrire une variable, associer plusieurs variables et tester la force de l'association entre plusieurs variables. Enfin, par une approche pratique et critique des statistiques, il s'agira de transmettre aux étudiants les manières dont elles peuvent être utiles à l'action publique et à la recherche scientifique en sciences sociales.
 
-🇫🇷 Course given in French, therefore the course's materials are in French. 
+Ce cours n'a pas vocation à former de futurs statisticiens. En conséquence, il n'est pas nécessaire d'avoir un bagage mathématique très poussé pour en retirer les principaux enseignements.
 
-- [Course syllabus (not available yet)](files/teaching/session1.pdf)
+🇫🇷 Cours donné en Français. 
 
-#### Sessions schedule
+- [Syllabus du cours](docs/images/syllabus.pdf)
+
+#### Organisation des séances
 
 ::: {.callout-note collapse="true"}
-## Session 1: What is Quantifying in the Social Sciences
-- More to come soon.
-- [Download Slides (PDF) (not available yet)](files/teaching/session1.pdf)
+## Séance 1: À quoi peuvent bien servir les statistiques ?
+- Les méthodes quantitatives ne sont pas que des mathématiques. Elles se basent sur un ensemble de choix politiques et de constructions scientifiques qui permettent de chiffrer ou de "mettre en chiffres" la réalité sociale. L'objectif de cette séance est d'introduire les étudiants aux principes scientifiques de ces méthodes ainsi qu'à la manière dont elles se sont construites historiquement. La fin de la séance sera dédiée à l'installation de RStudio, ainsi qu'à la découverte du logiciel. *Il n'y a pas de lecture obligatoire pour cette séance.*
+- [Télécharger les slides (PDF) (pas encore disponibles)](files/teaching/session1.pdf)
+- [Télécharger le jeu de données Titanic (titanic.csv)](docs/images/titanic.csv)
 :::
 
 ::: {.callout-note collapse="true"}
 ## Session 2: NA
-- More to come soon.
-- [Download Slides (PDF) (not available yet)](files/teaching/session1.pdf)
+- 
+- [Télécharger les slides (PDF) (pas encore disponibles)](files/teaching/session1.pdf)
 :::
 
 </div>
