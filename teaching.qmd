@@ -31,15 +31,84 @@ Ce cours n'a pas vocation à former de futurs statisticiens. En conséquence, il
 
 ::: {.callout-note collapse="true"}
 ## Séance 1: À quoi peuvent bien servir les statistiques ?
-- Les méthodes quantitatives ne sont pas que des mathématiques. Elles se basent sur un ensemble de choix politiques et de constructions scientifiques qui permettent de chiffrer ou de "mettre en chiffres" la réalité sociale. L'objectif de cette séance est d'introduire les étudiants aux principes scientifiques de ces méthodes ainsi qu'à la manière dont elles se sont construites historiquement. La fin de la séance sera dédiée à l'installation de RStudio, ainsi qu'à la découverte du logiciel. *Il n'y a pas de lecture obligatoire pour cette séance.*
-- [Télécharger les slides (PDF) (pas encore disponibles)](files/teaching/session1.pdf)
+Les méthodes quantitatives ne sont pas que des mathématiques. Elles se basent sur un ensemble de choix politiques et de constructions scientifiques qui permettent de chiffrer ou de "mettre en chiffres" la réalité sociale. L'objectif de cette séance est d'introduire les étudiants aux principes scientifiques de ces méthodes ainsi qu'à la manière dont elles se sont construites historiquement. La fin de la séance sera dédiée à l'installation de RStudio, ainsi qu'à la découverte du logiciel. *Il n'y a pas de lecture obligatoire pour cette séance.*
+
+
+- [Télécharger les slides (PDF)](docs/images/methodes_quanti_1.pdf)
 - [Télécharger le jeu de données Titanic (titanic.csv)](docs/images/titanic.csv)
 :::
 
 ::: {.callout-note collapse="true"}
-## Session 2: NA
-- 
+## Séance 2 : D'où viennent les données statistiques ?
+Un des éléments clés pour une analyse quantitative réussie, c'est de disposer de bonnes données. L'objectif de cette séance sera d'introduire les étudiants au panorama des données quantitatives qui peuvent exister, et aux conséquences que cela peut avoir sur l'analyse. On identifiera trois grandes sources d'enquêtes différentes : les données issues d'enquêtes régulières ou *ad hoc*, les données issues d'enquêtes administratives, et les données construites à partir de "traces". Il s'agira ainsi d'avoir un certain nombre de clés pour repérer les sources de données utilisées par l'action publique ou la littérature scientifique.
+
 - [Télécharger les slides (PDF) (pas encore disponibles)](files/teaching/session1.pdf)
+:::
+
+#### Tutoriels
+
+Ci-dessous, vous trouverez des tutoriels qui vous permettent d'installer R et RStudio sur vos ordinateurs en fonction de votre système d'exploitation (i.e., macOS ou Windows, par exemple), ainsi que d'ouvrir une version en ligne via Posit Cloud. 
+
+::: {.panel-tabset}
+
+## Windows
+
+1.  **Télécharger R :**
+    * Rendez-vous sur le site du CRAN : [https://cran.r-project.org/bin/windows/base/](https://cran.r-project.org/bin/windows/base/)
+    * Cliquez sur le lien **"Download R 4.x.x for Windows"**.
+    * Ouvrez le fichier `.exe` téléchargé et suivez les instructions d'installation (validez tout par défaut).
+
+2.  **Télécharger RStudio :**
+    * Rendez-vous sur le site de Posit : [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+    * Cliquez sur le bouton **"Download RStudio Desktop for Windows"**.
+    * Exécutez l'installation.
+
+3.  **Lancement :**
+    * Ouvrez **RStudio** (icône bleue ronde).
+    * *Note :* Il n'est pas nécessaire d'ouvrir le logiciel "R" (icône grise) directement.
+
+## macOS
+
+1.  **Vérifier votre processeur :**
+    * Cliquez sur la  (Pomme) en haut à gauche > **À propos de ce Mac**.
+    * Regardez la ligne "Puce" ou "Processeur". Si vous voyez "Apple M1/M2/M3", vous avez une puce **Apple Silicon**. Si vous voyez "Intel Core...", vous avez une puce **Intel**.
+
+2.  **Télécharger R :**
+    * Rendez-vous sur le site du CRAN : [https://cran.r-project.org/bin/macosx/](https://cran.r-project.org/bin/macosx/)
+    * Si puce **Apple Silicon (M1/M2...)** : Téléchargez le fichier sous "R-4.x.x-arm64.pkg".
+    * Si puce **Intel** : Téléchargez le fichier sous "R-4.x.x-x86_64.pkg".
+    * Installez le fichier `.pkg`.
+
+3.  **Télécharger RStudio :**
+    * Rendez-vous sur le site de Posit : [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+    * Téléchargez la version pour macOS et installez-la (glissez l'icône dans le dossier Applications).
+
+## Linux
+
+1.  **Installer R :**
+    * Il est recommandé d'utiliser le gestionnaire de paquets de votre distribution (apt, dnf, pacman).
+    * *Exemple pour Ubuntu/Debian :* Ouvrez un terminal et tapez : `sudo apt-get update && sudo apt-get install r-base`
+
+2.  **Télécharger RStudio :**
+    * Rendez-vous sur [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+    * Descendez vers la section "All Installers" et choisissez le fichier `.deb` (Ubuntu/Debian) ou `.rpm` (Fedora/RedHat) correspondant à votre version.
+    * Installez le paquet via votre gestionnaire de logiciels ou en ligne de commande.
+    
+    
+- Un tutoriel YouTube est disponible *via* ce lien : [https://www.youtube.com/watch?v=k0r3iLGJgmQ](https://www.youtube.com/watch?v=k0r3iLGJgmQ). Si jamais vous avez encore des problèmes pour installer le logiciel, nous prendrons du temps avant ou après les séances pour régler les soucis d'installation.
+    
+## Posit Cloud
+
+Si vous ne pouvez pas installer R et RStudio sur votre ordinateur car vous travaillez sur tablette ou sur Chromebook, vous pouvez utiliser la version "cloud" (en ligne). L'interface est strictement identique, mais tout se passe dans votre navigateur web.
+
+**Procédure d'accès :**
+
+1.  **Création du compte** : Rendez-vous sur [posit.cloud](https://posit.cloud/) et cliquez sur **"Sign Up"** (en haut à droite). Choisissez le plan "Cloud Free" (gratuit) et créez votre compte.
+2.  **Démarrer un projet** : Une fois connecté à votre espace de travail ("Your Workspace"), cliquez sur le bouton bleu **"New Project"** en haut à droite, puis sélectionnez **"New RStudio Project"**.
+3.  **Lancement** : L'environnement va mettre quelques secondes à se déployer ("Deploying project"). Une fois terminé, vous retrouverez l'interface familière de RStudio avec ses quatre fenêtres.
+
+*Note : Cette solution nécessite une connexion internet constante pour fonctionner.*
+
 :::
 
 </div>
