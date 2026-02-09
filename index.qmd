@@ -6,7 +6,7 @@ page-layout: full
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
-![](images/photo_github_matteolanoe.jpg){.profile-pic}
+![](images/photo_github_matteolanoe_nw.jpg){.profile-pic}
 :::
 
 ::: {.g-col-12 .g-col-md-8}
@@ -16,7 +16,7 @@ page-layout: full
 Doctoral Candidate, Sciences Po and French Institute for Demographic Studies (INED)
 </p>
 
-Welcome! My name is Mattéo Lanoë and I am a first-year Sociology PhD Candidate affiliated with the [Center for Research on Social Inequalities (CRIS)](https://www.sciencespo.fr/cris/en/) at [Sciences Po](https://www.sciencespo.fr/departement-sociologie/en/) and resident in the [Mortality, Health and Epidemiology](https://mse.site.ined.fr/en/) research unit at the [French Institute for Demographic Studies (INED)](https://www.ined.fr). My research is supervised both in sociology and social epidemiology, respectively by [Anne Revillard](https://www.sciencespo.fr/cris/fr/annuaire/revillard-anne/) at CRIS, and [Émilie Counil](https://www.ined.fr/fr/recherche/chercheurs/Counil+Emilie+) at INED. I am funded by the Sciences Po School of Research Doctoral Scholarship, for the 2025-2028 period.
+Welcome! My name is Mattéo Lanoë and I am a first-year Sociology PhD Candidate affiliated with the [Center for Research on Social Inequalities (CRIS)](https://www.sciencespo.fr/cris/en/) at [Sciences Po](https://www.sciencespo.fr/departement-sociologie/en/) and resident fellow in the [Mortality, Health and Epidemiology](https://mse.site.ined.fr/en/) research unit at the [French Institute for Demographic Studies (INED)](https://www.ined.fr). My research is supervised both in sociology and social epidemiology, respectively by [Anne Revillard](https://www.sciencespo.fr/cris/fr/annuaire/revillard-anne/) at CRIS, and [Émilie Counil](https://www.ined.fr/fr/recherche/chercheurs/Counil+Emilie+) at INED. I am funded by the Sciences Po School of Research Doctoral Scholarship, for the 2025-2028 period.
 
 I am also an affiliated doctoral candidate of the ERC Synergy [Gender and Health Inequalities (GENDHI)](https://gendhi.eu/), coordinated by INSERM. The project is supervised by [Nathalie Bajos](https://iris.ehess.fr/index.php?4562), [Muriel Darmon](https://cessp.cnrs.fr/membre/darmon-muriel/), [Pierre-Yves Geoffard](https://www.parisschoolofeconomics.eu/personnes/pierre-yves-geoffard/), and [Michelle Kelly-Irving](https://cerpop.inserm.fr/michelle-kelly-irving-biographie). 
 
@@ -49,6 +49,13 @@ You will find my CRIS institutionnal webpage [there](https://www.sciencespo.fr/c
 <div class="news-card">
  <h3>Latest News</h3>  
    <div class="news-scroll-zone">
+   
+   <div class="news-item">
+     <div class="date-badge">        <span class="month">FEB</span>
+       <span class="day">10</span>      </div>
+  <div class="news-text">
+   <p>I am pleased to announce that I have received the <a         href="[https://gestes.cnrs.fr/aap-amorcage/](https://gestes.cnrs.fr/aap-amorcage/)" target="_blank">Seed Grant</a> of the <a href="[https://gestes.cnrs.fr](https://gestes.cnrs.fr)" target="_blank">Working Group on Labor and Health at Work (GIS GESTES)</a>, totalling €8000 🎉. This grant will be dedicated to work on the collaborative and participative research project INCORP-19.</p>
+</div> </div>
    
        <div class="news-item">
      <div class="date-badge">        <span class="month">JAN</span>
