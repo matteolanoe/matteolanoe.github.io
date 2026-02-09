@@ -40,9 +40,18 @@ Les méthodes quantitatives ne sont pas que des mathématiques. Elles se basent 
 
 ::: {.callout-note collapse="true"}
 ## Séance 2 : D'où viennent les données statistiques ?
-Un des éléments clés pour une analyse quantitative réussie, c'est de disposer de bonnes données. L'objectif de cette séance sera d'introduire les étudiants au panorama des données quantitatives qui peuvent exister, et aux conséquences que cela peut avoir sur l'analyse. On identifiera trois grandes sources d'enquêtes différentes : les données issues d'enquêtes régulières ou *ad hoc*, les données issues d'enquêtes administratives, et les données construites à partir de "traces". Il s'agira ainsi d'avoir un certain nombre de clés pour repérer les sources de données utilisées par l'action publique ou la littérature scientifique.
+Un des éléments clés pour une analyse quantitative réussie, c'est de disposer de bonnes données. L'objectif de cette séance sera d'introduire les étudiants au panorama des données quantitatives qui peuvent exister, et aux conséquences que cela peut avoir sur l'analyse. On identifiera trois grandes sources d'enquêtes différentes : les données issues d'enquêtes régulières ou *ad hoc*, les données issues d'enquêtes administratives, et les données construites à partir de "traces". Il s'agira ainsi d'avoir un certain nombre de clés pour repérer les sources de données utilisées par l'action publique ou la littérature scientifique. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
-- [Télécharger les slides (PDF) (pas encore disponibles)](files/teaching/session1.pdf)
+- [Télécharger les slides (PDF)](docs/images/methodes_quanti_2.pdf)
+- [Télécharger le script R de la séance 2](docs/images/script_seance_2.R)
+:::
+
+::: {.callout-note collapse="true"}
+## Séance 3 : Décrire une variable
+Pour comprendre une variable et réaliser des tests statistiques ensuite, il faut d’abord comprendre comment elle est construite et distribuée. Cette séance a pour ambition d’introduire les étudiants aux indicateurs de tendance centrale et aux indicateurs de dispersion. Il s’agira ainsi de bien comprendre quels sont les enjeux derrière l’utilisation de ces concepts statistiques d’analyse univariée, de leurs avantages et de leurs défauts à avoir en tête quand on mène une analyse. *Il n’y a pas de lecture obligatoire pour cette séance*.
+
+- [Télécharger les slides (PDF)](docs/images/methodes_quanti_3.pdf)
+- [Télécharger le script R de la séance 3](docs/images/script_seance_3.R)
 :::
 
 #### Tutoriels
