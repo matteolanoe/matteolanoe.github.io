@@ -80,10 +80,6 @@ website:
           <i class="bi bi-clouds"></i><span class="reveal-text">@matteolanoe.bsky.social</span>
         </a>
       </div>
-      
-comments:
-    giscus:
-      repo: matteolanoe/matteolanoe.github.io # Remplace par tes infos exactes !
 
 format:
   html:
