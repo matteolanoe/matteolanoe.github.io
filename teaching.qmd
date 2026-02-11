@@ -79,7 +79,7 @@ Notions à retenir :
 ```{=html}
 <script src="https://giscus.app/client.js"
         data-repo="matteolanoe/matteolanoe.github.io"
-        data-repo-id="R_kgDONqylgA"
+        data-repo-id="R_kgDOQv1-sw"
         data-category="Announcements"
         data-category-id="DIC_kwDONqylgM4CmD5S"
         data-mapping="pathname"
