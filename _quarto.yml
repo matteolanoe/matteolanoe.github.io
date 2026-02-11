@@ -83,7 +83,7 @@ website:
       
 comments:
     giscus:
-      repo: matteolanoe.github.io # Remplace par tes infos exactes !
+      repo: matteolanoe/matteolanoe.github.io # Remplace par tes infos exactes !
 
 format:
   html:
