@@ -75,6 +75,31 @@ Notions à retenir :
 - **Séance 3** : éléments et vocabulaire pour décrire un fichier tableur (`.csv`), ainsi que les différentes fenêtres de `RStudio` ; les différents types d'indicateurs de tendance centrale et leurs défauts ; les indicateurs de dispersion et interprétation d'un écart-type ; quantiles ; interpréter une boîte à moustache (*boxplot*). 
 
 - **Commandes `R` à maitriser (à l'écrit!)** : `read.csv("df.csv", sep = ",")` *ou* `read.csv("df.csv", sep = ";")`, `View()`, `min()`, `max()`, `mean(df$var, na.rm = TRUE)`, `median(df$var, na.rm = TRUE)`, `var(df$var, na.rm = TRUE)`, `sd(df$var, na.rm = TRUE)`. L'évaluation de la connaissance de ces fonctions sera sous la forme d'un contrôle de vocabulaire, comme en cours de langue. 
+
+- **Vous pouvez poser vos questions en utilisant l'interface ci-dessous**. Je verrai d'abord vos questions, puis je les publierai ici en ajoutant une réponse : 
+
+```{=html}
+<hr style="margin-top: 30px; margin-bottom: 30px; border-top: 1px solid #ccc;">
+
+<div id="cusdis_thread"
+  data-host="[https://cusdis.com](https://cusdis.com)"
+  data-app-id="203fb0a3-2251-4a02-8d8c-f2664c2798e7"
+  data-page-id="dst-module-1"
+  data-page-url="[https://matteolanoe.github.io/teaching.html](https://matteolanoe.github.io/teaching.html)"
+  data-page-title="DST Module 1"
+  style="width: 100%; min-height: 400px;">
+  
+  <p style="text-align: center; color: #666; padding-top: 50px;">
+    <em>Le formulaire de commentaires charge...<br>
+    S'il n'apparaît pas, merci de désactiver votre bloqueur de publicité (AdBlock) pour cette page.</em>
+  </p>
+  
+</div>
+
+<script async defer src="[https://cusdis.com/js/cusdis.es.js](https://cusdis.com/js/cusdis.es.js)"></script>
+
+<hr style="margin-top: 30px; margin-bottom: 30px; border-top: 1px solid #ccc;">
+```
 :::
 
 #### Tutoriels
