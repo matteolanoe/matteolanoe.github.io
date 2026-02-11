@@ -11,7 +11,7 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 <summary class="course-summary">
 <div class="summary-text">
 <h3>Méthodes quantitatives en sciences sociales</h3>
-<p>**1A Sciences Po - 2025/2026 Semestre de printemps**. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.</p>
+<p>**1A Sciences Po - Teaching Fellow - 2025/2026 Semestre de printemps**. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser. </p>
 </div>
 <div class="summary-icon">+</div>
 </summary>
@@ -52,6 +52,47 @@ Pour comprendre une variable et réaliser des tests statistiques ensuite, il fau
 
 - [Télécharger les slides (PDF)](docs/images/methodes_quanti_3.pdf)
 - [Télécharger le script R de la séance 3](docs/images/script_seance_3.R)
+:::
+
+::: {.callout-note collapse="true"}
+## Séance 4 & 5 : Relier des variables entre elles
+Comprendre la distribution d'une variable n'est que la première étape dans la construction d'une analyse quantitative d'un jeu de données. Pour opérer des comparaisons entre variables, il faut avant tout comprendre leur nature : on ne peut pas comparer de la même manière des variables qualitatives (genre ou catégorie d'âge, par exemple), et des variables quantitatives (poids ou taille). Ces séances seront dédiées aux manières de comprendre quelle est la nature d'une variable, et aux manières de visualiser une association entre différentes variables, en tableau par exemple. *Il n’y a pas de lecture obligatoire pour cette séance*.
+
+- [Télécharger les slides (PDF)](docs/images/methodes_quanti_4.pdf)
+- [Télécharger le script R de la séance 4](docs/images/script_seance_4.R)
+:::
+
+#### Programmes de révision
+
+::: {.callout-note collapse="true"}
+## Devoir sur table (DST) du Module 1 : Introduction aux concepts statistiques de base
+Notions à retenir : 
+
+- **Séance 1** : statistiques et contrôle des populations (les trois traditions mises en avant par A. Desrosières ; exemple de la [variole chez Foucault](https://www.lagouvernance.fr/foucault-le-concept-de-normation-et-normalisation/#:~:text=Foucault%20prend%20l'exemple%20de,des%20champs%20de%20rationalit%C3%A9%20acceptables.)), régimes de généralisation en sciences sociales en fonction des méthodes, définition de la quantification par A. Desrosières. 
+
+- **Séance 2** : grands types d'enquêtes en sciences sociales (enquêtes scientifiques, enquêtes administratives, enquêtes par traces) ; exemples d'enquêtes ; biais liés aux différents types d'enquêtes ; nom complet des fichiers `.csv` (*comma separated values*).  
+
+- **Séance 3** : éléments et vocabulaire pour décrire un fichier tableur (`.csv`), ainsi que les différentes fenêtres de `RStudio` ; les différents types d'indicateurs de tendance centrale et leurs défauts ; les indicateurs de dispersion et interprétation d'un écart-type ; quantiles ; interpréter une boîte à moustache (*boxplot*). 
+
+- **Commandes `R` à maitriser (à l'écrit!)** : `read.csv("df.csv", sep = ",")` *ou* `read.csv("df.csv", sep = ";")`, `View()`, `min()`, `max()`, `mean(df$var, na.rm = TRUE)`, `median(df$var, na.rm = TRUE)`, `var(df$var, na.rm = TRUE)`, `sd(df$var, na.rm = TRUE)`. L'évaluation de la connaissance de ces fonctions sera sous la forme d'un contrôle de vocabulaire, comme en cours de langue. 
+
+```{=html}
+<script src="https://giscus.app/client.js"
+        data-repo="matteolanoe/matteolanoe.github.io"
+        data-repo-id="R_kgDONqylgA"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONqylgM4CmD5S"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="fr"
+        crossorigin="anonymous"
+        async>
+</script>
+```
 :::
 
 #### Tutoriels

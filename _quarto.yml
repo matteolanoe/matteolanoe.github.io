@@ -80,6 +80,10 @@ website:
           <i class="bi bi-clouds"></i><span class="reveal-text">@matteolanoe.bsky.social</span>
         </a>
       </div>
+      
+comments:
+    giscus:
+      repo: ton-nom-github/ton-repo-github # Remplace par tes infos exactes !
 
 format:
   html:

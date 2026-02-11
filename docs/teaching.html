@@ -197,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 Méthodes quantitatives en sciences sociales
 </h3>
 <p>
-<strong>1A Sciences Po - 2025/2026 Semestre de printemps</strong>. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.
+<strong>1A Sciences Po - Teaching Fellow - 2025/2026 Semestre de printemps</strong>. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.
 </p>
 </div>
 <div class="summary-icon">
@@ -271,6 +271,53 @@ Méthodes quantitatives en sciences sociales
 <li><a href="docs/images/methodes_quanti_3.pdf">Télécharger les slides (PDF)</a></li>
 <li><a href="docs/images/script_seance_3.R">Télécharger le script R de la séance 3</a></li>
 </ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Séance 4 &amp; 5 : Relier des variables entre elles
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Comprendre la distribution d’une variable n’est que la première étape dans la construction d’une analyse quantitative d’un jeu de données. Pour opérer des comparaisons entre variables, il faut avant tout comprendre leur nature : on ne peut pas comparer de la même manière des variables qualitatives (genre ou catégorie d’âge, par exemple), et des variables quantitatives (poids ou taille). Ces séances seront dédiées aux manières de comprendre quelle est la nature d’une variable, et aux manières de visualiser une association entre différentes variables, en tableau par exemple. <em>Il n’y a pas de lecture obligatoire pour cette séance</em>.</p>
+<ul>
+<li><a href="docs/images/methodes_quanti_4.pdf">Télécharger les slides (PDF)</a></li>
+<li><a href="docs/images/script_seance_4.R">Télécharger le script R de la séance 4</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="programmes-de-révision" class="level4">
+<h4 class="anchored" data-anchor-id="programmes-de-révision">Programmes de révision</h4>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Devoir sur table (DST) du Module 1 : Introduction aux concepts statistiques de base
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Notions à retenir :</p>
+<ul>
+<li><p><strong>Séance 1</strong> : statistiques et contrôle des populations (les trois traditions mises en avant par A. Desrosières ; exemple de la <a href="https://www.lagouvernance.fr/foucault-le-concept-de-normation-et-normalisation/#:~:text=Foucault%20prend%20l'exemple%20de,des%20champs%20de%20rationalit%C3%A9%20acceptables.">variole chez Foucault</a>), régimes de généralisation en sciences sociales en fonction des méthodes, définition de la quantification par A. Desrosières.</p></li>
+<li><p><strong>Séance 2</strong> : grands types d’enquêtes en sciences sociales (enquêtes scientifiques, enquêtes administratives, enquêtes par traces) ; exemples d’enquêtes ; biais liés aux différents types d’enquêtes ; nom complet des fichiers <code>.csv</code> (<em>comma separated values</em>).</p></li>
+<li><p><strong>Séance 3</strong> : éléments et vocabulaire pour décrire un fichier tableur (<code>.csv</code>), ainsi que les différentes fenêtres de <code>RStudio</code> ; les différents types d’indicateurs de tendance centrale et leurs défauts ; les indicateurs de dispersion et interprétation d’un écart-type ; quantiles ; interpréter une boîte à moustache (<em>boxplot</em>).</p></li>
+<li><p><strong>Commandes <code>R</code> à maitriser (à l’écrit!)</strong> : <code>read.csv("df.csv", sep = ",")</code> <em>ou</em> <code>read.csv("df.csv", sep = ";")</code>, <code>View()</code>, <code>min()</code>, <code>max()</code>, <code>mean(df$var, na.rm = TRUE)</code>, <code>median(df$var, na.rm = TRUE)</code>, <code>var(df$var, na.rm = TRUE)</code>, <code>sd(df$var, na.rm = TRUE)</code>. L’évaluation de la connaissance de ces fonctions sera sous la forme d’un contrôle de vocabulaire, comme en cours de langue.</p></li>
+</ul>
+<script src="https://giscus.app/client.js" data-repo="matteolanoe/matteolanoe.github.io" data-repo-id="R_kgDONqylgA" data-category="Announcements" data-category-id="DIC_kwDONqylgM4CmD5S" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="fr" crossorigin="anonymous" async="">
+</script>
 </div>
 </div>
 </div>
@@ -795,6 +842,35 @@ Méthodes quantitatives en sciences sociales
     }
   });
   </script>
+<input type="hidden" id="giscus-base-theme" value="light">
+<input type="hidden" id="giscus-alt-theme" value="dark">
+<script>
+  function loadGiscus() {
+    // Function to get the theme based on body class
+    const getTheme = () => {
+      let baseTheme = document.getElementById('giscus-base-theme').value;
+      let altTheme = document.getElementById('giscus-alt-theme').value;
+      return document.body.classList.contains('quarto-dark') ? altTheme : baseTheme;
+    };
+    const script = document.createElement("script");
+    script.src = "https://giscus.app/client.js";
+    script.async = true;
+    script.dataset.repo = "ton-nom-github/ton-repo-github";
+    script.dataset.repoId = "";
+    script.dataset.category = "General";
+    script.dataset.categoryId = "";
+    script.dataset.mapping = "title";
+    script.dataset.reactionsEnabled = "1";
+    script.dataset.emitMetadata = "0";
+    script.dataset.inputPosition = "top";
+    script.dataset.theme = getTheme();
+    script.dataset.lang = "en";
+    script.crossOrigin = "anonymous";
+    // Append the script to the desired div instead of at the end of the body
+    document.getElementById("quarto-content").appendChild(script);
+  }
+  loadGiscus();
+</script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
