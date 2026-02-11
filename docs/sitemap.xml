@@ -1,27 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://matteolanoe.github.io/projects.html</loc>
-    <lastmod>2026-01-02T04:18:52.146Z</lastmod>
-  </url>
-  <url>
-    <loc>https://matteolanoe.github.io/index.html</loc>
-    <lastmod>2026-02-09T00:17:26.308Z</lastmod>
+    <loc>https://matteolanoe.github.io/teaching.html</loc>
+    <lastmod>2026-02-11T19:05:11.574Z</lastmod>
   </url>
   <url>
     <loc>https://matteolanoe.github.io/about.html</loc>
     <lastmod>2026-01-02T13:51:53.769Z</lastmod>
   </url>
   <url>
-    <loc>https://matteolanoe.github.io/teaching.html</loc>
-    <lastmod>2026-02-11T19:05:11.574Z</lastmod>
+    <loc>https://matteolanoe.github.io/talks.html</loc>
+    <lastmod>2025-12-23T20:49:22.567Z</lastmod>
   </url>
   <url>
     <loc>https://matteolanoe.github.io/socials.html</loc>
     <lastmod>2025-12-27T17:10:24.929Z</lastmod>
   </url>
   <url>
-    <loc>https://matteolanoe.github.io/talks.html</loc>
-    <lastmod>2025-12-23T20:49:22.567Z</lastmod>
+    <loc>https://matteolanoe.github.io/projects.html</loc>
+    <lastmod>2026-01-02T04:18:52.146Z</lastmod>
   </url>
 </urlset>
