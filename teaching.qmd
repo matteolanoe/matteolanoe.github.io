@@ -75,24 +75,6 @@ Notions à retenir :
 - **Séance 3** : éléments et vocabulaire pour décrire un fichier tableur (`.csv`), ainsi que les différentes fenêtres de `RStudio` ; les différents types d'indicateurs de tendance centrale et leurs défauts ; les indicateurs de dispersion et interprétation d'un écart-type ; quantiles ; interpréter une boîte à moustache (*boxplot*). 
 
 - **Commandes `R` à maitriser (à l'écrit!)** : `read.csv("df.csv", sep = ",")` *ou* `read.csv("df.csv", sep = ";")`, `View()`, `min()`, `max()`, `mean(df$var, na.rm = TRUE)`, `median(df$var, na.rm = TRUE)`, `var(df$var, na.rm = TRUE)`, `sd(df$var, na.rm = TRUE)`. L'évaluation de la connaissance de ces fonctions sera sous la forme d'un contrôle de vocabulaire, comme en cours de langue. 
-
-```{=html}
-<script src="https://giscus.app/client.js"
-        data-repo="matteolanoe/matteolanoe.github.io"
-        data-repo-id="R_kgDOQv1-sw"
-        data-category="[ENTER CATEGORY NAME HERE]"
-        data-category-id="[ENTER CATEGORY ID HERE]"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="fr"
-        crossorigin="anonymous"
-        async>
-</script>
-```
 :::
 
 #### Tutoriels
