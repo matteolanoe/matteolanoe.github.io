@@ -79,7 +79,8 @@ Notions à retenir :
 - **Vous pouvez poser vos questions en utilisant l'interface ci-dessous**. Je verrai d'abord vos questions, puis je les publierai ici en ajoutant une réponse : 
 
 ```{=html}
-<hr <div id="cusdis_thread"
+<hr 
+<div id="cusdis_thread"
   data-host="https://cusdis.com"
   data-app-id="203fb0a3-2251-4a02-8d8c-f2664c2798e7"
   data-page-id="dst-module-1"
@@ -87,7 +88,7 @@ Notions à retenir :
   data-page-title="DST Module 1"
 ></div>
 <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-<hr
+<hr 
 ```
 :::
 

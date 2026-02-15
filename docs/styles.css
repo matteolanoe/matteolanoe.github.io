@@ -426,16 +426,22 @@ main ul li::before {
   left: -1.5em;
 }
 
-/* 2. NIVEAU 2 (Sous-listes) : On annule la flèche et on remet le point */
+/* 2. NIVEAU 2 (Sous-listes) : On met le triangle ▸ */
 main ul ul {
-  list-style-type: disc !important; /* Remet le point rond classique */
+  list-style-type: none !important; /* On cache le point rond classique */
   margin-top: 5px;
   margin-bottom: 5px;
+  padding-left: 1.5em; /* Un peu d'espace pour l'indentation */
 }
 
-/* On supprime la flèche verte qu'on avait ajoutée au niveau 1 */
+/* On définit le nouveau symbole pour la sous-liste */
 main ul ul li::before {
-  content: none !important; 
+  content: "▸" !important;
+  color: #285e3a; /* Ton vert habituel */
+  font-weight: normal; /* "▸" est déjà assez épais, pas besoin de bold */
+  position: absolute;
+  left: -1.2em; /* Ajuste ce chiffre pour rapprocher/éloigner la puce du texte */
+  font-size: 1.1em; /* Légèrement plus grand pour être lisible */
 }
 
 /* 3. EXCEPTIONS (Pour ne pas casser les menus) */
