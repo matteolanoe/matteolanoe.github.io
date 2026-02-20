@@ -58,7 +58,7 @@ Pour comprendre une variable et réaliser des tests statistiques ensuite, il fau
 ## Séance 4 & 5 : Relier des variables entre elles
 Comprendre la distribution d'une variable n'est que la première étape dans la construction d'une analyse quantitative d'un jeu de données. Pour opérer des comparaisons entre variables, il faut avant tout comprendre leur nature : on ne peut pas comparer de la même manière des variables qualitatives (genre ou catégorie d'âge, par exemple), et des variables quantitatives (poids ou taille). Ces séances seront dédiées aux manières de comprendre quelle est la nature d'une variable, et aux manières de visualiser une association entre différentes variables, en tableau par exemple. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
-- [Télécharger les slides (PDF)](docs/images/methodes_quanti_4-1.pdf)
+- [Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf)
 - [Télécharger le script R de la séance 4](docs/images/script_seance_4.R)
 :::
 
