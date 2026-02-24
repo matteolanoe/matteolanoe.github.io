@@ -60,6 +60,13 @@ Comprendre la distribution d'une variable n'est que la première étape dans la 
 
 - [Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf)
 - [Télécharger le script R de la séance 4](docs/images/script_seance_4.R)
+
+Télécharger les jeux de données à utiliser pendant le cours : 
+
+- [Télécharger le jeu de données avant la loterie](docs/images/expe_lycee_Ghana_avantloterie.csv){download="expe_lycee_Ghana_avantloterie.csv"}
+- [Télécharger le jeu de données après la loterie](docs/images/expe_lycee_Ghana_aprestloterie.csv){download="expe_lycee_Ghana_aprestloterie.csv"}
+- [Télécharger le jeu de données pour les MES](docs/images/expe_lycee_Ghana_MES.csv){download="expe_lycee_Ghana_MES.csv"}
+
 :::
 
 #### Programmes de révision
