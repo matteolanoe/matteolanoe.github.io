@@ -60,6 +60,7 @@ Comprendre la distribution d'une variable n'est que la première étape dans la 
 
 - [Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf)
 - [Télécharger le script R de la séance 4](docs/images/script_seance_4.R)
+- [Télécharger le script R de l'exercice en séance 5](docs/images/exercice_seance5.R){download="docs/images/exercice_seance5.R"}
 
 Télécharger les jeux de données à utiliser pendant le cours : 
 
