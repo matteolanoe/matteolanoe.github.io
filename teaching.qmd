@@ -70,6 +70,15 @@ Comprendre la distribution d'une variable n'est que la première étape dans la 
 
 :::
 
+::: {.callout-note collapse="true"}
+## Séance 6 & 7 : Construire et catégoriser des données
+Dans le cadre de ses missions, un chercheur ou un fonctionnaire d'une administration publique peut avoir besoin de mener ses propres enquêtes. Or, construire un questionnaire et construire des données n'est pas sans obstacles ou difficultés. Ces deux séances auront pour objectif d'introduire les étudiants aux problèmes récurrents dans la construction de questionnaires d'enquête : questions ouvertes ou questions fermées, ordre et formulation des questions, impact du Réglement général sur la protection des données (RGPD). La deuxième séance sera dédiée aux problèmes de recodage de données existantes, et des choix éthiques, scientifiques et politiques à réaliser lors de ce même recodage. *Il y a une lecture obligatoire pour ces séances*.
+
+<i class="bi bi-file-earmark-pdf"></i> [Télécharger les slides (séance 6, PDF), pas encore disponibles](docs/images/methodes_quanti_6.pdf){download="methodes_quanti_6.pdf"} <br>
+<i class="bi bi-book"></i> [Lecture obligatoire : A. Desrosières, *La portée sociologique des diverses phases du travail statistique*](docs/images/desrosieres_portee_socio.pdf){download="desrosieres_portee_socio.pdf"} <br>
+
+:::
+
 #### Programmes de révision
 
 ::: {.callout-note collapse="true"}
