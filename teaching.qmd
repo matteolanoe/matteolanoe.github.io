@@ -58,6 +58,7 @@ Pour comprendre une variable et réaliser des tests statistiques ensuite, il fau
 Comprendre la distribution d'une variable n'est que la première étape dans la construction d'une analyse quantitative d'un jeu de données. Pour opérer des comparaisons entre variables, il faut avant tout comprendre leur nature : on ne peut pas comparer de la même manière des variables qualitatives (genre ou catégorie d'âge, par exemple), et des variables quantitatives (poids ou taille). Ces séances seront dédiées aux manières de comprendre quelle est la nature d'une variable, et aux manières de visualiser une association entre différentes variables, en tableau par exemple. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
 <i class="bi bi-file-earmark-pdf"></i> [Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf){download="methodes_quanti_4-1.pdf"} <br>
+<i class="bi bi-file-earmark-pdf"></i> [Télécharger les slides (séance 5, PDF)](docs/images/methodes_quanti_4-2.pdf){download="methodes_quanti_4-2.pdf"} <br>
 <i class="bi bi-file-earmark-code"></i> [Télécharger le script R de la séance 4](docs/images/script_seance_4.R){download="script_seance_4.R"} <br>
 <i class="bi bi-file-earmark-code"></i> [Télécharger le script R de l'exercice en séance 5](docs/images/exercice_seance5.R){download="exercice_seance5.R"} <br>
 <br>
