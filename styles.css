@@ -648,3 +648,29 @@ body::before {
   /* Petit filtre gris pour éviter que les couleurs du logo ne jurent avec le texte */
   filter: grayscale(100%); 
 }
+
+/* Style revisité pour les icônes de téléchargement : COMPACT & FIN */
+.badge-doc {
+  background-color: #1a472a; /* Gris-bleu foncé */
+  color: #ffffff !important;
+  
+  /* ESPACEMENT RÉDUIT : moins massif */
+  padding: 3px 5px; 
+  
+  /* ARRONDI SUBTIL */
+  border-radius: 3px;
+  
+  /* TAILLE RÉDUITE : s'aligne mieux avec le texte de base */
+  font-size: 1.0rem; 
+  
+  /* Marge réduite */
+  margin-right: 6px;
+  
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  
+  /* SUPPRESSION de l'ombre pour plus de platitude */
+  box-shadow: none; 
+}
