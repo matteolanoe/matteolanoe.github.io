@@ -11,7 +11,7 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 <summary class="course-summary">
 <div class="summary-text">
 <h3>Méthodes quantitatives en sciences sociales</h3>
-<p>**1A Sciences Po - Teaching Fellow - 2025/2026 Semestre de printemps**. Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser. </p>
+<p>**1st Year Sciences Po Undergraduates Students | Position: Teaching Fellow | Year offered: 2026 Spring Semester** Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser. </p>
 </div>
 <div class="summary-icon">+</div>
 </summary>
@@ -25,7 +25,7 @@ Ce cours n'a pas vocation à former de futurs statisticiens. En conséquence, il
 
 🇫🇷 Cours donné en Français. 
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Syllabus du cours](docs/images/syllabus.pdf){download="syllabus.pdf"}
+[<i class="bi bi-filetype-pdf badge-doc"></i> Syllabus du cours](docs/images/syllabus.pdf){download="syllabus.pdf"}
 
 #### Organisation des séances
 
@@ -33,41 +33,41 @@ Ce cours n'a pas vocation à former de futurs statisticiens. En conséquence, il
 ## Séance 1: À quoi peuvent bien servir les statistiques ?
 Les méthodes quantitatives ne sont pas que des mathématiques. Elles se basent sur un ensemble de choix politiques et de constructions scientifiques qui permettent de chiffrer ou de "mettre en chiffres" la réalité sociale. L'objectif de cette séance est d'introduire les étudiants aux principes scientifiques de ces méthodes ainsi qu'à la manière dont elles se sont construites historiquement. La fin de la séance sera dédiée à l'installation de RStudio, ainsi qu'à la découverte du logiciel. *Il n'y a pas de lecture obligatoire pour cette séance.*
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Télécharger les slides (PDF)](docs/images/methodes_quanti_1.pdf){download="methodes_quanti_1.pdf"} <br>
-<i class="bi bi-filetype-csv badge-doc"></i> [Télécharger le jeu de données Titanic (titanic.csv)](docs/images/titanic.csv){download="titanic.csv"}
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (PDF)](docs/images/methodes_quanti_1.pdf){download="methodes_quanti_1.pdf"} <br>
+[<i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données Titanic (titanic.csv)](docs/images/titanic.csv){download="titanic.csv"}
 :::
 
 ::: {.callout-note collapse="true"}
 ## Séance 2 : D'où viennent les données statistiques ?
 Un des éléments clés pour une analyse quantitative réussie, c'est de disposer de bonnes données. L'objectif de cette séance sera d'introduire les étudiants au panorama des données quantitatives qui peuvent exister, et aux conséquences que cela peut avoir sur l'analyse. On identifiera trois grandes sources d'enquêtes différentes : les données issues d'enquêtes régulières ou *ad hoc*, les données issues d'enquêtes administratives, et les données construites à partir de "traces". Il s'agira ainsi d'avoir un certain nombre de clés pour repérer les sources de données utilisées par l'action publique ou la littérature scientifique. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Télécharger les slides (PDF)](docs/images/methodes_quanti_2.pdf){download="methodes_quanti_2.pdf"} <br>
-<i class="bi bi-file-code badge-doc"></i> [Télécharger le script R de la séance 2](docs/images/script_seance_2.R){download="script_seance_2.R"}
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (PDF)](docs/images/methodes_quanti_2.pdf){download="methodes_quanti_2.pdf"} <br>
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de la séance 2](docs/images/script_seance_2.R){download="script_seance_2.R"}
 :::
 
 ::: {.callout-note collapse="true"}
 ## Séance 3 : Décrire une variable
 Pour comprendre une variable et réaliser des tests statistiques ensuite, il faut d’abord comprendre comment elle est construite et distribuée. Cette séance a pour ambition d’introduire les étudiants aux indicateurs de tendance centrale et aux indicateurs de dispersion. Il s’agira ainsi de bien comprendre quels sont les enjeux derrière l’utilisation de ces concepts statistiques d’analyse univariée, de leurs avantages et de leurs défauts à avoir en tête quand on mène une analyse. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Télécharger les slides (PDF)](docs/images/methodes_quanti_3.pdf){download="methodes_quanti_3.pdf"} <br>
-<i class="bi bi-file-code badge-doc"></i> [Télécharger le script R de la séance 3](docs/images/script_seance_3.R){download="script_seance_3.R"}
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (PDF)](docs/images/methodes_quanti_3.pdf){download="methodes_quanti_3.pdf"} <br>
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de la séance 3](docs/images/script_seance_3.R){download="script_seance_3.R"}
 :::
 
 ::: {.callout-note collapse="true"}
 ## Séance 4 & 5 : Relier des variables entre elles
 Comprendre la distribution d'une variable n'est que la première étape dans la construction d'une analyse quantitative d'un jeu de données. Pour opérer des comparaisons entre variables, il faut avant tout comprendre leur nature : on ne peut pas comparer de la même manière des variables qualitatives (genre ou catégorie d'âge, par exemple), et des variables quantitatives (poids ou taille). Ces séances seront dédiées aux manières de comprendre quelle est la nature d'une variable, et aux manières de visualiser une association entre différentes variables, en tableau par exemple. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf){download="methodes_quanti_4-1.pdf"} <br>
-<i class="bi bi-file-code badge-doc"></i> [Télécharger le script R de la séance 4](docs/images/script_seance_4.R){download="script_seance_4.R"} <br>
-<i class="bi bi-file-code badge-doc"></i> [Télécharger le script R de l'exercice en séance 5](docs/images/exercice_seance5.R){download="exercice_seance5.R"} <br>
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 4, PDF)](docs/images/methodes_quanti_4-1.pdf){download="methodes_quanti_4-1.pdf"} <br>
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de la séance 4](docs/images/script_seance_4.R){download="script_seance_4.R"} <br>
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de l'exercice en séance 5](docs/images/exercice_seance5.R){download="exercice_seance5.R"} <br>
 
 <br>
 Télécharger les jeux de données à utiliser pendant le cours : 
 <br><br>
 
-<i class="bi bi-filetype-csv badge-doc"></i> [Télécharger le jeu de données avant la loterie](docs/images/expe_lycee_Ghana_avantloterie.csv){download="expe_lycee_Ghana_avantloterie.csv"} <br>
-<i class="bi bi-filetype-csv badge-doc"></i> [Télécharger le jeu de données après la loterie](docs/images/expe_lycee_Ghana_aprestloterie.csv){download="expe_lycee_Ghana_aprestloterie.csv"} <br>
-<i class="bi bi-filetype-csv badge-doc"></i> [Télécharger le jeu de données pour les MES](docs/images/expe_lycee_Ghana_MES.csv){download="expe_lycee_Ghana_MES.csv"}
+[<i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données avant la loterie](docs/images/expe_lycee_Ghana_avantloterie.csv){download="expe_lycee_Ghana_avantloterie.csv"} <br>
+[<i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données après la loterie](docs/images/expe_lycee_Ghana_aprestloterie.csv){download="expe_lycee_Ghana_aprestloterie.csv"} <br>
+[<i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données pour les MES](docs/images/expe_lycee_Ghana_MES.csv){download="expe_lycee_Ghana_MES.csv"}
 
 :::
 
@@ -75,8 +75,8 @@ Télécharger les jeux de données à utiliser pendant le cours :
 ## Séance 6 & 7 : Construire et catégoriser des données
 Dans le cadre de ses missions, un chercheur ou un fonctionnaire d'une administration publique peut avoir besoin de mener ses propres enquêtes. Or, construire un questionnaire et construire des données n'est pas sans obstacles ou difficultés. Ces deux séances auront pour objectif d'introduire les étudiants aux problèmes récurrents dans la construction de questionnaires d'enquête : questions ouvertes ou questions fermées, ordre et formulation des questions, impact du Réglement général sur la protection des données (RGPD). La deuxième séance sera dédiée aux problèmes de recodage de données existantes, et des choix éthiques, scientifiques et politiques à réaliser lors de ce même recodage. *Il y a une lecture obligatoire pour ces séances*.
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Télécharger les slides (séance 6, PDF), pas encore disponibles](docs/images/methodes_quanti_6.pdf){download="methodes_quanti_6.pdf"} <br>
-<i class="bi bi-book badge-doc"></i> [Lecture obligatoire : A. Desrosières, *La portée sociologique des diverses phases du travail statistique*](docs/images/desrosieres_portee_socio.pdf){download="desrosieres_portee_socio.pdf"} <br>
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF), pas encore disponibles](docs/images/methodes_quanti_6.pdf){download="methodes_quanti_6.pdf"} <br>
+[<i class="bi bi-book badge-doc"></i> Lecture obligatoire : A. Desrosières, *La portée sociologique des diverses phases du travail statistique*](docs/images/desrosieres_portee_socio.pdf){download="desrosieres_portee_socio.pdf"} <br>
 
 :::
 

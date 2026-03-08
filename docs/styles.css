@@ -649,28 +649,44 @@ body::before {
   filter: grayscale(100%); 
 }
 
-/* Style revisité pour les icônes de téléchargement : COMPACT & FIN */
+/* 1. L'état de base de l'icône (avec bordure invisible et animation) */
 .badge-doc {
-  background-color: #1a472a; /* Gris-bleu foncé */
+  background-color: #1a472a; /* Ton fond sombre */
   color: #ffffff !important;
-  
-  /* ESPACEMENT RÉDUIT : moins massif */
-  padding: 3px 5px; 
-  
-  /* ARRONDI SUBTIL */
+  border: 1px solid #1a472a; /* Bordure de la même couleur pour préparer le survol */
+  padding: 3px 5px;
   border-radius: 3px;
-  
-  /* TAILLE RÉDUITE : s'aligne mieux avec le texte de base */
-  font-size: 1.0rem; 
-  
-  /* Marge réduite */
+  font-size: 1.0rem;
   margin-right: 6px;
-  
   display: inline-flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
-  
-  /* SUPPRESSION de l'ombre pour plus de platitude */
-  box-shadow: none; 
+  transition: all 0.2s ease-in-out; /* Animation d'inversion fluide */
+}
+
+/* 2. Le fond devient blanc au survol */
+.badge-doc:hover, a:hover .badge-doc {
+  background-color: #ffffff !important;
+}
+
+/* 3. Les couleurs spécifiques des icônes selon le type de fichier */
+/* PDF -> Rouge */
+.bi-filetype-pdf.badge-doc:hover, a:hover .bi-filetype-pdf.badge-doc {
+  color: #b32d2e !important;
+}
+
+/* CSV -> Vert */
+.bi-filetype-csv.badge-doc:hover, a:hover .bi-filetype-csv.badge-doc {
+  color: #1a472a !important; 
+}
+
+/* Scripts & Code -> Bleu */
+.bi-file-code.badge-doc:hover, a:hover .bi-file-code.badge-doc {
+  color: #21618c !important;
+}
+
+/* Livre/Lecture -> Noir ou Gris foncé */
+.bi-book.badge-doc:hover, a:hover .bi-book.badge-doc {
+  color: #333333 !important;
 }
