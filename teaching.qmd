@@ -76,7 +76,7 @@ Télécharger les jeux de données à utiliser pendant le cours :
 ## Séance 6 & 7 : Construire et catégoriser des données
 Dans le cadre de ses missions, un chercheur ou un fonctionnaire d'une administration publique peut avoir besoin de mener ses propres enquêtes. Or, construire un questionnaire et construire des données n'est pas sans obstacles ou difficultés. Ces deux séances auront pour objectif d'introduire les étudiants aux problèmes récurrents dans la construction de questionnaires d'enquête : questions ouvertes ou questions fermées, ordre et formulation des questions, impact du Réglement général sur la protection des données (RGPD). La deuxième séance sera dédiée aux problèmes de recodage de données existantes, et des choix éthiques, scientifiques et politiques à réaliser lors de ce même recodage. *Il y a une lecture obligatoire pour ces séances*.
 
-[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF), pas encore disponibles](docs/images/methodes_quanti_seance6.pdf){download="methodes_quanti_seance6.pdf"} <br>
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF)](docs/images/methodes_quanti_seance6.pdf){download="methodes_quanti_seance6.pdf"} <br>
 [<i class="bi bi-book badge-doc"></i> Lecture obligatoire : Desrosieres, Alain. «La portée sociologique des diverses phases du travail statistique». In Des mesures, édité par Jean-Louis Besson et Maurice Comte. Presses universitaires de Lyon, 1986](docs/images/desrosieres_portee_socio.pdf){download="desrosieres_portee_socio.pdf"} <br>
 
 - Lien de l'exercice : [Exercice de la séance 6](https://docs.google.com/document/d/1_Qy8WsYf-vTD4GARn3CSRoOKTyxGuI4Scb3FVFtpXV4/edit?usp=sharing)
