@@ -79,6 +79,9 @@ Dans le cadre de ses missions, un chercheur ou un fonctionnaire d'une administra
 [<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF)](docs/images/methodes_quanti_6.pdf){download="methodes_quanti_6.pdf"} <br>
 [<i class="bi bi-book badge-doc"></i> Lecture obligatoire : Desrosieres, Alain. «La portée sociologique des diverses phases du travail statistique». In Des mesures, édité par Jean-Louis Besson et Maurice Comte. Presses universitaires de Lyon, 1986](docs/images/desrosieres_portee_socio.pdf){download="desrosieres_portee_socio.pdf"} <br>
 
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de l'exercice en séance 7](docs/images/exercice_seance7.R){download="exercice_seance7.R"} <br>
+[<i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données pour les communes](docs/images/communes-france-2025.csv){download="communes-france-2025.csv"}
+
 - Lien de l'exercice : [Exercice de la séance 6](https://docs.google.com/document/d/1_Qy8WsYf-vTD4GARn3CSRoOKTyxGuI4Scb3FVFtpXV4/edit?usp=sharing)
 
 :::
