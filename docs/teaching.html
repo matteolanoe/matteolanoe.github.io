@@ -211,7 +211,7 @@ Méthodes quantitatives en sciences sociales
 <p>🇫🇷 Cours donné en Français.</p>
 <p><a href="docs/images/syllabus.pdf" download="syllabus.pdf"><i class="bi bi-filetype-pdf badge-doc"></i> Syllabus du cours</a></p>
 <section id="organisation-des-séances" class="level4">
-<h4 class="anchored" data-anchor-id="organisation-des-séances">Organisation des séances</h4>
+<h4 class="anchored">Organisation des séances</h4>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -295,11 +295,222 @@ Méthodes quantitatives en sciences sociales
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Dans le cadre de ses missions, un chercheur ou un fonctionnaire d’une administration publique peut avoir besoin de mener ses propres enquêtes. Or, construire un questionnaire et construire des données n’est pas sans obstacles ou difficultés. Ces deux séances auront pour objectif d’introduire les étudiants aux problèmes récurrents dans la construction de questionnaires d’enquête : questions ouvertes ou questions fermées, ordre et formulation des questions, impact du Réglement général sur la protection des données (RGPD). La deuxième séance sera dédiée aux problèmes de recodage de données existantes, et des choix éthiques, scientifiques et politiques à réaliser lors de ce même recodage. <em>Il y a une lecture obligatoire pour ces séances</em>.</p>
-<p><a href="docs/images/methodes_quanti_6.pdf" download="methodes_quanti_6.pdf"><i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF)</a> <br> <a href="docs/images/desrosieres_portee_socio.pdf" download="desrosieres_portee_socio.pdf"><i class="bi bi-book badge-doc"></i> Lecture obligatoire : Desrosieres, Alain. «La portée sociologique des diverses phases du travail statistique». In Des mesures, édité par Jean-Louis Besson et Maurice Comte. Presses universitaires de Lyon, 1986</a> <br></p>
-<p><a href="docs/images/exercice_seance7.R" download="exercice_seance7.R"><i class="bi bi-file-code badge-doc"></i> Télécharger le script R de l’exercice en séance 7</a> <br> <a href="docs/images/communes-france-2025.csv" download="communes-france-2025.csv"><i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données pour les communes</a></p>
+<p><a href="docs/images/methodes_quanti_6.pdf" download="methodes_quanti_6.pdf"><i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 6, PDF)</a> <br> <a href="docs/images/methodes_quanti_7.pdf" download="methodes_quanti_7.pdf"><i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 7, PDF)</a> <br> <a href="docs/images/desrosieres_portee_socio.pdf" download="desrosieres_portee_socio.pdf"><i class="bi bi-book badge-doc"></i> Lecture obligatoire : Desrosieres, Alain. «La portée sociologique des diverses phases du travail statistique». In Des mesures, édité par Jean-Louis Besson et Maurice Comte. Presses universitaires de Lyon, 1986</a> <br></p>
+<p><a href="docs/images/exercice_seance7.R" download="exercice_seance7.R"><i class="bi bi-file-code badge-doc"></i> Télécharger le script R de l’exercice en séance 7</a> <br> <a href="docs/images/correction_exercice_seance7.R" download="correction_seance7.R"><i class="bi bi-file-code badge-doc"></i> Télécharger la correction R de l’exercice en séance 7</a> <br> <a href="docs/images/communes-france-2025.csv" download="communes-france-2025.csv"><i class="bi bi-filetype-csv badge-doc"></i> Télécharger le jeu de données pour les communes</a></p>
 <ul>
 <li>Lien de l’exercice : <a href="https://docs.google.com/document/d/1_Qy8WsYf-vTD4GARn3CSRoOKTyxGuI4Scb3FVFtpXV4/edit?usp=sharing">Exercice de la séance 6</a></li>
 </ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Séance 8 &amp; 9 : Tester la significativité du lien entre deux variables
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Faire des associations entre des variables est à la base du travail statistique. Toutefois, ces associations peuvent parfois naitre du hasard, et pour vérifier de manière rigoureuse que deux variables sont bien corrélées, il faut opérer plusieurs tests statistiques de routine qu’il faut savoir interpréter. Cette séance visera donc à introduire les étudiants aux tests canoniques en sciences sociales quantitatives, et à faire en sorte qu’ils soient capables de les mettre en oeuvre puis d’interpréter leurs résultats. <em>Il n’y a pas de lecture obligatoire pour cette séance</em>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Théorème Central Limite</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Test de Student</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Test du Chi-Deux</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div style="font-family: sans-serif; text-align: center; background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+    <h4 style="margin-top: 0; color: #001e64;" class="anchored">Théorème Central Limite, animation</h4>
+      <p style="font-size: 0.9em; color: #555;">
+          Population d'origine : <strong>Asymétrique</strong>.<br>
+    Taille de chaque échantillon : <strong>n = 30</strong>.
+  </p>
+  <div style="margin-bottom: 20px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+    <button id="btn-1" style="background: #001e64; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.9em;">+ 1 tirage</button>
+    <button id="btn-10" style="background: #001e64; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.9em;">+ 10 tirages</button>
+    <button id="btn-100" style="background: #001e64; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.9em;">+ 100 tirages</button>
+    <button id="btn-500" style="background: #e7001a; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; font-size: 0.9em;">+ 500 tirages</button>
+    <button id="btn-reset" style="background: #505050; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 0.9em;">Réinitialiser</button>
+  </div>
+  <div id="histogram-container" style="display: flex; align-items: flex-end; justify-content: center; height: 200px; width: 100%; border-bottom: 2px solid #333; gap: 2px;">
+  </div>
+  <p style="margin-top: 10px; font-weight: bold; color: #333; font-size: 1.1em;">
+    Distribution des moyennes : <span id="compteur" style="color: #e7001a;">0</span> échantillons tirés
+  </p>
+</div>
+<script>
+  const numBins = 40;
+  let bins = new Array(numBins).fill(0);
+  let totalDraws = 0;
+  const container = document.getElementById('histogram-container');
+  const compteurText = document.getElementById('compteur');
+  const bars = [];
+  function initHistogram() {
+    container.innerHTML = '';
+    bins.fill(0);
+    totalDraws = 0;
+    compteurText.innerText = totalDraws;
+    bars.length = 0;
+    for(let i = 0; i < numBins; i++) {
+      const bar = document.createElement('div');
+      bar.style.width = '100%';
+      bar.style.background = '#001e64';
+          bar.style.height = '0px';
+          bar.style.borderRadius = '3px 3px 0 0';
+          bar.style.transition = 'height 0.2s ease-out'; 
+          container.appendChild(bar);
+          bars.push(bar);
+        }
+  }
+  function drawSampleMean() {
+      let sum = 0;
+      for(let i = 0; i < 30; i++) { sum += Math.pow(Math.random(), 3); }
+      return sum / 30; 
+    }
+  function addDraws(count) {
+      for(let k = 0; k < count; k++) {
+          const mean = drawSampleMean();
+          let binIndex = Math.floor((mean - 0.12) / (0.26 / numBins));
+          if(binIndex < 0) binIndex = 0;
+          if(binIndex >= numBins) binIndex = numBins - 1;
+          bins[binIndex]++;
+        }
+      totalDraws += count;
+      compteurText.innerText = totalDraws;
+      const maxBin = Math.max(...bins) || 1;
+      for(let i = 0; i < numBins; i++) {
+          bars[i].style.height = (bins[i] / maxBin * 190) + 'px';
+        }
+    }
+  document.getElementById('btn-1').addEventListener('click', () => addDraws(1));
+  document.getElementById('btn-10').addEventListener('click', () => addDraws(10));
+  document.getElementById('btn-100').addEventListener('click', () => addDraws(100));
+  document.getElementById('btn-500').addEventListener('click', () => addDraws(500));
+  document.getElementById('btn-reset').addEventListener('click', initHistogram);
+  initHistogram();
+</script>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div style="font-family: sans-serif; text-align: center; background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+    <h4 style="margin-top: 0; color: #001e64;" class="anchored">Test de Student Bilatéral (Comparaison de moyennes)</h4>
+      <p style="font-size: 0.9em; color: #555;">Déplacez le curseur pour simuler la moyenne de votre échantillon.</p>
+        <input type="range" id="t-slider" min="-4" max="4" step="0.1" value="0" style="width: 80%; cursor: pointer;">
+          <p>Score Z de l'échantillon : <strong id="t-score" style="font-size: 1.2em;">0.00</strong></p>
+  <svg id="t-svg" viewbox="0 0 800 300" style="width: 100%; height: auto; max-height: 250px; border-bottom: 2px solid #333;"></svg>
+  <h3 id="t-result" style="color: #505050; margin-bottom: 0;" class="anchored" data-anchor-id="organisation-des-séances">H0 NON REJETÉE : Le hasard est plausible</h3>
+</div>
+<script>
+  const tSvg = document.getElementById('t-svg');
+  const tSlider = document.getElementById('t-slider');
+  const tScore = document.getElementById('t-score');
+  const tResult = document.getElementById('t-result');
+
+  let curvePath = "M ";
+  let leftTail = "M 0 280 L ";
+  let rightTail = "M 596 280 L ";
+
+  for(let x = -4; x <= 4.05; x += 0.05) {
+      let cx = (x + 4) * 100;
+      let y = Math.exp(-x*x/2);
+      let cy = 280 - (y * 250);
+      curvePath += `${cx} ${cy} `;
+      if (x <= -1.96) { leftTail += `${cx} ${cy} `; }
+      if (x >= 1.96) { rightTail += `${cx} ${cy} `; }
+  }
+  leftTail += "204 280 Z"; 
+  rightTail += "800 280 Z";
+
+  tSvg.innerHTML = `
+    <path d="${leftTail}" fill="#ffcccc" />
+    <path d="${rightTail}" fill="#ffcccc" />
+    <path d="${curvePath}" fill="none" stroke="#001e64" stroke-width="4" />
+    <line x1="204" y1="0" x2="204" y2="280" stroke="#e7001a" stroke-dasharray="5,5" stroke-width="2" />
+    <line x1="596" y1="0" x2="596" y2="280" stroke="#e7001a" stroke-dasharray="5,5" stroke-width="2" />
+    <text x="204" y="20" fill="#e7001a" text-anchor="middle" font-size="14" font-weight="bold">-1.96</text>
+    <text x="596" y="20" fill="#e7001a" text-anchor="middle" font-size="14" font-weight="bold">+1.96</text>
+    <line id="t-line" x1="400" y1="0" x2="400" y2="280" stroke="#00a8ff" stroke-width="4" />
+    <circle id="t-dot" cx="400" cy="30" r="8" fill="#00a8ff" />
+  `;
+
+  tSlider.addEventListener('input', (e) => {
+      let val = parseFloat(e.target.value);
+      tScore.innerText = val.toFixed(2);
+      let cx = (val + 4) * 100;
+      document.getElementById('t-line').setAttribute('x1', cx);
+      document.getElementById('t-line').setAttribute('x2', cx);
+      document.getElementById('t-dot').setAttribute('cx', cx);
+
+      if(val <= -1.96 || val >= 1.96) {
+          tResult.innerText = "SIGNIFICATIF : H0 Rejetée";
+          tResult.style.color = "#e7001a";
+      } else {
+          tResult.innerText = "NON SIGNIFICATIF : Le hasard est plausible";
+          tResult.style.color = "#505050";
+      }
+  });
+</script>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div style="font-family: sans-serif; text-align: center; background: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #ddd;">
+  <h4 style="margin-top: 0; color: #001e64;" class="anchored">Test du Chi-Deux (Indépendance)</h4>
+  <p style="font-size: 0.9em; color: #555;">Simulez un score d'écart global pour voir sa position sur la courbe d'improbabilité.</p>
+  <input type="range" id="chi-slider" min="0" max="15" step="0.1" value="2" style="width: 80%; cursor: pointer;">
+  <p>Score Chi-Deux obtenu : <strong id="chi-score" style="font-size: 1.2em;">2.00</strong></p>
+  <svg id="chi-svg" viewbox="0 0 800 300" style="width: 100%; height: auto; max-height: 250px; border-bottom: 2px solid #333;"></svg>
+  <h3 id="chi-result" style="color: #505050; margin-bottom: 0;" class="anchored">H0 NON REJETÉE : Indépendance plausible</h3>
+</div>
+<script>
+  const chiSvg = document.getElementById('chi-svg');
+  const chiSlider = document.getElementById('chi-slider');
+  const chiScore = document.getElementById('chi-score');
+  const chiResult = document.getElementById('chi-result');
+
+  let chiCurvePath = "M 0 280 L ";
+  let chiTail = "M 416 280 L "; 
+
+  for(let x = 0; x <= 15.1; x += 0.1) {
+      let cx = (x / 15) * 800;
+      let y = x * Math.exp(-x / 2.5); 
+      let cy = 280 - ((y / 0.92) * 230);
+      chiCurvePath += `${cx} ${cy} `;
+      if (x >= 7.8) { chiTail += `${cx} ${cy} `; }
+  }
+  chiTail += "800 280 Z";
+
+  chiSvg.innerHTML = `
+    <path d="${chiTail}" fill="#ffcccc" />
+    <path d="${chiCurvePath}" fill="none" stroke="#001e64" stroke-width="4" />
+    <line x1="416" y1="0" x2="416" y2="280" stroke="#e7001a" stroke-dasharray="5,5" stroke-width="2" />
+    <text x="416" y="20" fill="#e7001a" text-anchor="middle" font-size="14" font-weight="bold">Seuil de Rejet (7.8)</text>
+    <line id="chi-line" x1="106" y1="0" x2="106" y2="280" stroke="#00a8ff" stroke-width="4" />
+    <circle id="chi-dot" cx="106" cy="180" r="8" fill="#00a8ff" />
+  `;
+
+  chiSlider.addEventListener('input', (e) => {
+      let val = parseFloat(e.target.value);
+      chiScore.innerText = val.toFixed(2);
+      let cx = (val / 15) * 800;
+      document.getElementById('chi-line').setAttribute('x1', cx);
+      document.getElementById('chi-line').setAttribute('x2', cx);
+      document.getElementById('chi-dot').setAttribute('cx', cx);
+      
+      let y = val * Math.exp(-val / 2.5);
+      let cy = 280 - ((y / 0.92) * 230);
+      document.getElementById('chi-dot').setAttribute('cy', cy);
+
+      if(val >= 7.8) {
+          chiResult.innerText = "SIGNIFICATIF : H0 Rejetée (Variables liées)";
+          chiResult.style.color = "#e7001a";
+      } else {
+          chiResult.innerText = "NON SIGNIFICATIF : Indépendance plausible";
+          chiResult.style.color = "#505050";
+      }
+  });
+</script>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -307,7 +518,7 @@ Méthodes quantitatives en sciences sociales
 <section id="programmes-de-révision" class="level4">
 <h4 class="anchored" data-anchor-id="programmes-de-révision">Programmes de révision</h4>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -316,7 +527,7 @@ Méthodes quantitatives en sciences sociales
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Notions à retenir :</p>
 <ul>
@@ -324,6 +535,39 @@ Méthodes quantitatives en sciences sociales
 <li><p><strong>Séance 2</strong> : grands types d’enquêtes en sciences sociales (enquêtes scientifiques, enquêtes administratives, enquêtes par traces) ; exemples d’enquêtes ; biais liés aux différents types d’enquêtes ; nom complet des fichiers <code>.csv</code> (<em>comma separated values</em>).</p></li>
 <li><p><strong>Séance 3</strong> : éléments et vocabulaire pour décrire un fichier tableur (<code>.csv</code>), ainsi que les différentes fenêtres de <code>RStudio</code> ; les différents types d’indicateurs de tendance centrale et leurs défauts ; les indicateurs de dispersion et interprétation d’un écart-type ; quantiles ; interpréter une boîte à moustache (<em>boxplot</em>).</p></li>
 <li><p><strong>Commandes <code>R</code> à maitriser (à l’écrit!)</strong> : <code>read.csv("df.csv", sep = ",")</code> <em>ou</em> <code>read.csv("df.csv", sep = ";")</code>, <code>View()</code>, <code>min()</code>, <code>max()</code>, <code>mean(df$var, na.rm = TRUE)</code>, <code>median(df$var, na.rm = TRUE)</code>, <code>var(df$var, na.rm = TRUE)</code>, <code>sd(df$var, na.rm = TRUE)</code>. L’évaluation de la connaissance de ces fonctions sera sous la forme d’un contrôle de vocabulaire, comme en cours de langue.</p></li>
+<li><p><strong>Vous pouvez poser vos questions en utilisant l’interface ci-dessous</strong>. Je verrai d’abord vos questions, puis je les publierai ici en ajoutant une réponse :</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Devoir sur table (DST) du Module 2 : Utiliser et traiter des données
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Notions à retenir :</p>
+<ul>
+<li><p><strong>Séance 4</strong> : variables indépendantes, variables dépendantes et leurs typologies, types de croisement des variables (quali x quali ; quanti x quali ; quanti x quanti) et outils utilisés afin de les croiser ; interpréter les résultats de ces outils (par exemple, savoir interpréter une variance ou un coefficient de corrélation).</p></li>
+<li><p><strong>Séance 5</strong> : comprendre le principe de l’essai randomisé contrôlé (ERC ; randomized control trial, en anglais) ; calcul d’une marge d’erreur statistique et interprétation du résultat.</p></li>
+<li><p><strong>Séance 6</strong> : apprendre les différents types de biais pouvant affecter la qualité d’un questionnaire, à partir de l’article de Jean Paul Grémy évoqué en cours ; schéma de l’article en page 2 de l’article d’Alain Desrosières.</p></li>
+<li><p><strong>Séance 7</strong> : cas historique de la prédiction des résultats de l’élection américaine de 1936 ; concepts fondamentaux de l’échantillonage ; base de sondage ; grandes familles de sondage et leurs sous-types ; enquêtes par Big Data et leur fonctionnement.</p></li>
+<li><p><strong>Séance 8</strong> : théorème central limit ; intervalles de confiance ; Test de Student et Test du Khi-2, fonctionnement et interprétation des résultats.</p></li>
+<li><p><strong>Commandes <code>R</code> à maîtriser (à l’écrit !) :</strong></p>
+<ul>
+<li><em>Préparation et manipulation des données :</em> <code>read.csv()</code> pour importer, <code>as.factor()</code> pour transformer une variable en variable qualitative, <code>str()</code> pour vérifier la structure, et <code>nrow()</code> pour vérifier la taille du tableau. Savoir utiliser les crochets <code>[]</code> pour extraire des valeurs précises.</li>
+<li><em>Croisement Quali x Quali :</em> <code>table()</code> pour les effectifs bruts, <code>prop.table(..., margin = 1 ou 2)</code> pour les pourcentages en ligne ou en colonne, et <code>round()</code> pour arrondir.</li>
+<li><em>Croisement Quali x Quanti :</em> <code>aggregate(Y ~ X, data = ..., FUN = mean ou sd)</code> pour calculer des moyennes ou des écarts-types par sous-groupe, et <code>boxplot()</code> pour afficher une boîte à moustaches.</li>
+<li><em>Croisement Quanti x Quanti :</em> <code>plot()</code> pour générer un nuage de points, <code>cov(..., use = "complete.obs")</code> pour la covariance, et <code>cor(..., use = "complete.obs")</code> pour la corrélation.</li>
+<li><em>Échantillonnage :</em> <code>set.seed()</code> pour fixer le hasard, <code>sample()</code> pour le tirage aléatoire simple, ainsi que la syntaxe du package <code>dplyr</code> (<code>%&gt;%</code>, <code>group_by()</code>, <code>slice_sample()</code></li>
+<li><em>Tests statistiques et intervalles :</em> calcul manuel de la marge d’erreur <code>1.96 * sd(...) * (1/sqrt(...) + 1/sqrt(...))</code>, <code>t.test(Y ~ X, data = ...)</code> pour comparer deux moyennes et obtenir directement leurs intervalles de confiance, et <code>chisq.test(tableau)</code> pour tester l’indépendance statistique.</li>
+</ul></li>
 <li><p><strong>Vous pouvez poser vos questions en utilisant l’interface ci-dessous</strong>. Je verrai d’abord vos questions, puis je les publierai ici en ajoutant une réponse :</p></li>
 </ul>
 <hr <div="" id="cusdis_thread" data-host="https://cusdis.com" data-app-id="203fb0a3-2251-4a02-8d8c-f2664c2798e7" data-page-id="dst-module-1" data-page-url="https://matteolanoe.github.io/teaching.html" data-page-title="DST Module 1"></div>
@@ -336,9 +580,9 @@ Méthodes quantitatives en sciences sociales
 <h4 class="anchored" data-anchor-id="tutoriels">Tutoriels</h4>
 <p>Ci-dessous, vous trouverez des tutoriels qui vous permettent d’installer R et RStudio sur vos ordinateurs en fonction de votre système d’exploitation (i.e., macOS ou Windows, par exemple), ainsi que d’ouvrir une version en ligne via Posit Cloud.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Linux</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Posit Cloud</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Windows</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">macOS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Linux</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Posit Cloud</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <ol type="1">
 <li><strong>Télécharger R :</strong>
 <ul>
@@ -359,7 +603,7 @@ Méthodes quantitatives en sciences sociales
 </ul></li>
 </ol>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <ol type="1">
 <li><strong>Vérifier votre processeur :</strong>
 <ul>
@@ -380,7 +624,7 @@ Méthodes quantitatives en sciences sociales
 </ul></li>
 </ol>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <ol type="1">
 <li><strong>Installer R :</strong>
 <ul>
@@ -398,7 +642,7 @@ Méthodes quantitatives en sciences sociales
 <li>Un tutoriel YouTube est disponible <em>via</em> ce lien : <a href="https://www.youtube.com/watch?v=k0r3iLGJgmQ">https://www.youtube.com/watch?v=k0r3iLGJgmQ</a>. Si jamais vous avez encore des problèmes pour installer le logiciel, nous prendrons du temps avant ou après les séances pour régler les soucis d’installation.</li>
 </ul>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <p>Si vous ne pouvez pas installer R et RStudio sur votre ordinateur car vous travaillez sur tablette ou sur Chromebook, vous pouvez utiliser la version “cloud” (en ligne). L’interface est strictement identique, mais tout se passe dans votre navigateur web.</p>
 <p><strong>Procédure d’accès :</strong></p>
 <ol type="1">
@@ -414,7 +658,7 @@ Méthodes quantitatives en sciences sociales
 <section id="évaluations-et-rendus" class="level4">
 <h4 class="anchored" data-anchor-id="évaluations-et-rendus">Évaluations et rendus</h4>
 <div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -423,7 +667,7 @@ Méthodes quantitatives en sciences sociales
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
 <li><p>Veuillez déposer votre fichier pour le <strong>DM2</strong> directement dans le dossier Google Drive centralisé. <em>Merci de bien nommer votre fichier avec les noms et prénoms de vos groupes avant de le téléverser.</em></p></li>
