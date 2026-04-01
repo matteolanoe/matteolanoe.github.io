@@ -92,6 +92,10 @@ Dans le cadre de ses missions, un chercheur ou un fonctionnaire d'une administra
 ## Séance 8 & 9 : Tester la significativité du lien entre deux variables
 Faire des associations entre des variables est à la base du travail statistique. Toutefois, ces associations peuvent parfois naitre du hasard, et pour vérifier de manière rigoureuse que deux variables sont bien corrélées, il faut opérer plusieurs tests statistiques de routine qu'il faut savoir interpréter. Cette séance visera donc à introduire les étudiants aux tests canoniques en sciences sociales quantitatives, et à faire en sorte qu'ils soient capables de les mettre en oeuvre puis d'interpréter leurs résultats. *Il n’y a pas de lecture obligatoire pour cette séance*.
 
+[<i class="bi bi-filetype-pdf badge-doc"></i> Télécharger les slides (séance 8, PDF)](docs/images/methodes_quanti_8.pdf){download="methodes_quanti_8.pdf"} <br>
+[<i class="bi bi-file-code badge-doc"></i> Télécharger le script R de la séance 8](docs/images/script_seance_8.R){download="script_seance_8.R"} <br>
+
+
 ::: {.panel-tabset}
 
 ## Théorème Central Limite
