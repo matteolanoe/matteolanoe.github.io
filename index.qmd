@@ -20,10 +20,6 @@ Welcome! My name is Mattéo Lanoë and I am a first-year **Sociology PhD Candida
 
 I am also an affiliated doctoral candidate of the ERC Synergy [Gender and Health Inequalities (GENDHI)](https://gendhi.eu/), coordinated by the [French Institute for Health and Medical Research (INSERM)](https://www.inserm.fr). The project is supervised by [Nathalie Bajos](https://iris.ehess.fr/index.php?4562), [Muriel Darmon](https://cessp.cnrs.fr/membre/darmon-muriel/), [Pierre-Yves Geoffard](https://www.parisschoolofeconomics.eu/personnes/pierre-yves-geoffard/), and [Michelle Kelly-Irving](https://cerpop.inserm.fr/michelle-kelly-irving-biographie). 
 
-Before joining the CRIS and INED as a doctoral student, I did several research internships spanning a wide range of sociological methodologies. Among other research projects, I had the chance to work with [Agnès van Zanten](https://www.sciencespo.fr/cris/fr/annuaire/vanzanten-agnes/) at LIEPP and CRIS, focusing on the analysis of a DEI policy at Sciences Po. As well, I had the pleasure to be supervised by [Hesu Yoon](https://www.ensae.fr/faculty/6209-hesu-yoon) at the [Computational Social Sciences Group](https://www.css.cnrs.fr) working on topics related to the construction of neighborhoods reputations through the study of AirBnb captions, using unsupervised NLP technics. These internships punctuated my graduate studies at the [Sciences Po School of Research](https://www.sciencespo.fr/ecole-recherche/en/), where I obtained my MA in Sociology. 
-
-My master's dissertation dove into a sociology of dispositions and socialization approach to Long Covid management, and was supervised by [Anne Revillard](https://www.sciencespo.fr/cris/fr/annuaire/revillard-anne/) at CRIS. My dissertation was entitled "Body and Soul? Dispositions, Socialization(s) and Illness's Shape Trajectory Control of Post-Covid-19 Symptoms," and was defended on May the 27th at Sciences Po (Committee: Alex Kindle, Étienne Nouguez, Jérôme Pélisse).
-
 You will find my CRIS institutionnal webpage [there](https://www.sciencespo.fr/cris/en/directory/lanoe-matteo/).
 
 ::: {.grid}
