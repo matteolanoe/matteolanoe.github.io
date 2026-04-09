@@ -142,66 +142,6 @@ details > div {
 }
 
 /* =========================================
-   STYLE DU PIED DE PAGE (FOOTER)
-   ========================================= */
-
-.footer {
-  background-color: #285e3a !important; /* Ton vert */
-  color: #ffffff !important;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.1rem;
-  padding: 30px 0;
-  border-top: none;
-}
-
-/* On cible nos liens personnalisés */
-.custom-footer-links a {
-  color: #ffffff !important;
-  text-decoration: none;
-  display: inline-flex; /* Pour aligner icône et texte */
-  align-items: center;
-  margin: 0 15px; /* Espace entre les blocs */
-  position: relative;
-  vertical-align: middle;
-}
-
-/* Style des icônes */
-.custom-footer-links i {
-  font-size: 1.4rem;
-  transition: transform 0.3s ease;
-}
-
-/* Le texte caché (Animation Reveal) */
-.reveal-text {
-  max-width: 0;           /* Largeur nulle au début */
-  opacity: 0;             /* Invisible */
-  overflow: hidden;       /* Cache ce qui dépasse */
-  white-space: nowrap;    /* Une seule ligne */
-  transition: all 0.5s ease; /* Animation fluide */
-  font-size: 1rem;
-  font-weight: 300;
-  margin-left: 0;
-}
-
-/* L'ACTION au survol */
-.custom-footer-links a:hover .reveal-text {
-  max-width: 300px;       /* On ouvre l'espace */
-  opacity: 1;             /* On affiche */
-  margin-left: 10px;      /* On décolle le texte de l'icône */
-}
-
-/* Petit effet de zoom sur l'icône */
-.custom-footer-links a:hover i {
-  transform: scale(1.1);
-}
-
-/* Lien "Made with Quarto" et Copyright */
-.footer-left, .footer-right, .footer-right a {
-   color: rgba(255,255,255, 0.8) !important;
-   font-size: 0.9rem;
-}
-
-/* =========================================
    STYLE DES CARTES "SOCIALS" (VERSION CORRIGÉE)
    ========================================= */
 
@@ -390,25 +330,6 @@ details.course-spoiler[open] .summary-icon {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- RÉDUIRE LA HAUTEUR DU FOOTER --- */
-
-footer.footer {
-  margin-top: 0;
-  padding-top: 10px !important;    /* Réduit l'espace au-dessus du texte */
-  padding-bottom: 10px !important; /* Réduit l'espace en dessous du texte */
-}
-
-/* On s'assure que les paragraphes dans le footer ne rajoutent pas de hauteur inutile */
-footer.footer p {
-  margin-bottom: 0 !important;
-}
-
-/* Si tu as des icônes ou du texte custom, on réduit leurs marges aussi */
-.custom-footer-links {
-  margin: 0 !important;
-  line-height: 1.2 !important; /* Resserre un peu les lignes si elles sont sur 2 étages */
-}
-
 /* --- COULEUR DU MENU DE DROITE (TOC) --- */
 
 /* Couleur du lien actif (la section que tu es en train de lire) */
@@ -574,28 +495,7 @@ main ul ul li::before {
     background-size: 800px !important; /* 250px sur mobile vs 500px sur PC */
     opacity: 0.10 !important; /* Légèrement moins opaque pour ne pas gêner la photo */
   }
-
-  /* 2. LE FOOTER (ESPACEMENT) */
-  .footer, footer {
-    padding: 30px 0 !important;
-  }
   
-  body .custom-footer-links,
-  div.custom-footer-links {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: space-evenly !important; /* Espacement équitable */
-    align-items: center !important;
-    width: 90% !important; /* Un peu plus large pour laisser de la place */
-    margin: 20px auto !important;
-    gap: 0 !important;
-  }
-  
-  body .custom-footer-links i {
-    font-size: 2.2rem !important;
-    padding: 10px !important;
-  }
-
   /* 3. LE CENTRAGE (PHOTO & BIO) */
   #quarto-content .quarto-about-trestles {
     display: flex !important;
@@ -724,4 +624,112 @@ main ul ul li::before {
 /* 3. On met l'effet de clic (halo de sélection) aux couleurs de ton site */
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0.25rem rgba(26, 71, 42, 0.25) !important;
+}
+
+/* =========================================
+   STYLE DU PIED DE PAGE (Adresse & Logos)
+   ========================================= */
+
+/* 1. Le fond et l'espacement global */
+.nav-footer {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  padding: 30px 20px !important; /* Ajout d'espace sur les côtés */
+  border-top: none !important;
+  margin-top: 40px !important;
+}
+
+/* Décoller spécifiquement les textes aux extrémités */
+.nav-footer-left { padding-left: 20px !important; }
+.nav-footer-right { padding-right: 20px !important; }
+
+.nav-footer a, 
+.nav-footer p {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.nav-footer a:hover {
+  color: #a1c181 !important; 
+}
+
+/* 2. Le conteneur central */
+.footer-center-container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 50px !important;
+  text-align: left;
+}
+
+/* 3. Le bloc d'adresse */
+.footer-address {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 40px;
+  white-space: nowrap; /* Empêche le texte de se tordre aléatoirement */
+}
+
+/* 4. Le conteneur des logos (CÔTE À CÔTE FORCÉ) */
+.footer-logos {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 30px !important;
+}
+
+/* Neutraliser les retours à la ligne parasites générés par Quarto */
+.footer-logos p, 
+.footer-logos a {
+  display: inline-flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+}
+
+/* 5. Les images des logos (Base pour Sciences Po) */
+.footer-logo {
+  height: 50px !important;
+  width: auto !important;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Agrandir spécifiquement le logo INED en ciblant son nom de fichier */
+/* Agrandir spécifiquement le logo INED en ciblant son nom de fichier */
+img[src*="ined"] {
+  height: 90px !important; /* Ajuste ce chiffre pour affiner la taille */
+  filter: none !important; /* Annule la transformation en blanc pour ce logo */
+}
+
+.footer-logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* 6. Optimisation pour petits écrans (Mobile) */
+@media (max-width: 900px) {
+  .footer-center-container {
+    flex-direction: column !important; 
+    gap: 20px !important;
+    text-align: center;
+  }
+  .footer-address {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+    white-space: normal;
+  }
+  .footer-logos {
+    flex-direction: row !important; /* Garde les logos côte à côte sur mobile */
+    justify-content: center !important;
+  }
+  .footer-logo {
+    height: 45px !important;
+  }
 }
