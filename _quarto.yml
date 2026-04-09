@@ -3,6 +3,7 @@ project:
   output-dir: docs
   resources:
     - images/logo-site.png
+    - fonts/
 
 website:
   title: "Mattéo Lanoë | Doctoral Candidate in Sociology"

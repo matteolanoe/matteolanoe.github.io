@@ -1,22 +1,87 @@
-/* On garde Roboto pour le corps du texte car cela reste très lisible */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+/* =========================================
+   1. TYPOGRAPHIE ET GLOBALES (Police Engrez)
+   ========================================= */
+
+/* Déclaration de tes fichiers locaux avec le bon chemin relatif */
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-Light.ttf') format('truetype'); 
+  font-weight: 300; 
+}
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-Regular.ttf') format('truetype'); 
+  font-weight: 400; 
+}
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-Medium.ttf') format('truetype'); 
+  font-weight: 500; 
+}
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-SemiBold.ttf') format('truetype'); 
+  font-weight: 600; 
+}
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-Bold.ttf') format('truetype'); 
+  font-weight: 700; 
+}
+@font-face { 
+  font-family: 'Engrez'; 
+  src: url('fonts/Engrez-Black.ttf') format('truetype'); 
+  font-weight: 900; 
+}
+
+/* Application globale au corps du site */
+body {
+  font-family: 'Engrez', sans-serif !important;
+  color: #333;
+  background-color: #f9f9f9;
+  line-height: 1.6;
+}
+
+/* Force la police sur tous les niveaux de titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Engrez', sans-serif !important;
+  color: #1a472a; /* Vert foncé */
+}
+
+a {
+  color: #1a472a;
+  text-decoration: none;
+  font-weight: 600; /* Le navigateur ira chercher le fichier SemiBold automatiquement */
+}
+
+a:hover {
+  color: #0e2a18;
+  text-decoration: underline;
+}
+.profile-pic {
+  border-radius: 5px;
+  width: 100%;
+  max-width: 280px;
+  display: block;
+  margin-bottom: 20px;
+}
 
 /* 1. La couleur principale (Barre de navigation) */
 .navbar {
   background-color: #1a472a !important; /* Vert foncé académique */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
 }
 
 /* Ton nom dans la barre de menu en TeX Gyre Pagella */
 .navbar-brand {
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: 'Engrez', sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
 
 /* 2. Typographie générale */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
   color: #333;
   background-color: #f9f9f9;
   line-height: 1.6;
@@ -24,7 +89,7 @@ body {
 
 /* Tes titres (dont ton nom principal) en TeX Gyre Pagella et en vert */
 h1, h2, h3 {
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: Source Sans Pro, Engrez, sans-serif;
   color: #1a472a; /* Vert foncé */
 }
 
@@ -59,7 +124,7 @@ details > summary {
   border-radius: 4px;
   cursor: pointer;
   display: inline-block; /* Pour qu'il ait la taille du texte */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   margin-top: 8px;
@@ -178,7 +243,7 @@ details > div {
 
 /* 4. Le Titre (Github, HAL, ORCID) en TeX Gyre Pagella */
 .card-content h3 {
-  font-family: Source Sans Pro, Helvetica, sans-serif; /* La police demandée */
+  font-family: Source Sans Pro, Engrez, sans-serif; /* La police demandée */
   color: #222;
   margin-bottom: 8px;
   font-size: 1.6rem;
@@ -187,7 +252,7 @@ details > div {
 
 /* 5. Le sous-titre (Repositories, etc.) */
 .card-content p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
   color: #666;
   font-size: 1rem;
   margin: 0;
@@ -277,7 +342,7 @@ summary.course-summary::-webkit-details-marker { display: none; }
   margin-bottom: 8px;
   color: #1a472a;
   /* On met important pour écraser tout le reste */
-  font-family: Source Sans Pro, Helvetica, sans-serif !important;
+  font-family: 'Engrez', sans-serif !important;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
@@ -289,7 +354,7 @@ summary.course-summary::-webkit-details-marker { display: none; }
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
 }
 
 /* Au survol, on fonce légèrement le texte pour le contraste, mais on reste lisible */
@@ -446,7 +511,7 @@ main ul ul li::before {
 .news-card h3, .contact-box h3 {
   margin-top: 0 !important;
   padding-top: 0 !important;
-  font-family: Source Sans Pro, Helvetica, sans-serif;
+  font-family: 'Engrez', sans-serif;
   color: #1a472a;
   font-size: 1.5rem;
   border-bottom: 2px solid #1a472a;
@@ -665,7 +730,7 @@ main ul ul li::before {
 
 /* 3. Le bloc d'adresse */
 .footer-address {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Engrez', sans-serif;
   font-size: 0.85rem;
   line-height: 1.5;
   border-right: 1px solid rgba(255, 255, 255, 0.2);
