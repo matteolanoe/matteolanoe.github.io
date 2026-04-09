@@ -91,36 +91,54 @@ details > div {
 }
 
 /* =========================================
-   ANIMATION DE LA BARRE DE NAVIGATION
+   1. FOND DE LA NAVBAR ET OMBRE GLOBALE
    ========================================= */
+.navbar {
+  background-color: #f9f9f9 !important; /* Même couleur que le fond de ton site */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important; /* L'ombre pour la rendre lisible */
+}
+
+/* Le titre principal (Mattéo Lanoë) devient vert */
+.navbar-brand, .navbar-title {
+  color: #1a472a !important;
+}
+
+/* Les icônes globales à droite (recherche, etc.) deviennent vertes */
+.navbar-nav .nav-link i, .search-icon {
+  color: #1a472a !important;
+}
 
 /* =========================================
-   ANIMATION DE LA BARRE DE NAVIGATION
+   2. STYLE DES BOUTONS DU MENU (ÉTAT NORMAL)
    ========================================= */
-
 .navbar-nav .nav-link {
-  position: relative;
-  padding-bottom: 5px;
-  transition: color 0.3s ease;
-  /* La ligne magique pour enlever le soulignement par défaut : */
-  text-decoration: none !important; 
+  color: #1a472a !important; /* Texte en vert foncé par défaut */
+  padding: 8px 15px !important;
+  margin: 0 5px;
+  border-radius: 0 !important; /* FORCER LES COINS CARRÉS */
+  background-color: transparent !important;
+  transition: all 0.2s ease-in-out;
 }
 
-/* Le reste ne change pas */
+/* Supprimer l'ancienne ligne de soulignement */
 .navbar-nav .nav-link::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: width 0.3s ease-in-out;
+  display: none !important;
 }
 
-.navbar-nav .nav-link:hover::after,
-.navbar-nav .nav-link.active::after {
-  width: 100%;
+/* =========================================
+   3. SURBRILLANCE AU SURVOL (BLOC VERT CARRÉ)
+   ========================================= */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #1a472a !important; /* Le fond devient vert foncé */
+  color: #ffffff !important;            /* Le texte devient blanc */
+  border-radius: 0 !important;          /* SÉCURITÉ : Forcer les coins carrés au survol */
+}
+
+/* Assurer que les icônes dans les menus deviennent blanches au survol */
+.navbar-nav .nav-link:hover i,
+.navbar-nav .nav-link.active i {
+  color: #ffffff !important;
 }
 
 /* =========================================
@@ -615,78 +633,81 @@ main ul ul li::before {
 }
 
 /* =========================================
-   FOND DE SITE : WATERMARK (LOGO EN FOND)
+   VERROUILLAGE DE LA NAVBAR 
+   ========================================= */
+#quarto-header, 
+.headroom, 
+.headroom--unpinned, 
+.headroom--pinned {
+  position: fixed !important;
+  top: 0 !important;
+  transform: translateY(0) !important;
+  transition: none !important; /* Désactive les animations de montée/descente */
+  z-index: 1030 !important; /* S'assure qu'elle reste toujours au-dessus du reste */
+}
+
+/* =========================================
+   STYLE DE LA BARRE DE RECHERCHE
    ========================================= */
 
-body::before {
-  content: "";
-  position: fixed; /* L'image reste fixe quand on scrolle */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  
-  /* L'image à utiliser (mets bien le bon nom de fichier !) */
-  background-image: url('images/logo-site.png'); 
-  
-  /* Mise en page : centré et pas répété */
-  background-repeat: no-repeat;
-  background-position: center center;
-  
-  /* Taille du logo en fond (Ajuste selon tes goûts) */
-  /* 40% de la largeur de l'écran, ou mets une taille fixe comme 500px */
-  background-size: 1800px; 
-  
-  /* La transparence : Le secret pour que ce soit joli */
-  /* 1 = totalement visible, 0 = invisible. */
-  /* 0.05 ou 0.1 est idéal pour un effet subtil. */
-  opacity: 0.10; 
-  
-  /* Pour s'assurer que ça reste bien DERRIÈRE le texte */
-  z-index: -1;
-  
-  /* Petit filtre gris pour éviter que les couleurs du logo ne jurent avec le texte */
-  filter: grayscale(100%); 
-}
-
-/* 1. L'état de base de l'icône (avec bordure invisible et animation) */
-.badge-doc {
-  background-color: #1a472a; /* Ton fond sombre */
-  color: #ffffff !important;
-  border: 1px solid #1a472a; /* Bordure de la même couleur pour préparer le survol */
-  padding: 3px 5px;
-  border-radius: 3px;
-  font-size: 1.0rem;
-  margin-right: 6px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
-  transition: all 0.2s ease-in-out; /* Animation d'inversion fluide */
-}
-
-/* 2. Le fond devient blanc au survol */
-.badge-doc:hover, a:hover .badge-doc {
+/* 1. Conteneur principal de la recherche */
+#quarto-search .aa-Form {
+  border: 1px solid #1a472a !important;
+  border-radius: 0 !important; /* Coins stricts */
   background-color: #ffffff !important;
+  position: relative !important; /* Permet de caler le bouton parfaitement à droite */
+  padding: 0 !important;
+  overflow: hidden !important; /* Empêche le bouton de déborder */
 }
 
-/* 3. Les couleurs spécifiques des icônes selon le type de fichier */
-/* PDF -> Rouge */
-.bi-filetype-pdf.badge-doc:hover, a:hover .bi-filetype-pdf.badge-doc {
-  color: #b32d2e !important;
-}
-
-/* CSV -> Vert */
-.bi-filetype-csv.badge-doc:hover, a:hover .bi-filetype-csv.badge-doc {
-  color: #1a472a !important; 
-}
-
-/* Scripts & Code -> Bleu */
-.bi-file-code.badge-doc:hover, a:hover .bi-file-code.badge-doc {
-  color: #21618c !important;
-}
-
-/* Livre/Lecture -> Noir ou Gris foncé */
-.bi-book.badge-doc:hover, a:hover .bi-book.badge-doc {
+/* 2. Zone pour taper le texte */
+#quarto-search .aa-Input {
+  border-radius: 0 !important;
+  background-color: transparent !important;
   color: #333333 !important;
+  padding-left: 10px !important;
+  padding-right: 45px !important; /* On laisse de l'espace à droite pour ne pas écrire sous le bouton vert */
+}
+
+/* 3. Comportement quand on clique dedans */
+#quarto-search .aa-Form:focus-within {
+  outline: 1px solid #0e2a18 !important;
+  box-shadow: none !important;
+}
+
+/* 4. Le bouton (Le carré vert) */
+#quarto-search .aa-SubmitButton {
+  position: absolute !important; /* On le détache pour le forcer à droite */
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 38px !important; /* Largeur pour former un beau carré */
+  height: 100% !important;
+  background-color: #1a472a !important;
+  color: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  transform: none !important;
+}
+
+#quarto-search .aa-SubmitButton:hover {
+  background-color: #0e2a18 !important;
+}
+
+/* 5. On supprime le texte "Search" de l'essai précédent */
+#quarto-search .aa-SubmitButton::before {
+  display: none !important;
+}
+
+/* 6. L'icône de la loupe centrée dans le carré */
+#quarto-search .aa-SubmitIcon {
+  fill: #ffffff !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
 }

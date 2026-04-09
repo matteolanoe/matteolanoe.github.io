@@ -46,6 +46,14 @@ You will find my CRIS institutionnal webpage [there](https://www.sciencespo.fr/c
  <h3>Latest News</h3>  
    <div class="news-scroll-zone">
    
+      <div class="news-item">
+     <div class="date-badge">        <span class="month">APRIL</span>
+       <span class="day">6</span>      </div>
+<div class="news-text">
+        <p>Glad to share that I will present at the Sociology of Body and Embodiment Section of the American Sociological Association (ASA) Annual Meeting in New York City, next August!</p>
+      </div>
+    </div>
+   
    <div class="news-item">
      <div class="date-badge">        <span class="month">FEB</span>
        <span class="day">10</span>      </div>
