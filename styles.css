@@ -34,12 +34,23 @@
   font-weight: 900; 
 }
 
+html {
+  background-color: #333333 !important; /* Le fond ultime (overscroll bas) devient sombre */
+}
+
 /* Application globale au corps du site */
 body {
   font-family: 'Engrez', sans-serif !important;
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 !important; /* Le fond du site reste clair */
   line-height: 1.6;
+  margin-bottom: 0 !important; /* Supprime l'espace secret de Bootstrap */
+  padding-bottom: 0 !important;
+}
+
+/* On s'assure que le footer n'a pas de marge en dessous */
+.nav-footer {
+  margin-bottom: 0 !important;
 }
 
 /* Force la police sur tous les niveaux de titres */
@@ -114,45 +125,75 @@ a:hover {
   margin-bottom: 20px; /* Un peu d'espace sous la photo sur mobile */
 }
 
-/* --- Style pour le bouton Abstract --- */
+/* --- Style pour le bouton Abstract (Accordéon + Animation) --- */
 
-/* 1. L'apparence du bouton (balise summary) */
+/* L'apparence du bouton */
 details > summary {
-  background-color: #1a472a; /* Ton vert foncé */
+  background-color: #1a472a;
   color: white;
-  padding: 6px 15px;
-  border-radius: 4px;
+  padding: 10px 15px;
+  border-radius: 0 !important; /* Angles droits */
   cursor: pointer;
-  display: inline-block; /* Pour qu'il ait la taille du texte */
   font-family: 'Engrez', sans-serif;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   margin-top: 8px;
-  list-style: none; /* Enlève la flèche par défaut (standard) */
+  list-style: none;
   transition: background-color 0.2s;
+  
+  /* Flexbox pour aligner le texte à gauche et le symbole à droite */
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
 }
 
-/* Enlève la flèche par défaut sur Safari/Chrome */
 details > summary::-webkit-details-marker {
   display: none;
 }
 
-/* Changement de couleur au survol */
 details > summary:hover {
   background-color: #0e2a18;
 }
 
-/* 2. L'apparence du texte qui s'ouvre (balise div à l'intérieur) */
+/* Le signe "+" à droite */
+details > summary::after {
+  content: "\002B"; /* Code CSS de l'icône + */
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1;
+  transition: transform 0.3s ease; /* Fluidité de la rotation */
+}
+
+/* Au clic, le "+" pivote pour former une croix */
+details[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+/* L'apparence du texte qui se déroule */
 details > div {
-  margin-top: 10px;
+  margin-top: 0 !important; /* Supprime l'espace pour coller le bloc au bouton */
   margin-bottom: 20px;
   padding: 15px;
   background-color: #ffffff;
-  border-left: 3px solid #1a472a; /* Une petite ligne verte élégante sur le côté */
-  border-radius: 0 5px 5px 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Ombre très légère */
+  border: 1px solid #1a472a;
+  border-top: none; /* Fusion visuelle avec l'élément supérieur */
+  border-radius: 0 !important; /* Angles droits */
   font-size: 0.95rem;
   color: #444;
+  
+  /* Animation d'apparition */
+  animation: slideDownFade 0.3s ease-out forwards;
+}
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* =========================================
@@ -216,7 +257,7 @@ details > div {
   text-decoration: none !important;
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 12px;
+  border-radius: 0 !important; /* Modification ici */
   padding: 40px 20px;
   height: 100%;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -299,7 +340,7 @@ details > div {
 details.course-spoiler {
   background: #ffffff;
   border: 1px solid #e0e0e0;
-  border-radius: 12px;
+  border-radius: 0 !important; /* Modification ici */
   margin-bottom: 20px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -499,9 +540,9 @@ main ul ul li::before {
 .news-card, .contact-box {
   background-color: #f8f9fa;
   border: 1px solid #e9ecef;
-  border-radius: 12px;
+  border-radius: 0 !important; /* Modification ici */
   padding: 25px;
-  height: 380px;          /* HAUTEUR FIXE : Change ce chiffre si tu veux plus/moins haut */
+  height: 380px;
   display: flex !important;
   flex-direction: column !important;
   justify-content: flex-start !important;
@@ -696,14 +737,17 @@ main ul ul li::before {
    ========================================= */
 
 /* 1. Le fond et l'espacement global */
+/* 1. Le fond et l'espacement global */
 .nav-footer {
   background-color: #333333 !important;
   color: #ffffff !important;
-  padding: 30px 20px !important; /* Ajout d'espace sur les côtés */
+  padding: 30px 20px !important; 
   border-top: none !important;
   margin-top: 40px !important;
+  
+  /* L'ILLUSION D'OPTIQUE POUR L'OVERSCROLL */
+  box-shadow: 0 50vh 0 50vh #333333 !important; 
 }
-
 /* Décoller spécifiquement les textes aux extrémités */
 .nav-footer-left { padding-left: 20px !important; }
 .nav-footer-right { padding-right: 20px !important; }
@@ -797,4 +841,13 @@ img[src*="ined"] {
   .footer-logo {
     height: 45px !important;
   }
+}
+
+/* Angles droits stricts pour le contenu interne des accordéons Teaching */
+.course-details-full .callout,
+.course-details-full .callout-header,
+.course-details-full pre,
+.course-details-full details,
+.course-details-full summary {
+  border-radius: 0 !important;
 }
