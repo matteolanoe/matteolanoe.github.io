@@ -52,8 +52,6 @@ Post-COVID-19 symptoms (PACS-19), or “long COVID,” are a major public health
 
 Lanoë, M. (2025). Corps et âmes ? Dispositions, socialisation(s) et contrôle de la trajectoire des symptômes post-Covid-19 \[Mémoire de master, École de la recherche, Institut d’études politiques de Paris\]. Sous la direction d’Anne Revillard.
 
-* BibTeX citation:
-
 ```bibtex
 @mastersthesis{lanoe2025corps,
  title = {Corps et âmes ? {Dispositions}, socialisation(s) et contrôle de la trajectoire des symptômes post-{Covid}-19},  author = {Lanoë, Mattéo},
@@ -80,7 +78,7 @@ This master's thesis is the co-winner of the [**2024 Best Master's thesis prize*
 
 In this master's thesis, we examine the impact of the grandes écoles system on students' political socialization throughout their family and school life. Our investigation is divided into two parts: the first focuses on primary socialization, highlighting the influence of childhood characterized by “concerted cultivation.” This phase prepares students to debate, develop rigorous arguments, and follow current events, thus shaping their ability to engage politically. The second part explores the respondents' entry into the grandes écoles system, revealing a process of total educational envelopment. Initially focused on academic success, this immersion evolves into political socialization protected from outside disturbances. The grandes écoles create a space for identity formation, promote political exchange, and encourage civic engagement through student stipends. Finally, schooling leaves a lasting mark on students' political perspectives, favoring a consensual and technoscientific approach. The grandes écoles system in France thus profoundly shapes its students' worldview and political outlook, preparing them for influential roles and dominant positions in society.
 
-<i class="bi bi-filetype-pdf badge-doc"></i> [Download the manuscript (PDF)](images/LANOE_Memoire_M1.pdf){download="LANOE_Memoire_M1.pdf"} <br>
+[<i class="bi bi-filetype-pdf"></i> Download the manuscript (PDF)](images/LANOE_Memoire_M1.pdf){.badge-doc download="LANOE_Memoire_M1.pdf"} <br>
 
 </div>
 
@@ -93,8 +91,6 @@ In this master's thesis, we examine the impact of the grandes écoles system on 
 <div>
 
 Lanoë, M. (2023). Le politique chez les heureux du monde. Dispositions et socialisation politiques des élèves des grandes écoles \[Mémoire de master, Institut d’études politiques de Lyon\]. Sous la direction d’Anthéa Chenini et de Sébastien Michon.
-
-* BibTeX citation:
 
 ```bibtex
 @mastersthesis{lanoe2023politique,

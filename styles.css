@@ -851,3 +851,46 @@ img[src*="ined"] {
 .course-details-full summary {
   border-radius: 0 !important;
 }
+
+/* =========================================
+   7. BADGES FICHIERS (PDF, CSV, R) - STYLE ENCADRÉ
+   ========================================= */
+
+.badge-doc {
+  background-color: #ffffff !important;
+  color: #444444 !important; 
+  border: 1px solid #cccccc !important; 
+  border-radius: 0 !important; 
+  padding: 6px 15px !important; 
+  font-size: 0.95rem !important;
+  font-family: 'Engrez', sans-serif !important;
+  font-weight: 500 !important;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Espacement entre ton icône HTML et le texte */
+.badge-doc::before,
+.badge-doc i {
+  margin-right: 10px !important;
+  font-size: 1rem !important;
+}
+
+/* On garde les couleurs spécifiques de tes icônes HTML pour qu'elles ressortent sur le fond blanc */
+.bi-filetype-pdf { color: #b32d2e !important; }
+.bi-filetype-csv { color: #1a472a !important; }
+.bi-file-code { color: #21618c !important; }
+.bi-book { color: #333333 !important; }
+
+/* Effet discret au survol (le fond devient très légèrement gris et la bordure fonce) */
+.badge-doc:hover, 
+a:hover .badge-doc { 
+  background-color: #f4f4f4 !important; 
+  border-color: #999999 !important;
+  color: #222222 !important;
+}
