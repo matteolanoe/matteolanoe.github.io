@@ -894,3 +894,44 @@ a:hover .badge-doc {
   border-color: #999999 !important;
   color: #222222 !important;
 }
+
+/* =========================================
+   RÉDUCTION DE LA NAVBAR SUR MOBILE
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+    min-height: auto !important;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .navbar-toggler {
+    padding: 4px 8px !important;
+  }
+}
+
+/* =========================================
+   CORRECTION DU MENU MOBILE (Icône Plus animée)
+   ========================================= */
+
+/* L'icône Plus avec une transition pour l'animation */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231a472a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M15 6v18M6 15h18'/%3e%3c/svg%3e") !important;
+  transition: transform 0.3s ease-in-out !important; /* Ajout de la fluidité */
+}
+
+/* L'ANIMATION : Quand le menu est ouvert, on tourne de 45 degrés pour faire un X */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  transform: rotate(45deg) !important;
+}
+
+/* On garde l'effet de clic (halo de sélection) aux couleurs de ton site */
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem rgba(26, 71, 42, 0.25) !important;
+}
