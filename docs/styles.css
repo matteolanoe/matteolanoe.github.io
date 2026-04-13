@@ -935,3 +935,35 @@ a:hover .badge-doc {
 .navbar-toggler:focus {
   box-shadow: 0 0 0 0.25rem rgba(26, 71, 42, 0.25) !important;
 }
+
+/* =========================================
+   RÉORGANISATION DE LA NAVBAR MOBILE
+   ========================================= */
+@media (max-width: 768px) {
+  .navbar > .container-fluid,
+  .navbar > .navbar-container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  /* Le nom tout à gauche */
+  .navbar-brand {
+    order: 1 !important;
+    margin-right: auto !important; /* Pousse les autres éléments vers la droite */
+    margin-left: 10px !important;
+  }
+
+  /* La loupe de recherche */
+  #quarto-search {
+    order: 2 !important;
+    margin-right: 15px !important;
+  }
+
+  /* Le bouton Plus tout à droite */
+  .navbar-toggler {
+    order: 3 !important;
+    margin-right: 10px !important;
+  }
+}
