@@ -297,6 +297,418 @@ Faire des associations entre des variables est à la base du travail statistique
 
 :::
 
+::: {.callout-note collapse="true"}
+## Séance 10 : Introduction à la régression linéaire univariée
+Afin de familiariser les étudiants avec une méthode très populaire en sciences humaines et sociales, cette séance visera à introduire aux bases conceptuelles et géométriques de la régression linéaire. Cette introduction utilisera des modèles univariés, et consistera principalement à apprendre à lire les résultats d'un modèle de régression. *Il n'y a pas de lecture obligatoire pour cette séance.*
+
+**Notions abordées :** *nuage de points, droite de régression, R², coefficients p (p-value)*
+
+- **Simulateur Interactif : Comprendre la régression linéaire**
+
+Utilisez cet outil pour manipuler manuellement la pente et la constante d'une droite de régression et comprendre comment elle s'ajuste à un nuage de points réels.
+
+::: {.panel-tabset}
+
+## Concept Géométrique
+
+```{=html}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+    .regression-container {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7f6;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+    .regression-box {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-width: 1000px;
+        width: 100%;
+    }
+    .regression-box h1 {
+        color: #2c3e50;
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+    .equation-box {
+        background-color: #e8f4f8;
+        border-left: 5px solid #3498db;
+        padding: 15px;
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+    .math {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: #2980b9;
+    }
+    .layout-reg {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .chart-container-reg {
+        flex: 2;
+        min-width: 400px;
+        height: 400px;
+        position: relative;
+    }
+    .controls-reg {
+        flex: 1;
+        min-width: 300px;
+        background: #fafafa;
+        padding: 20px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+    .controls-reg label {
+        display: block;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+    .controls-reg input[type=range] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .value-display {
+        font-size: 0.9em;
+        color: #7f8c8d;
+        margin-bottom: 15px;
+    }
+    .dynamic-equation {
+        background: #2c3e50;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .prediction {
+        background: #27ae60;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    .controls-reg button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 10px;
+        background-color: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    .controls-reg button:hover {
+        background-color: #c0392b;
+    }
+</style>
+
+<div class="regression-container">
+<div class="regression-box">
+    <h1>Comprendre la Régression Linéaire</h1>
+    
+    <div class="equation-box">
+        <strong>L'équation générique théorique :</strong><br>
+        <span class="math">Y = &beta;<sub>1</sub>X + &beta;<sub>0</sub> + &epsilon;</span>
+        <div style="font-size: 0.85em; margin-top: 5px; color: #555;">
+            Y = Variable dépendante (Salaire) | X = Variable indépendante (Années d'études) <br>
+            &beta;<sub>1</sub> = Pente (Effet d'une année) | &beta;<sub>0</sub> = Constante (Salaire de base) | &epsilon; = Résidu (Marge d'erreur)
+        </div>
+    </div>
+
+    <div class="layout-reg">
+        <div class="chart-container-reg">
+            <canvas id="regressionChart"></canvas>
+        </div>
+        
+        <div class="controls-reg">
+            <h3>Paramètres du Modèle</h3>
+            
+            <label for="slopeSlider">&beta;<sub>1</sub> (Pente / Effet d'une année d'étude)</label>
+            <input type="range" id="slopeSlider" min="-2" max="8" step="0.1" value="0">
+            <div class="value-display">Valeur actuelle : <span id="slopeValue">0</span> K€ / an</div>
+
+            <label for="interceptSlider">&beta;<sub>0</sub> (Constante / Salaire à 0 année)</label>
+            <input type="range" id="interceptSlider" min="0" max="50" step="1" value="20">
+            <div class="value-display">Valeur actuelle : <span id="interceptValue">20</span> K€</div>
+
+            <div class="dynamic-equation">
+                <div style="font-size: 0.8em; color: #bdc3c7; margin-bottom: 5px;">Modèle estimé :</div>
+                Salaire = <span id="eqSlope" style="color: #3498db; font-weight: bold;">0</span> * Années + <span id="eqIntercept" style="color: #e74c3c; font-weight: bold;">20</span>
+            </div>
+
+            <div class="prediction">
+                <div style="font-size: 0.8em; opacity: 0.9;">Prédiction pour 5 années d'études :</div>
+                <span id="predictionValue">20.0</span> K€
+            </div>
+
+            <button id="resetButton">Calculer la droite parfaite (Moindres Carrés)</button>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+    // Données fictives (Années d'études, Salaire en K€)
+    const rawData = [
+        {x: 1, y: 22}, {x: 1.5, y: 24}, {x: 2, y: 23}, {x: 3, y: 28},
+        {x: 3.5, y: 31}, {x: 4, y: 29}, {x: 5, y: 35}, {x: 5.5, y: 34},
+        {x: 6, y: 40}, {x: 7, y: 42}, {x: 8, y: 46}, {x: 8.5, y: 44},
+        {x: 9, y: 52}, {x: 10, y: 50}
+    ];
+
+    // Calcul des moindres carrés (OLS) pour le bouton reset
+    function calculateOLS(data) {
+        let sumX = 0, sumY = 0, sumXY = 0, sumXX = 0;
+        const n = data.length;
+        data.forEach(p => {
+            sumX += p.x;
+            sumY += p.y;
+            sumXY += p.x * p.y;
+            sumXX += p.x * p.x;
+        });
+        const meanX = sumX / n;
+        const meanY = sumY / n;
+        
+        const beta1 = (sumXY - n * meanX * meanY) / (sumXX - n * meanX * meanX);
+        const beta0 = meanY - beta1 * meanX;
+        
+        return { slope: beta1, intercept: beta0 };
+    }
+
+    const ols = calculateOLS(rawData);
+
+    // Initialisation du graphique Chart.js
+    const ctx = document.getElementById('regressionChart').getContext('2d');
+    const regressionChart = new Chart(ctx, {
+        type: 'scatter',
+        data: {
+            datasets: [{
+                label: 'Individus (Données réelles)',
+                data: rawData,
+                backgroundColor: 'rgba(52, 152, 219, 0.6)',
+                borderColor: '#2980b9',
+                pointRadius: 6,
+                pointHoverRadius: 8
+            }, {
+                label: 'Modèle estimé (Droite)',
+                data: [], // Sera rempli par updateLine()
+                type: 'line',
+                borderColor: '#e74c3c',
+                borderWidth: 3,
+                fill: false,
+                pointRadius: 0
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    title: { display: true, text: "Années d'études (X)", font: { size: 14, weight: 'bold' } },
+                    min: 0,
+                    max: 11
+                },
+                y: {
+                    title: { display: true, text: "Salaire en K€ (Y)", font: { size: 14, weight: 'bold' } },
+                    min: 0,
+                    max: 60
+                }
+            },
+            plugins: {
+                legend: { position: 'top' }
+            }
+        }
+    });
+
+    // Récupération des éléments DOM
+    const slopeSlider = document.getElementById('slopeSlider');
+    const interceptSlider = document.getElementById('interceptSlider');
+    const slopeValue = document.getElementById('slopeValue');
+    const interceptValue = document.getElementById('interceptValue');
+    const eqSlope = document.getElementById('eqSlope');
+    const eqIntercept = document.getElementById('eqIntercept');
+    const predictionValue = document.getElementById('predictionValue');
+    const resetButton = document.getElementById('resetButton');
+
+    // Mise à jour de la ligne et des textes
+    function updateVisualization() {
+        const slope = parseFloat(slopeSlider.value);
+        const intercept = parseFloat(interceptSlider.value);
+
+        // Mise à jour des textes
+        slopeValue.textContent = slope.toFixed(1);
+        interceptValue.textContent = intercept.toFixed(0);
+        eqSlope.textContent = slope.toFixed(1);
+        eqIntercept.textContent = intercept.toFixed(0);
+        
+        // Calcul prédiction pour X=5
+        const pred = (slope * 5) + intercept;
+        predictionValue.textContent = pred.toFixed(1);
+
+        // Mise à jour de la droite sur le graphique
+        regressionChart.data.datasets[1].data = [
+            { x: 0, y: intercept },
+            { x: 11, y: (slope * 11) + intercept }
+        ];
+        regressionChart.update();
+    }
+
+    // Écouteurs d'événements pour les sliders
+    slopeSlider.addEventListener('input', updateVisualization);
+    interceptSlider.addEventListener('input', updateVisualization);
+
+    // Écouteur pour le bouton "Moindres Carrés"
+    resetButton.addEventListener('click', () => {
+        slopeSlider.value = ols.slope.toFixed(1);
+        interceptSlider.value = ols.intercept.toFixed(0);
+        updateVisualization();
+    });
+
+    // Initialisation au chargement
+    updateVisualization();
+</script>
+```
+
+## Lire une console R
+
+```{=html}
+<style>
+  .r-console-wrapper { display: flex; flex-direction: column; gap: 15px; margin-top: 20px; }
+  .r-console { background: #282a36; color: #f8f8f2; padding: 20px; font-family: 'Courier New', monospace; font-size: 0.95rem; overflow-x: auto; line-height: 1.5; border-radius: 0; }
+  .r-clickable { background: rgba(255,255,255,0.15); padding: 2px 4px; border-radius: 0; cursor: pointer; border-bottom: 1px dashed #a1c181; transition: background 0.2s; }
+  .r-clickable:hover { background: rgba(255,255,255,0.3); color: #a1c181; }
+  .r-explain-box { padding: 15px; border-left: 4px solid #1a472a; background: #f0f7f2; color: #333; font-family: 'Engrez', sans-serif; min-height: 80px; }
+  .r-explain-title { font-weight: bold; color: #1a472a; margin-bottom: 5px; display: block; font-size: 1.1rem; }
+</style>
+<div class="r-console-wrapper">
+  <div class="r-console">
+    > summary(modele)<br><br>
+    Call:<br>
+    lm(formula = Salaire ~ Annees_Etudes, data = df)<br><br>
+    Residuals:<br>
+    Min &nbsp; &nbsp; 1Q &nbsp; Median &nbsp; 3Q &nbsp; Max <br>
+    -5.2 &nbsp; -1.8 &nbsp; 0.4 &nbsp; &nbsp; 2.1 &nbsp; 4.8 <br><br>
+    Coefficients:<br>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span class="r-clickable" data-info="estimate">Estimate</span> &nbsp;<span class="r-clickable" data-info="std">Std. Error</span> &nbsp;<span class="r-clickable" data-info="tval">t value</span> &nbsp;<span class="r-clickable" data-info="pval">Pr(>|t|)</span><br>
+    (Intercept) &nbsp; &nbsp;<span class="r-clickable" data-info="est-int">20.000</span> &nbsp; &nbsp;2.100 &nbsp; &nbsp; &nbsp; 9.52 &nbsp; &nbsp;<span class="r-clickable" data-info="pval-int">1.2e-06 ***</span><br>
+    Annees_Etudes &nbsp;<span class="r-clickable" data-info="est-pente">3.500</span> &nbsp; &nbsp; 0.450 &nbsp; &nbsp; &nbsp; 7.77 &nbsp; &nbsp;<span class="r-clickable" data-info="pval-pente">4.5e-05 ***</span><br>
+    ---<br>
+    Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1<br><br>
+    Residual standard error: 2.8 on 12 degrees of freedom<br>
+    <span class="r-clickable" data-info="r2">Multiple R-squared:  0.834</span>,  Adjusted R-squared:  0.820 <br>
+    F-statistic: 60.4 on 1 and 12 DF,  p-value: 4.5e-05
+  </div>
+  <div class="r-explain-box" id="r-explain-text">
+    <span class="r-explain-title">Interactivité de la console</span>
+    <p style="margin:0;">Clique sur un élément mis en évidence dans le code ci-dessus pour afficher sa signification statistique détaillée.</p>
+  </div>
+</div>
+<script>
+  const rExplanations = {
+    "estimate": "<span class='r-explain-title'>Estimate (Coefficient)</span><p style='margin:0;'>C'est la valeur calculée par le modèle. Elle indique la force et le sens de l'association entre les variables.</p>",
+    "std": "<span class='r-explain-title'>Std. Error (Erreur Standard)</span><p style='margin:0;'>Représente la marge d'erreur autour de l'estimation. Une valeur petite indique une estimation précise.</p>",
+    "tval": "<span class='r-explain-title'>t value (Valeur t)</span><p style='margin:0;'>C'est le ratio entre l'estimation et son erreur standard. Plus cette valeur s'éloigne de 0, plus le résultat gagne en robustesse.</p>",
+    "pval": "<span class='r-explain-title'>Pr(>|t|) (P-value)</span><p style='margin:0;'>Probabilité d'obtenir ce résultat par simple hasard. En dessous du seuil de 0.05, l'effet est considéré comme statistiquement significatif.</p>",
+    "est-int": "<span class='r-explain-title'>Constante (Intercept) : 20.000</span><p style='margin:0;'>Si la variable indépendante (années d'études) est égale à 0, le modèle prédit de manière théorique un salaire de base de 20 K€.</p>",
+    "est-pente": "<span class='r-explain-title'>Pente (Annees_Etudes) : 3.500</span><p style='margin:0;'>Pour chaque unité supplémentaire (une année d'étude en plus), le modèle prédit une augmentation moyenne de la variable dépendante de 3.5 K€.</p>",
+    "pval-int": "<span class='r-explain-title'>Significativité de la Constante</span><p style='margin:0;'>La probabilité que la valeur 20.000 soit un artefact du hasard est virtuellement nulle. Les étoiles confirment une très forte significativité.</p>",
+    "pval-pente": "<span class='r-explain-title'>Significativité de la Pente</span><p style='margin:0;'>La probabilité que l'effet des études sur le salaire n'existe pas dans la réalité est extrêmement faible. L'hypothèse nulle est rejetée.</p>",
+    "r2": "<span class='r-explain-title'>Multiple R-squared (R²) : 0.834</span><p style='margin:0;'>Indicateur de pouvoir prédictif. Le chiffre signifie que 83.4% de la variation totale des salaires s'explique mathématiquement par les années d'études.</p>"
+  };
+  document.querySelectorAll('.r-clickable').forEach(el => {
+    el.addEventListener('click', function() {
+      document.getElementById('r-explain-text').innerHTML = rExplanations[this.getAttribute('data-info')];
+    });
+  });
+</script>
+```
+
+## Lire un Tableau Académique
+
+```{=html}
+<style>
+  .acad-container { display: flex; gap: 30px; flex-wrap: wrap; margin-top: 20px; font-family: 'Engrez', sans-serif;}
+  .acad-table-wrapper { flex: 1; min-width: 300px; background: white; padding: 20px; border-radius: 0; border: 1px solid #ddd; display: flex; justify-content: center; }
+  .acad-table { border-collapse: collapse; width: 100%; max-width: 400px; text-align: center; font-size: 0.95rem; }
+  .acad-table th, .acad-table td { padding: 8px; border-bottom: 1px solid transparent; }
+  .acad-table th { border-top: 2px solid black; border-bottom: 1px solid black; }
+  .acad-table .bottom-rule { border-bottom: 2px solid black; }
+  .acad-table .mid-rule { border-bottom: 1px solid black; }
+  .acad-clickable { cursor: pointer; transition: background 0.2s; }
+  .acad-clickable:hover { background: #f0f7f2; color: #1a472a; font-weight: bold; }
+  .acad-explain-box { flex: 1; min-width: 300px; padding: 20px; border-left: 4px solid #1a472a; background: #f0f7f2; color: #333; display: flex; flex-direction: column; justify-content: center; }
+  .acad-explain-title { font-weight: bold; color: #1a472a; margin-bottom: 10px; font-size: 1.2rem; display: block; }
+</style>
+<div class="acad-container">
+  <div class="acad-table-wrapper">
+    <table class="acad-table">
+      <thead>
+        <tr><th style="text-align:left;">Variable</th><th>Modèle 1 (Salaire)</th></tr>
+      </thead>
+      <tbody>
+        <tr class="acad-clickable" data-info="acad-pente">
+          <td style="text-align:left;">Années d'études</td><td>3.500***</td>
+        </tr>
+        <tr class="acad-clickable" data-info="acad-se">
+          <td style="text-align:left;"></td><td>(0.450)</td>
+        </tr>
+        <tr class="acad-clickable" data-info="acad-int">
+          <td style="text-align:left;">Constante</td><td>20.000***</td>
+        </tr>
+        <tr class="acad-clickable" data-info="acad-se">
+          <td style="text-align:left;" class="mid-rule"></td><td class="mid-rule">(2.100)</td>
+        </tr>
+        <tr class="acad-clickable" data-info="acad-n">
+          <td style="text-align:left;">Observations</td><td>14</td>
+        </tr>
+        <tr class="acad-clickable" data-info="acad-r2">
+          <td style="text-align:left;" class="bottom-rule">R²</td><td class="bottom-rule">0.834</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="2" style="text-align:left; font-size:0.8rem; padding-top:10px;">Note : *p<0.1; **p<0.05; ***p<0.01</td></tr>
+      </tfoot>
+    </table>
+  </div>
+  <div class="acad-explain-box" id="acad-explain-text">
+    <span class="acad-explain-title">Standards de publication</span>
+    <p style="margin:0;">Passe la souris sur les différentes lignes du tableau pour comprendre la manière dont les chercheurs formatent et publient leurs résultats de régression dans les revues académiques.</p>
+  </div>
+</div>
+<script>
+  const acadExplanations = {
+    "acad-pente": "<span class='acad-explain-title'>Le Coefficient et la Significativité</span><p style='margin:0;'>Le chiffre 3.500 désigne l'ampleur de l'effet. Les étoiles accolées traduisent directement la p-value, indiquant une significativité très forte (p < 0.01). C'est le résultat central du tableau.</p>",
+    "acad-se": "<span class='acad-explain-title'>L'Erreur Standard (entre parenthèses)</span><p style='margin:0;'>Systématiquement placée sous le coefficient, cette valeur précise la marge d'erreur. En analyse rapide, un coefficient fiable est généralement au moins deux fois supérieur à son erreur standard.</p>",
+    "acad-int": "<span class='acad-explain-title'>La Constante (Intercept)</span><p style='margin:0;'>Repoussée en bas de la liste des variables explicatives, elle fixe la ligne de base du modèle. Son interprétation conceptuelle présente rarement un intérêt direct pour la démonstration de recherche.</p>",
+    "acad-n": "<span class='acad-explain-title'>Le nombre d'observations (N)</span><p style='margin:0;'>Indique la taille de l'échantillon analysé. Ce chiffre permet d'évaluer la puissance statistique de l'étude. Un N=14 est purement illustratif, la norme se comptant en centaines ou milliers.</p>",
+    "acad-r2": "<span class='acad-explain-title'>Le R² (Ajustement du modèle)</span><p style='margin:0;'>Cette statistique, toujours comprise entre 0 et 1, quantifie la pertinence globale du modèle. Un score de 0.834 indique que les variables explicatives parviennent à capter 83.4% de la variance observée.</p>"
+  };
+  document.querySelectorAll('.acad-clickable').forEach(el => {
+    el.addEventListener('mouseenter', function() { document.getElementById('acad-explain-text').innerHTML = acadExplanations[this.getAttribute('data-info')]; });
+    el.addEventListener('click', function() { document.getElementById('acad-explain-text').innerHTML = acadExplanations[this.getAttribute('data-info')]; });
+  });
+</script>
+```
+
+:::
+
+:::
+
 #### Programmes de révision
 
 ::: {.callout-note collapse="true"}
@@ -336,8 +748,8 @@ Notions à retenir :
   - *Croisement Quanti x Quanti :* `plot()` pour générer un nuage de points, `cov(..., use = "complete.obs")` pour la covariance, et `cor(..., use = "complete.obs")` pour la corrélation.
   - *Échantillonnage :* `set.seed()` pour fixer le hasard, `sample()` pour le tirage aléatoire simple, ainsi que la syntaxe du package `dplyr` (`%>%`, `group_by()`, `slice_sample()`
   - *Tests statistiques et intervalles :* calcul manuel de la marge d'erreur `1.96 * sd(...) * (1/sqrt(...) + 1/sqrt(...))`, `t.test(Y ~ X, data = ...)` pour comparer deux moyennes et obtenir directement leurs intervalles de confiance, et `chisq.test(tableau)` pour tester l'indépendance statistique.
-  
-[<i class="bi bi-filetype-pdf"></i> Télécharger la fiche de révision pour les commandes R]{.badge-doc download="fiche_revision.pdf"}
+
+[<i class="bi bi-filetype-pdf"></i> Télécharger la fiche de révision pour les commandes R](docs/images/fiche_revision.pdf){.badge-doc download="fiche_revision_R.pdf"} <br>
 
 - **Vous pouvez poser vos questions en utilisant l'interface ci-dessous**. Je verrai d'abord vos questions, puis je les publierai ici en ajoutant une réponse : 
 
@@ -464,6 +876,25 @@ Si vous ne pouvez pas installer R et RStudio sur votre ordinateur car vous trava
     <i class="bi bi-cloud-arrow-up-fill"></i> Accéder à l'espace de dépôt (Groupe 15h30-17h30)
   </a>
 </div>
+:::
+
+::: {.callout-note collapse="false"}
+## Évaluation finale
+
+Ce travail final a pour objectif de vous faire mobiliser l'ensemble des compétences analytiques et statistiques acquises durant le semestre. L'évaluation s'articule autour de deux grandes étapes :
+
+- **1. Le traitement des données (Code R)**
+À partir des données de l'enquête ELIPSS et des variables spécifiques attribuées à votre groupe, vous devrez concevoir un script `R` propre, reproductible et rigoureusement commenté. Ce script devra contenir toutes les étapes de votre démarche.
+
+- **2. La restitution (Exposé oral)**
+Vous présenterez ensuite vos conclusions lors d'un exposé oral devant la classe. Votre présentation ne doit pas être une simple lecture de chiffres, mais une véritable démonstration sociologique. Elle devra obligatoirement inclure :
+  - **Une justification méthodologique :** une explication claire et vulgarisée des choix effectués dans votre code `R`.
+  - **L'interprétation des résultats :** la présentation visuelle de vos données (tableaux, graphiques) et leur lecture analytique.
+  - **Un ancrage théorique :** une brève discussion de vos résultats à la lumière de la littérature existante. Vous devez vous appuyer sur un minimum de 1 à 2 références académiques (articles scientifiques, ouvrages), que vous pouvez tout à fait compléter par des articles de presse pertinents pour ancrer le sujet dans l'actualité.
+
+[<i class="bi bi-filetype-pdf"></i> Télécharger le mini-codebook de l'enquête ELIPSS](docs/images/mini-codebook.pdf){.badge-doc download="mini-codebook.pdf"} <br>
+[<i class="bi bi-filetype-csv"></i> Ouvrir le tableur - Groupes, questions et variables choisies](https://docs.google.com/spreadsheets/d/14JJUGEEv8TGd_NKaHDfcRFLtGxJ30ldSY5dDZUYSM0o/edit?usp=sharing){.badge-doc target="_blank"}
+
 :::
 
 </div>

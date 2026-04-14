@@ -464,7 +464,7 @@ main ul li {
 
 /* On ajoute la flèche verte */
 main ul li::before {
-  content: "➔";
+  content: "▸";
   color: #285e3a;
   font-weight: bold;
   position: absolute;
@@ -481,7 +481,7 @@ main ul ul {
 
 /* On définit le nouveau symbole pour la sous-liste */
 main ul ul li::before {
-  content: "▸" !important;
+  content: "▹" !important;
   color: #285e3a; /* Ton vert habituel */
   font-weight: normal; /* "▸" est déjà assez épais, pas besoin de bold */
   position: absolute;
