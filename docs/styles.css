@@ -539,7 +539,7 @@ main ul ul li::before {
 /* 1. On force les deux boîtes à avoir EXACTEMENT la même taille */
 .news-card, .contact-box {
   background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
+  border: 1px solid #1a472a;
   border-radius: 0 !important; /* Modification ici */
   padding: 25px;
   height: 380px;

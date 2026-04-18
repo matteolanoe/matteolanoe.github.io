@@ -1,24 +1,27 @@
 ---
-title: "Invited Talks & Conferences"
+title: "Seminars & Conferences"
 ---
 
 ## 2026
 
-### Invited Talks
+### Seminar Presentations
 
 * **Mortality Health and Epidemiology Internal Seminar** (INED, Aubervilliers, February 20)
+* **INED Doctoral Workshop** (INED, Aubervilliers, May)
+
+### Conferences
+
+* **The Taming Disease: How Long Covid Crushes Previous Socializations** (American Sociological Association Annual Meeting, New York City, 2026, Sociology of Body and Embodiment Section)
 
 ## 2025
 
-### Invited Talks
+### Seminar Presentations
 
 * **CRIS Scientific Seminar** (Sciences Po, Paris, November 28)
 
 ### Conferences
 
-* **Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** (American Sociological Association Annual Meeting, Chicago, 2025)
-    * *Role:* Speaker (Health & Illness Roundtable)
-    * [Link to program](https://convention2.allacademic.com/one/asa/asa25/)
+* **Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** (American Sociological Association Annual Meeting, Chicago, 2025, Health & Illness Roundtable)
 
 <div style="margin-left: 40px; margin-top: 10px; margin-bottom: 30px;">
   <details>

@@ -12,7 +12,7 @@ page-layout: full
 ::: {.g-col-12 .g-col-md-8}
 # Mattéo Lanoë {style="margin-top: 0;"}
 
-<p style="color: #666; font-size: 1.3rem; font-weight: 300; margin-top: -10px; margin-bottom: 20px;">
+<p style="color: #666; font-size: 1.15rem; font-weight: 300; margin-top: -10px; margin-bottom: 20px;">
 **Doctoral Candidate, Sciences Po and French Institute for Demographic Studies (INED)**
 </p>
 
@@ -45,6 +45,14 @@ You will find my CRIS institutionnal webpage [there](https://www.sciencespo.fr/c
 <div class="news-card">
  <h3>Latest News</h3>  
    <div class="news-scroll-zone">
+   
+         <div class="news-item">
+     <div class="date-badge">        <span class="month">MAY</span>
+       <span class="day">26</span>      </div>
+<div class="news-text">
+        <p>I will speak at the INED Doctoral Workshop <i>(journée doctorale de l'Ined)</i> for a presentation tackling issues related to how Long Haulers (Long Covid ills) pathologize their symptoms.</p>
+      </div>
+    </div>
    
       <div class="news-item">
      <div class="date-badge">        <span class="month">APRIL</span>
