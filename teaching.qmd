@@ -892,8 +892,16 @@ Vous présenterez ensuite vos conclusions lors d'un exposé oral devant la class
   - **L'interprétation des résultats :** la présentation visuelle de vos données (tableaux, graphiques) et leur lecture analytique.
   - **Un ancrage théorique :** une brève discussion de vos résultats à la lumière de la littérature existante. Vous devez vous appuyer sur un minimum de 1 à 2 références académiques (articles scientifiques, ouvrages), que vous pouvez tout à fait compléter par des articles de presse pertinents pour ancrer le sujet dans l'actualité.
 
+<br>
+
 [<i class="bi bi-filetype-pdf"></i> Télécharger le mini-codebook de l'enquête ELIPSS](docs/images/mini-codebook.pdf){.badge-doc download="mini-codebook.pdf"} <br>
 [<i class="bi bi-filetype-csv"></i> Ouvrir le tableur - Groupes, questions et variables choisies](https://docs.google.com/spreadsheets/d/14JJUGEEv8TGd_NKaHDfcRFLtGxJ30ldSY5dDZUYSM0o/edit?usp=sharing){.badge-doc target="_blank"}
+
+<div style="text-align: center; margin: 30px 0;">
+  <a href="https://drive.google.com/drive/folders/1zS9DpLEJRPL7y43S9p-XnnxxsnEyyyvq?usp=share_link" target="_blank" style="background-color: #1a472a; color: white; padding: 12px 25px; text-decoration: none; border-radius: 0; font-weight: bold; font-size: 1.05rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <i class="bi bi-cloud-arrow-up-fill"></i> Accéder à l'espace de dépôt (Groupe 15h30-17h30)
+  </a>
+</div>
 
 :::
 
