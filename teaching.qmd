@@ -899,7 +899,7 @@ Vous présenterez ensuite vos conclusions lors d'un exposé oral devant la class
 
 <div style="text-align: center; margin: 30px 0;">
   <a href="https://drive.google.com/drive/folders/1zS9DpLEJRPL7y43S9p-XnnxxsnEyyyvq?usp=share_link" target="_blank" style="background-color: #1a472a; color: white; padding: 12px 25px; text-decoration: none; border-radius: 0; font-weight: bold; font-size: 1.05rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-    <i class="bi bi-cloud-arrow-up-fill"></i> Accéder à l'espace de dépôt (Groupe 15h30-17h30)
+    <i class="bi bi-cloud-arrow-up-fill"></i> Accéder à l'espace de dépôt (Groupe 13h15-15h15)
   </a>
 </div>
 
