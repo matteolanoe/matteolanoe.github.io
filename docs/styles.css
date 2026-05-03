@@ -639,20 +639,6 @@ main ul ul li::before {
 }
 
 /* =========================================
-   VERROUILLAGE DE LA NAVBAR 
-   ========================================= */
-#quarto-header, 
-.headroom, 
-.headroom--unpinned, 
-.headroom--pinned {
-  position: fixed !important;
-  top: 0 !important;
-  transform: translateY(0) !important;
-  transition: none !important; /* Désactive les animations de montée/descente */
-  z-index: 1030 !important; /* S'assure qu'elle reste toujours au-dessus du reste */
-}
-
-/* =========================================
    STYLE DE LA BARRE DE RECHERCHE
    ========================================= */
 
@@ -900,19 +886,19 @@ a:hover .badge-doc {
    ========================================= */
 @media (max-width: 768px) {
   .navbar {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
+    padding-top: 10px !important; /* Augmenté de 4px à 10px */
+    padding-bottom: 10px !important; /* Augmenté de 4px à 10px */
     min-height: auto !important;
   }
 
   .navbar-brand {
-    font-size: 1.5rem !important;
+    font-size: 1.6rem !important; /* Augmenté de 1.5 à 1.6rem */
     padding-top: 0 !important;
     padding-bottom: 0 !important;
   }
 
   .navbar-toggler {
-    padding: 4px 8px !important;
+    padding: 6px 10px !important; /* Bouton un tout petit peu plus large */
   }
 }
 
@@ -967,3 +953,20 @@ a:hover .badge-doc {
     margin-right: 10px !important;
   }
 }
+
+#quarto-header {
+    position: absolute !important; /* La détache de l'écran et l'accroche au document */
+    top: 0 !important;             /* La cloue tout en haut de la page */
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;    /* Interdit à Quarto de la faire réapparaître/disparaître */
+    transition: none !important;   /* Désactive les animations */
+    z-index: 1030 !important;
+}
+
+/* Le trait gris et suppression de l'ombre */
+.navbar {
+    border-bottom: 6px solid #b8b8b8 !important; 
+    box-shadow: none !important; 
+}
+

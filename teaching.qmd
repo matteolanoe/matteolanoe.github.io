@@ -10,11 +10,25 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 <summary class="course-summary">
 <div class="summary-text">
 <h3>Méthodes quantitatives en sciences sociales</h3>
-<p>**1st Year Sciences Po Undergraduates Students | Position: Teaching Fellow | Year offered: 2026 Spring Semester** Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser. </p>
+<p>**Sciences Po Undergraduate College | Teaching Fellow | 2026 Spring Semester** Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser. </p>
 </div>
 <div class="summary-icon">+</div>
 </summary>
 <div class="course-details-full">
+
+<div id="lock-quanti" style="text-align: center; padding: 40px 20px;">
+  <i class="bi bi-lock-fill" style="font-size: 2.5rem; color: #1a472a;"></i>
+  <h4 style="margin-top: 15px; color: #333;">Contenu protégé</h4>
+  <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">Saisissez le mot de passe pour accéder au syllabus.</p>
+  
+<input type="password" id="pwd-quanti" placeholder="Mot de passe..." style="padding: 10px; border: 1px solid #ccc; border-radius: 0; margin-bottom: 15px; width: 200px; text-align: center; font-family: 'Engrez', sans-serif;" onkeypress="if(event.key === 'Enter') checkPwd('quanti', 'quanti')"> <br>
+  
+  <button onclick="checkPwd('quanti', 'quanti')" style="background: #1a472a; color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Engrez', sans-serif; font-weight: bold; transition: 0.2s;">Déverrouiller</button>
+  
+  <p id="error-quanti" style="color: #e7001a; display: none; font-size: 0.85rem; margin-top: 15px;">Mot de passe incorrect.</p>
+</div>
+
+<div id="content-quanti" style="display: none;">
 
 <br>
 
@@ -907,6 +921,27 @@ Vous présenterez ensuite vos conclusions lors d'un exposé oral devant la class
 
 </div>
 </details>
+
+```{=html}
+<script>
+function checkPwd(id, correctPwd) {
+  const input = document.getElementById('pwd-' + id).value;
+  const errorMsg = document.getElementById('error-' + id);
+  const lockScreen = document.getElementById('lock-' + id);
+  const courseContent = document.getElementById('content-' + id);
+
+  if (input === correctPwd) {
+    // Si le mot de passe est bon, on cache le cadenas et on affiche le cours
+    lockScreen.style.display = 'none';
+    courseContent.style.display = 'block';
+    errorMsg.style.display = 'none';
+  } else {
+    // Si c'est faux, on affiche le message rouge
+    errorMsg.style.display = 'block';
+  }
+}
+</script>
+```
 
 <!--
 <details class="course-spoiler">

@@ -20,12 +20,12 @@ website:
   
   open-graph:
     description: "Mattéo Lanoë | Doctoral Candidate in Sociology"
-    image: images/logo-site.png  # Ou une image spécifique format rectangulaire
+    image: images/logo-site.png
   twitter-card:
     image: images/logo-site.png
     card-style: summary_large_image
   
-  # --- RECHERCHE (Doit être indenté sous website) ---
+  # --- RECHERCHE ---
   search:
     location: navbar
     type: textbox
@@ -33,8 +33,8 @@ website:
   # --- BARRE DE NAVIGATION ---
   navbar:
     title: "Mattéo Lanoë"
-    
     background: primary
+    
     # MENU GAUCHE
     left:
       - text: "Home"
@@ -62,7 +62,7 @@ website:
         href: https://bsky.app/profile/matteolanoe.bsky.social
         aria-label: "BlueSky"
 
-# --- PIED DE PAGE ---
+  # --- PIED DE PAGE ---
   page-footer:
     left: "© 2026 Mattéo Lanoë"
     center: |

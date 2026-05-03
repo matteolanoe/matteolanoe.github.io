@@ -197,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
 Méthodes quantitatives en sciences sociales
 </h3>
 <p>
-<strong>1st Year Sciences Po Undergraduates Students | Position: Teaching Fellow | Year offered: 2026 Spring Semester</strong> Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.
+<strong>Sciences Po Undergraduate College | Teaching Fellow | 2026 Spring Semester</strong> Introduction aux méthodes quantitatives en sciences sociales et aux concepts de base pour les utiliser.
 </p>
 </div>
 <div class="summary-icon">
@@ -205,6 +205,21 @@ Méthodes quantitatives en sciences sociales
 </div>
 </summary>
 <div class="course-details-full">
+<div id="lock-quanti" style="text-align: center; padding: 40px 20px;">
+<i class="bi bi-lock-fill" style="font-size: 2.5rem; color: #1a472a;"></i>
+<h4 style="margin-top: 15px; color: #333;" class="anchored">
+Contenu protégé
+</h4>
+<p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">
+Saisissez le mot de passe pour accéder au syllabus.
+</p>
+<p><input type="password" id="pwd-quanti" placeholder="Mot de passe..." style="padding: 10px; border: 1px solid #ccc; border-radius: 0; margin-bottom: 15px; width: 200px; text-align: center; font-family: 'Engrez', sans-serif;" onkeypress="if(event.key === 'Enter') checkPwd('quanti', 'quanti')"> <br></p>
+<p><button onclick="checkPwd('quanti', 'quanti')" style="background: #1a472a; color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Engrez', sans-serif; font-weight: bold; transition: 0.2s;">Déverrouiller</button></p>
+<p id="error-quanti" style="color: #e7001a; display: none; font-size: 0.85rem; margin-top: 15px;">
+Mot de passe incorrect.
+</p>
+</div>
+<div id="content-quanti" style="display: none;">
 <p><br></p>
 <p><strong>Description du cours:</strong> Ce cours de première année a plusieurs objectifs. Le principal est d’introduire les étudiants aux usages et à la lecture des sciences sociales quantitatives – comprises de manière large, avec la sociologie, la science politique, l’économie, l’histoire et le droit. Le second objectif est d’introduire les étudiants aux bases de l’analyse de données en utilisant des concepts statistiques simples, afin de mieux saisir comment décrire une variable, associer plusieurs variables et tester la force de l’association entre plusieurs variables. Enfin, par une approche pratique et critique des statistiques, il s’agira de transmettre aux étudiants les manières dont elles peuvent être utiles à l’action publique et à la recherche scientifique en sciences sociales.</p>
 <p>Ce cours n’a pas vocation à former de futurs statisticiens. En conséquence, il n’est pas nécessaire d’avoir un bagage mathématique très poussé pour en retirer les principaux enseignements.</p>
@@ -1170,7 +1185,25 @@ Méthodes quantitatives en sciences sociales
 </div>
 </section>
 </div>
-</details>
+</div></details>
+<script>
+function checkPwd(id, correctPwd) {
+  const input = document.getElementById('pwd-' + id).value;
+  const errorMsg = document.getElementById('error-' + id);
+  const lockScreen = document.getElementById('lock-' + id);
+  const courseContent = document.getElementById('content-' + id);
+
+  if (input === correctPwd) {
+    // Si le mot de passe est bon, on cache le cadenas et on affiche le cours
+    lockScreen.style.display = 'none';
+    courseContent.style.display = 'block';
+    errorMsg.style.display = 'none';
+  } else {
+    // Si c'est faux, on affiche le message rouge
+    errorMsg.style.display = 'block';
+  }
+}
+</script>
 <!--
 <details class="course-spoiler">
 <summary class="course-summary">
@@ -1207,9 +1240,10 @@ Méthodes quantitatives en sciences sociales
 -->
 
 
-</section>
+</section></main></div>
 
-</main> <!-- /main -->
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1610,7 +1644,7 @@ Méthodes quantitatives en sciences sociales
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
