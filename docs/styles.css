@@ -2,7 +2,6 @@
    1. TYPOGRAPHIE ET GLOBALES (Police Engrez)
    ========================================= */
 
-/* Déclaration de tes fichiers locaux avec le bon chemin relatif */
 @font-face { 
   font-family: 'Engrez'; 
   src: url('fonts/Engrez-Light.ttf') format('truetype'); 
@@ -35,104 +34,101 @@
 }
 
 html {
-  background-color: #333333 !important; /* Le fond ultime (overscroll bas) devient sombre */
+  background-color: #333333 !important; /* Fond ultime (overscroll bas) */
 }
 
-/* Application globale au corps du site */
 body {
   font-family: 'Engrez', sans-serif !important;
   color: #333;
-  background-color: #f9f9f9 !important; /* Le fond du site reste clair */
+  background-color: #f5f2ec !important; /* Fond beige clair */
   line-height: 1.6;
-  margin-bottom: 0 !important; /* Supprime l'espace secret de Bootstrap */
+  margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
 
-/* On s'assure que le footer n'a pas de marge en dessous */
 .nav-footer {
   margin-bottom: 0 !important;
 }
 
-/* Force la police sur tous les niveaux de titres */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Engrez', sans-serif !important;
-  color: #1a472a; /* Vert foncé */
+  color: #1a1a1a;
 }
 
 a {
-  color: #1a472a;
-  text-decoration: none;
-  font-weight: 600; /* Le navigateur ira chercher le fichier SemiBold automatiquement */
-}
-
-a:hover {
-  color: #0e2a18;
+  color: #1a1a1a;
   text-decoration: underline;
-}
-.profile-pic {
-  border-radius: 5px;
-  width: 100%;
-  max-width: 280px;
-  display: block;
-  margin-bottom: 20px;
-}
-
-/* 1. La couleur principale (Barre de navigation) */
-.navbar {
-  background-color: #1a472a !important; /* Vert foncé académique */
-  font-family: 'Engrez', sans-serif;
-}
-
-/* Ton nom dans la barre de menu en TeX Gyre Pagella */
-.navbar-brand {
-  font-family: 'Engrez', sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-/* 2. Typographie générale */
-body {
-  font-family: 'Engrez', sans-serif;
-  color: #333;
-  background-color: #f9f9f9;
-  line-height: 1.6;
-}
-
-/* Tes titres (dont ton nom principal) en TeX Gyre Pagella et en vert */
-h1, h2, h3 {
-  font-family: Source Sans Pro, Engrez, sans-serif;
-  color: #1a472a; /* Vert foncé */
-}
-
-/* 3. Style des liens */
-a {
-  color: #1a472a; /* Les liens prennent aussi la couleur verte */
-  text-decoration: none;
   font-weight: 600;
 }
 
 a:hover {
-  color: #0e2a18; /* Une version encore plus sombre du vert au survol */
-  text-decoration: underline;
+  color: #000000;
 }
 
-/* 4. Style de l'image de profil */
 .profile-pic {
   border-radius: 5px;
   width: 100%;
-  max-width: 280px; /* Réduit de 350px à 280px */
-  display: block;   /* Sécurité pour le centrage si besoin */
-  margin-bottom: 20px; /* Un peu d'espace sous la photo sur mobile */
+  max-width: 250px;
+  display: block;
+  margin-bottom: 20px;
 }
 
-/* --- Style pour le bouton Abstract (Accordéon + Animation) --- */
+/* =========================================
+   2. NAVBAR
+   ========================================= */
 
-/* L'apparence du bouton */
+.navbar {
+  background-color: #f5f2ec !important;
+  font-family: 'Engrez', sans-serif;
+  box-shadow: none !important;
+}
+
+.navbar-brand {
+  font-family: 'Engrez', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #1a1a1a !important;
+}
+
+.navbar-nav .nav-link i, .search-icon {
+  color: #1a1a1a !important;
+}
+
+.navbar-nav .nav-link {
+  color: #1a1a1a !important;
+  padding: 8px 15px !important;
+  margin: 0 5px;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none !important; /* les liens de navbar restent non soulignés */
+}
+
+.navbar-nav .nav-link::after {
+  display: none !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-radius: 0 !important;
+}
+
+.navbar-nav .nav-link:hover i,
+.navbar-nav .nav-link.active i {
+  color: #ffffff !important;
+}
+
+/* =========================================
+   3. ACCORDÉON "ABSTRACT"
+   ========================================= */
+
 details > summary {
-  background-color: #1a472a;
+  background-color: #1a1a1a;
   color: white;
   padding: 10px 15px;
-  border-radius: 0 !important; /* Angles droits */
+  border-radius: 0 !important;
   cursor: pointer;
   font-family: 'Engrez', sans-serif;
   font-size: 0.95rem;
@@ -140,8 +136,8 @@ details > summary {
   margin-top: 8px;
   list-style: none;
   transition: background-color 0.2s;
-  
-  /* Flexbox pour aligner le texte à gauche et le symbole à droite */
+  text-decoration: none;
+
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
@@ -152,684 +148,127 @@ details > summary::-webkit-details-marker {
 }
 
 details > summary:hover {
-  background-color: #0e2a18;
+  background-color: #000000;
 }
 
-/* Le signe "+" à droite */
 details > summary::after {
-  content: "\002B"; /* Code CSS de l'icône + */
+  content: "\002B";
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 1;
-  transition: transform 0.3s ease; /* Fluidité de la rotation */
+  transition: transform 0.3s ease;
 }
 
-/* Au clic, le "+" pivote pour former une croix */
 details[open] > summary::after {
   transform: rotate(45deg);
 }
 
-/* L'apparence du texte qui se déroule */
 details > div {
-  margin-top: 0 !important; /* Supprime l'espace pour coller le bloc au bouton */
+  margin-top: 0 !important;
   margin-bottom: 20px;
   padding: 15px;
   background-color: #ffffff;
-  border: 1px solid #1a472a;
-  border-top: none; /* Fusion visuelle avec l'élément supérieur */
-  border-radius: 0 !important; /* Angles droits */
+  border: 1px solid #1a1a1a;
+  border-top: none;
+  border-radius: 0 !important;
   font-size: 0.95rem;
   color: #444;
-  
-  /* Animation d'apparition */
   animation: slideDownFade 0.3s ease-out forwards;
 }
 
 @keyframes slideDownFade {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* =========================================
-   1. FOND DE LA NAVBAR ET OMBRE GLOBALE
-   ========================================= */
-.navbar {
-  background-color: #f9f9f9 !important; /* Même couleur que le fond de ton site */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important; /* L'ombre pour la rendre lisible */
-}
-
-/* Le titre principal (Mattéo Lanoë) devient vert */
-.navbar-brand, .navbar-title {
-  color: #1a472a !important;
-}
-
-/* Les icônes globales à droite (recherche, etc.) deviennent vertes */
-.navbar-nav .nav-link i, .search-icon {
-  color: #1a472a !important;
-}
-
-/* =========================================
-   2. STYLE DES BOUTONS DU MENU (ÉTAT NORMAL)
-   ========================================= */
-.navbar-nav .nav-link {
-  color: #1a472a !important; /* Texte en vert foncé par défaut */
-  padding: 8px 15px !important;
-  margin: 0 5px;
-  border-radius: 0 !important; /* FORCER LES COINS CARRÉS */
-  background-color: transparent !important;
-  transition: all 0.2s ease-in-out;
-}
-
-/* Supprimer l'ancienne ligne de soulignement */
-.navbar-nav .nav-link::after {
-  display: none !important;
-}
-
-/* =========================================
-   3. SURBRILLANCE AU SURVOL (BLOC VERT CARRÉ)
-   ========================================= */
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-  background-color: #1a472a !important; /* Le fond devient vert foncé */
-  color: #ffffff !important;            /* Le texte devient blanc */
-  border-radius: 0 !important;          /* SÉCURITÉ : Forcer les coins carrés au survol */
-}
-
-/* Assurer que les icônes dans les menus deviennent blanches au survol */
-.navbar-nav .nav-link:hover i,
-.navbar-nav .nav-link.active i {
-  color: #ffffff !important;
-}
-
-/* =========================================
-   STYLE DES CARTES "SOCIALS" (VERSION CORRIGÉE)
+   4. ACCORDÉON "COURSE-SPOILER" (Teaching)
    ========================================= */
 
-/* 1. Le cadre global de la carte */
-.social-card {
-  display: block;
-  text-decoration: none !important;
-  background-color: #f8f9fa;
-  border: 1px solid #e9ecef;
-  border-radius: 0 !important; /* Modification ici */
-  padding: 40px 20px;
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  transition: all 0.3s ease;
-}
-
-/* 2. Le contenu interne : C'est ici qu'on gère le centrage parfait */
-.card-content {
-  display: flex;             /* Active le mode Flexbox */
-  flex-direction: column;    /* Empile les éléments verticalement (Icône sur Titre) */
-  align-items: center;       /* Centre tout horizontalement par rapport à l'axe central */
-  justify-content: center;   /* Centre verticalement si besoin */
-  text-align: center;        /* Sécurité pour le texte multi-lignes */
-}
-
-/* 3. L'icône */
-.card-content i {
-  font-size: 3.5rem;         /* Icône un peu plus grosse */
-  margin-bottom: 15px;
-  color: #1a472a;            /* Ton vert */
-  transition: color 0.3s ease;
-  line-height: 1;            /* Évite les décalages invisibles */
-}
-
-/* 4. Le Titre (Github, HAL, ORCID) en TeX Gyre Pagella */
-.card-content h3 {
-  font-family: Source Sans Pro, Engrez, sans-serif; /* La police demandée */
-  color: #222;
-  margin-bottom: 8px;
-  font-size: 1.6rem;
-  font-weight: 600;          /* Un peu plus gras pour le style */
-}
-
-/* 5. Le sous-titre (Repositories, etc.) */
-.card-content p {
-  font-family: 'Engrez', sans-serif;
-  color: #666;
-  font-size: 1rem;
-  margin: 0;
-}
-
-/* --- EFFETS AU SURVOL (HOVER) --- */
-
-.social-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* Github : Noir au survol */
-.social-card.github-card:hover { border-color: #333; }
-.social-card.github-card:hover i { color: #333; }
-
-/* Google Scholar : Bleu Google (#4285F4) au survol */
-.social-card.scholar-card:hover { border-color: #4285F4; }
-.social-card.scholar-card:hover i { color: #4285F4; }
-
-/* ORCID : Vert pomme au survol */
-.social-card.orcid-card:hover { border-color: #a6ce39; }
-.social-card.orcid-card:hover i { color: #a6ce39; }
-
-/* --- COULEURS DES NOUVELLES CARTES --- */
-
-/* Institution : Rouge Sciences Po au survol */
-.social-card.institution-card:hover { border-color: #e2001a; }
-.social-card.institution-card:hover i { color: #e2001a; }
-
-/* X (Twitter) : Noir au survol */
-.social-card.x-card:hover { border-color: #000000; }
-.social-card.x-card:hover i { color: #000000; }
-
-/* BlueSky : Bleu Ciel au survol */
-.social-card.bsky-card:hover { border-color: #0560ff; }
-.social-card.bsky-card:hover i { color: #0560ff; }
-
-/* =========================================
-   STYLE SUPER-ACCORDÉON (VERSION FINALE - LAYOUT & COULEURS)
-   ========================================= */
-
-/* 1. LA BOÎTE GLOBALE */
 details.course-spoiler {
   background: #f5f5f5;
   border: 1px solid #e0e0e0;
-  border-radius: 0 !important; /* Modification ici */
+  border-radius: 0 !important;
   margin-bottom: 20px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-/* 2. LE SURVOL DE LA BOÎTE */
 details.course-spoiler:hover {
-  background-color: #f0f7f2 !important; /* Vert très pâle */
-  border-color: #1a472a !important;     /* Bordure verte */
-  box-shadow: 0 4px 12px rgba(26, 71, 42, 0.15);
+  background-color: #f0f0f0 !important;
+  border-color: #1a1a1a !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 3. L'EN-TÊTE (La zone cliquable) */
 summary.course-summary {
   list-style: none;
   padding: 25px;
   background: transparent !important;
-  
-  /* MOTEUR D'ALIGNEMENT */
+  text-decoration: none;
+
   display: flex;
-  justify-content: space-between; /* Ecarte le texte (gauche) de la croix (droite) */
-  align-items: flex-start;        /* Aligne tout en haut */
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 summary.course-summary::-webkit-details-marker { display: none; }
 
-/* 4. LE BLOC DE TEXTE (Titre + Description) */
 .summary-text {
   display: flex;
-  flex-direction: column; /* TRES IMPORTANT : Empile le titre et le texte verticalement */
-  text-align: left;       /* Tout aligné à gauche */
-  padding-right: 20px;    /* Marge pour ne pas toucher la croix */
-  width: 100%;            /* Prend toute la largeur dispo */
+  flex-direction: column;
+  text-align: left;
+  padding-right: 20px;
+  width: 100%;
 }
 
-/* FORCE LA POLICE DU TITRE */
 .summary-text h3 {
   margin-top: 0;
   margin-bottom: 8px;
-  color: #1a472a;
-  /* On met important pour écraser tout le reste */
+  color: #1a1a1a;
   font-family: 'Engrez', sans-serif !important;
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 1.2;
 }
 
-/* La Description (CORRECTION COULEUR) */
 .summary-text p {
-  color: #555555 !important; /* Gris foncé FORCÉ (fini le blanc illisible) */
+  color: #555555 !important;
   margin-bottom: 0;
   font-size: 1rem;
   line-height: 1.5;
   font-family: 'Engrez', sans-serif;
 }
 
-/* Au survol, on fonce légèrement le texte pour le contraste, mais on reste lisible */
 details.course-spoiler:hover .summary-text p {
-  color: #2e4d36 !important; /* Un vert gris foncé élégant */
+  color: #2e2e2e !important;
 }
 
-/* 5. L'ICÔNE (+ / Croix) */
 .summary-icon {
   font-size: 2rem;
-  color: #1a472a;
+  color: #1a1a1a;
   font-weight: 300;
   line-height: 1;
   transition: transform 0.3s ease;
   min-width: 30px;
-  margin-top: -5px; /* Petit ajustement optique pour l'aligner avec le haut du titre */
+  margin-top: -5px;
 }
 
 details.course-spoiler[open] .summary-icon {
   transform: rotate(45deg);
 }
 
-/* 6. LE CONTENU DÉROULÉ */
 .course-details-full {
   padding: 0 25px 25px 25px;
-  border-top: 1px solid rgba(26, 71, 42, 0.1); /* Ligne de séparation subtile */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff; 
   animation: fadeIn 0.3s ease;
 }
 
-/* Styles des séances (Callouts) */
-.course-details-full .callout-note { border-left-color: #1a472a !important; }
-.course-details-full .callout-header { background-color: #f0f7f2 !important; color: #1a472a !important; }
-.course-details-full .callout-icon::before { color: #1a472a !important; }
+.course-details-full .callout-note { border-left-color: #1a1a1a !important; }
+.course-details-full .callout-header { background-color: #f0f0f0 !important; color: #1a1a1a !important; }
+.course-details-full .callout-icon::before { color: #1a1a1a !important; }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* --- COULEUR DU MENU DE DROITE (TOC) --- */
-
-/* Couleur du lien actif (la section que tu es en train de lire) */
-#TOC .nav-link.active {
-  color: #285e3a !important;            /* Le texte devient vert */
-  border-left-color: #285e3a !important; /* La barre verticale à gauche devient verte */
-}
-
-/* Couleur au survol de la souris */
-#TOC .nav-link:hover {
-  color: #285e3a !important;
-}
-
-/* --- GESTION INTELLIGENTE DES PUCES (NIVEAU 1 vs NIVEAU 2) --- */
-
-/* 1. NIVEAU 1 : On enlève la puce par défaut pour mettre la flèche */
-main ul {
-  list-style-type: none !important; /* Cache le point rond standard */
-  padding-left: 1.5em;
-}
-
-main ul li {
-  position: relative;
-  margin-bottom: 5px;
-}
-
-/* On ajoute la flèche verte */
-main ul li::before {
-  content: "▸";
-  color: #285e3a;
-  font-weight: bold;
-  position: absolute;
-  left: -1.5em;
-}
-
-/* 2. NIVEAU 2 (Sous-listes) : On met le triangle ▸ */
-main ul ul {
-  list-style-type: none !important; /* On cache le point rond classique */
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-left: 1.5em; /* Un peu d'espace pour l'indentation */
-}
-
-/* On définit le nouveau symbole pour la sous-liste */
-main ul ul li::before {
-  content: "▹" !important;
-  color: #285e3a; /* Ton vert habituel */
-  font-weight: normal; /* "▸" est déjà assez épais, pas besoin de bold */
-  position: absolute;
-  left: -1.2em; /* Ajuste ce chiffre pour rapprocher/éloigner la puce du texte */
-  font-size: 1.1em; /* Légèrement plus grand pour être lisible */
-}
-
-/* 3. EXCEPTIONS (Pour ne pas casser les menus) */
-.navbar ul, .navbar li::before, #TOC ul, #TOC li::before, .nav-tabs li::before {
-  content: none !important;
-  list-style-type: none !important;
-}
-
-/* =========================================
-   OPTIMISATION MOBILE (STYLE "SITE NOIR")
-   ========================================= */
-
-@media (max-width: 768px) {
-  
-  /* 1. On rend le footer beaucoup plus compact */
-  .footer {
-    padding: 15px 0 !important; /* Réduit drastiquement l'épaisseur */
-    font-size: 0.85rem !important; /* Texte un peu plus petit */
-  }
-
-  /* 2. On cache le texte "déroulant" (l'email écrit) pour gagner de la place */
-  .reveal-text {
-    display: none !important; 
-  }
-
-  /* 3. On force les icônes à s'aligner horizontalement */
-  .custom-footer-links {
-    display: flex !important;
-    justify-content: center !important; /* Bien centré */
-    gap: 25px; /* Espace entre les icônes */
-    margin: 10px 0; /* Un peu d'air en haut et en bas */
-  }
-
-  /* 4. On s'assure que les liens ne prennent pas toute la largeur */
-  .custom-footer-links a {
-    margin: 0 !important;
-    width: auto !important;
-  }
-  
-  /* 5. On agrandit un peu les icônes pour qu'elles soient faciles à toucher */
-  .custom-footer-links i {
-    font-size: 1.5rem !important;
-  }
-}
-
-/* =========================================
-   STYLE FINAL : HAUTEUR FIXE + SCROLL (News)
-   ========================================= */
-
-/* 1. On force les deux boîtes à avoir EXACTEMENT la même taille */
-.news-card, .contact-box {
-  background-color: #f8f9fa;
-  border: 1px solid #1a472a;
-  border-radius: 0 !important; /* Modification ici */
-  padding: 25px;
-  height: 380px;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-}
-
-/* 2. Le Titre reste fixe en haut */
-.news-card h3, .contact-box h3 {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  font-family: 'Engrez', sans-serif;
-  color: #1a472a;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #1a472a;
-  padding-bottom: 10px;
-  margin-bottom: 20px !important;
-  flex-shrink: 0;         /* Interdit au titre de s'écraser */
-}
-
-/* 3. LA ZONE MAGIQUE : Le conteneur qui scroll */
-.news-scroll-zone {
-  flex-grow: 1;           /* Prend tout l'espace restant */
-  overflow-y: auto;       /* Active le SCROLL vertical si besoin */
-  padding-right: 10px;    /* Espace pour ne pas coller à la barre de scroll */
-}
-
-/* --- Design de la barre de scroll (Webkit/Chrome/Safari) --- */
-.news-scroll-zone::-webkit-scrollbar {
-  width: 6px;             /* Barre fine */
-}
-.news-scroll-zone::-webkit-scrollbar-thumb {
-  background-color: #1a472a; /* Couleur verte */
-  border-radius: 10px;
-}
-.news-scroll-zone::-webkit-scrollbar-track {
-  background: #eee;
-}
-
-/* --- Le reste ne change pas --- */
-.contact-item { margin-bottom: 15px; display: flex; align-items: center; gap: 12px; color: #444; }
-.contact-item i { color: #1a472a; font-size: 1.3rem; }
-.contact-item a { color: #444; text-decoration: none; }
-
-.news-item { display: flex; align-items: flex-start; margin-bottom: 20px; gap: 15px; }
-.date-badge { background-color: #ffffff; border: 1px solid #1a472a; color: #1a472a; border-radius: 6px; min-width: 50px; text-align: center; padding: 5px 0; }
-.date-badge .month { display: block; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; }
-.date-badge .day { display: block; font-size: 1.2rem; font-weight: 700; }
-.news-text p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: #444; }
-
-/* =========================================
-   MOBILE : BLOC FINAL (Layout + Watermark ajusté)
-   ========================================= */
-@media (max-width: 768px) {
-
-  /* 1. LE FILIGRANE (WATERMARK) PLUS PETIT */
-  body::before {
-    background-size: 800px !important; /* 250px sur mobile vs 500px sur PC */
-    opacity: 0.10 !important; /* Légèrement moins opaque pour ne pas gêner la photo */
-  }
-  
-  /* 3. LE CENTRAGE (PHOTO & BIO) */
-  #quarto-content .quarto-about-trestles {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  #quarto-content .about-entity {
-    width: 100% !important;
-    padding-right: 0 !important;
-    margin-bottom: 20px !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  #quarto-content img.about-image {
-    margin-left: auto !important;
-    margin-right: auto !important;
-    display: block !important;
-    max-width: 50% !important; /* Photo un peu plus petite aussi pour l'équilibre */
-    height: auto !important;
-  }
-
-  #quarto-content .about-contents {
-    width: 100% !important;
-    padding-left: 0 !important;
-    text-align: center !important;
-  }
-  
-  #quarto-content .about-contents h1,
-  #quarto-content .about-contents p {
-    text-align: center !important;
-  }
-}
-
-/* =========================================
-   STYLE DE LA BARRE DE RECHERCHE
-   ========================================= */
-
-/* 1. Conteneur principal de la recherche */
-#quarto-search .aa-Form {
-  border: 1px solid #1a472a !important;
-  border-radius: 0 !important; /* Coins stricts */
-  background-color: #ffffff !important;
-  position: relative !important; /* Permet de caler le bouton parfaitement à droite */
-  padding: 0 !important;
-  overflow: hidden !important; /* Empêche le bouton de déborder */
-}
-
-/* 2. Zone pour taper le texte */
-#quarto-search .aa-Input {
-  border-radius: 0 !important;
-  background-color: transparent !important;
-  color: #333333 !important;
-  padding-left: 10px !important;
-  padding-right: 45px !important; /* On laisse de l'espace à droite pour ne pas écrire sous le bouton vert */
-}
-
-/* 3. Comportement quand on clique dedans */
-#quarto-search .aa-Form:focus-within {
-  outline: 1px solid #0e2a18 !important;
-  box-shadow: none !important;
-}
-
-/* 4. Le bouton (Le carré vert) */
-#quarto-search .aa-SubmitButton {
-  position: absolute !important; /* On le détache pour le forcer à droite */
-  right: 0 !important;
-  top: 0 !important;
-  bottom: 0 !important;
-  width: 38px !important; /* Largeur pour former un beau carré */
-  height: 100% !important;
-  background-color: #1a472a !important;
-  color: #ffffff !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  border-radius: 0 !important;
-  cursor: pointer !important;
-  transform: none !important;
-}
-
-#quarto-search .aa-SubmitButton:hover {
-  background-color: #0e2a18 !important;
-}
-
-/* 5. On supprime le texte "Search" de l'essai précédent */
-#quarto-search .aa-SubmitButton::before {
-  display: none !important;
-}
-
-/* 6. L'icône de la loupe centrée dans le carré */
-#quarto-search .aa-SubmitIcon {
-  fill: #ffffff !important;
-  width: 16px !important;
-  height: 16px !important;
-  margin: 0 !important;
-}
-
-/* =========================================
-   CORRECTION DU MENU MOBILE
-   ========================================= */
-
-/* 1. On remplace l'icône SVG blanche par la même en vert (#1a472a = %231a472a) */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231a472a' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
-}
-
-/* 3. On met l'effet de clic (halo de sélection) aux couleurs de ton site */
-.navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(26, 71, 42, 0.25) !important;
-}
-
-/* =========================================
-   STYLE DU PIED DE PAGE (Adresse & Logos)
-   ========================================= */
-
-/* 1. Le fond et l'espacement global */
-/* 1. Le fond et l'espacement global */
-.nav-footer {
-  background-color: #333333 !important;
-  color: #ffffff !important;
-  padding: 30px 20px !important; 
-  border-top: none !important;
-  margin-top: 40px !important;
-  
-  /* L'ILLUSION D'OPTIQUE POUR L'OVERSCROLL */
-  box-shadow: 0 50vh 0 50vh #333333 !important; 
-}
-/* Décoller spécifiquement les textes aux extrémités */
-.nav-footer-left { padding-left: 20px !important; }
-.nav-footer-right { padding-right: 20px !important; }
-
-.nav-footer a, 
-.nav-footer p {
-  color: #ffffff !important;
-  text-decoration: none;
-}
-
-.nav-footer a:hover {
-  color: #a1c181 !important; 
-}
-
-/* 2. Le conteneur central */
-.footer-center-container {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 50px !important;
-  text-align: left;
-}
-
-/* 3. Le bloc d'adresse */
-.footer-address {
-  font-family: 'Engrez', sans-serif;
-  font-size: 0.85rem;
-  line-height: 1.5;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
-  padding-right: 40px;
-  white-space: nowrap; /* Empêche le texte de se tordre aléatoirement */
-}
-
-/* 4. Le conteneur des logos (CÔTE À CÔTE FORCÉ) */
-.footer-logos {
-  display: flex !important;
-  flex-direction: row !important;
-  align-items: center !important;
-  flex-wrap: nowrap !important;
-  gap: 30px !important;
-}
-
-/* Neutraliser les retours à la ligne parasites générés par Quarto */
-.footer-logos p, 
-.footer-logos a {
-  display: inline-flex !important;
-  align-items: center !important;
-  margin: 0 !important;
-}
-
-/* 5. Les images des logos (Base pour Sciences Po) */
-.footer-logo {
-  height: 50px !important;
-  width: auto !important;
-  opacity: 0.8;
-  transition: all 0.3s ease;
-  filter: brightness(0) invert(1) !important;
-}
-
-/* Agrandir spécifiquement le logo INED en ciblant son nom de fichier */
-/* Agrandir spécifiquement le logo INED en ciblant son nom de fichier */
-img[src*="ined"] {
-  height: 90px !important; /* Ajuste ce chiffre pour affiner la taille */
-  filter: none !important; /* Annule la transformation en blanc pour ce logo */
-}
-
-.footer-logo:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/* 6. Optimisation pour petits écrans (Mobile) */
-@media (max-width: 900px) {
-  .footer-center-container {
-    flex-direction: column !important; 
-    gap: 20px !important;
-    text-align: center;
-  }
-  .footer-address {
-    border-right: none;
-    padding-right: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 20px;
-    white-space: normal;
-  }
-  .footer-logos {
-    flex-direction: row !important; /* Garde les logos côte à côte sur mobile */
-    justify-content: center !important;
-  }
-  .footer-logo {
-    height: 45px !important;
-  }
-}
-
-/* Angles droits stricts pour le contenu interne des accordéons Teaching */
 .course-details-full .callout,
 .course-details-full .callout-header,
 .course-details-full pre,
@@ -838,8 +277,131 @@ img[src*="ined"] {
   border-radius: 0 !important;
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 /* =========================================
-   7. BADGES FICHIERS (PDF, CSV, R) - STYLE ENCADRÉ
+   5. TABLE DES MATIÈRES (TOC)
+   ========================================= */
+
+#TOC .nav-link.active {
+  color: #1a1a1a !important;
+  border-left-color: #1a1a1a !important;
+}
+
+#TOC .nav-link:hover {
+  color: #1a1a1a !important;
+}
+
+/* =========================================
+   6. LISTES À PUCES
+   ========================================= */
+
+main ul {
+  list-style-type: none !important;
+  padding-left: 1.5em;
+}
+
+main ul li {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+main ul li::before {
+  content: "▸";
+  color: #1a1a1a;
+  font-weight: bold;
+  position: absolute;
+  left: -1.5em;
+}
+
+main ul ul {
+  list-style-type: none !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 1.5em;
+}
+
+main ul ul li::before {
+  content: "▹" !important;
+  color: #1a1a1a;
+  font-weight: normal;
+  position: absolute;
+  left: -1.2em;
+  font-size: 1.1em;
+}
+
+.navbar ul, .navbar li::before, #TOC ul, #TOC li::before, .nav-tabs li::before {
+  content: none !important;
+  list-style-type: none !important;
+}
+
+/* =========================================
+   7. NEWS / CONTACT BOX
+   ========================================= */
+
+.news-card, .contact-box {
+  background-color: transparent;
+  border: 1px solid #ddd8cd;
+  border-radius: 4px;
+  padding: 18px;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+.contact-box {
+  height: auto;
+}
+
+.news-card {
+  height: 260px;
+}
+
+.news-card h3, .contact-box h3 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  font-family: 'Engrez', sans-serif;
+  color: #1a1a1a;
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd8cd;
+  padding-bottom: 8px;
+  margin-bottom: 14px !important;
+  flex-shrink: 0;
+}
+
+.news-scroll-zone {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.news-scroll-zone::-webkit-scrollbar {
+  width: 5px;
+}
+.news-scroll-zone::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.news-scroll-zone::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.contact-item { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; color: #444; font-size: 0.9rem; }
+.contact-item i { color: #1a1a1a; font-size: 1.1rem; }
+.contact-item a { color: #444; text-decoration: underline; }
+
+.news-item { display: flex; align-items: flex-start; margin-bottom: 14px; gap: 12px; }
+.date-badge { background-color: transparent; border: 1px solid #ccc; color: #1a1a1a; border-radius: 4px; min-width: 42px; text-align: center; padding: 3px 0; }
+.date-badge .month { display: block; font-size: 0.6rem; font-weight: bold; text-transform: uppercase; }
+.date-badge .day { display: block; font-size: 1rem; font-weight: 700; }
+.news-text p { margin: 0; font-size: 0.88rem; line-height: 1.4; color: #444; }
+
+/* =========================================
+   8. BADGES FICHIERS (PDF, CSV, R)
    ========================================= */
 
 .badge-doc {
@@ -858,22 +420,20 @@ img[src*="ined"] {
   justify-content: center !important;
   vertical-align: middle;
   transition: all 0.2s ease-in-out;
+  text-decoration: none !important;
 }
 
-/* Espacement entre ton icône HTML et le texte */
 .badge-doc::before,
 .badge-doc i {
   margin-right: 10px !important;
   font-size: 1rem !important;
 }
 
-/* On garde les couleurs spécifiques de tes icônes HTML pour qu'elles ressortent sur le fond blanc */
 .bi-filetype-pdf { color: #b32d2e !important; }
-.bi-filetype-csv { color: #1a472a !important; }
+.bi-filetype-csv { color: #1a1a1a !important; }
 .bi-file-code { color: #21618c !important; }
 .bi-book { color: #333333 !important; }
 
-/* Effet discret au survol (le fond devient très légèrement gris et la bordure fonce) */
 .badge-doc:hover, 
 a:hover .badge-doc { 
   background-color: #f4f4f4 !important; 
@@ -882,50 +442,152 @@ a:hover .badge-doc {
 }
 
 /* =========================================
-   RÉDUCTION DE LA NAVBAR SUR MOBILE
+   8bis. BOUTON CV
    ========================================= */
-@media (max-width: 768px) {
-  .navbar {
-    padding-top: 10px !important; /* Augmenté de 4px à 10px */
-    padding-bottom: 10px !important; /* Augmenté de 4px à 10px */
-    min-height: auto !important;
-  }
 
-  .navbar-brand {
-    font-size: 1.6rem !important; /* Augmenté de 1.5 à 1.6rem */
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
+.btn-cv {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border: 1px solid #1a1a1a !important;
+  border-radius: 4px !important;
+  padding: 10px 22px !important;
+  font-family: 'Engrez', sans-serif !important;
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  transition: all 0.2s ease-in-out;
+}
 
-  .navbar-toggler {
-    padding: 6px 10px !important; /* Bouton un tout petit peu plus large */
-  }
+.btn-cv i {
+  font-size: 1rem !important;
+}
+
+.btn-cv:hover {
+  background-color: #ffffff !important;
+  color: #1a1a1a !important;
 }
 
 /* =========================================
-   CORRECTION DU MENU MOBILE (Icône Plus animée)
+   9. BARRE DE RECHERCHE
    ========================================= */
 
-/* L'icône Plus avec une transition pour l'animation */
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231a472a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M15 6v18M6 15h18'/%3e%3c/svg%3e") !important;
-  transition: transform 0.3s ease-in-out !important; /* Ajout de la fluidité */
+#quarto-search .aa-Form {
+  border: 1px solid #1a1a1a !important;
+  border-radius: 0 !important;
+  background-color: #ffffff !important;
+  position: relative !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
-/* L'ANIMATION : Quand le menu est ouvert, on tourne de 45 degrés pour faire un X */
+#quarto-search .aa-Input {
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  color: #333333 !important;
+  padding-left: 10px !important;
+  padding-right: 45px !important;
+}
+
+#quarto-search .aa-Form:focus-within {
+  outline: 1px solid #000000 !important;
+  box-shadow: none !important;
+}
+
+#quarto-search .aa-SubmitButton {
+  position: absolute !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 38px !important;
+  height: 100% !important;
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 0 !important;
+  cursor: pointer !important;
+  transform: none !important;
+}
+
+#quarto-search .aa-SubmitButton:hover {
+  background-color: #000000 !important;
+}
+
+#quarto-search .aa-SubmitButton::before {
+  display: none !important;
+}
+
+#quarto-search .aa-SubmitIcon {
+  fill: #ffffff !important;
+  width: 16px !important;
+  height: 16px !important;
+  margin: 0 !important;
+}
+
+/* =========================================
+   10. MENU MOBILE (TOGGLER)
+   ========================================= */
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%231a1a1a' stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M15 6v18M6 15h18'/%3e%3c/svg%3e") !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: rotate(45deg) !important;
 }
 
-/* On garde l'effet de clic (halo de sélection) aux couleurs de ton site */
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 0.25rem rgba(26, 71, 42, 0.25) !important;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.15) !important;
 }
 
 /* =========================================
-   RÉORGANISATION DE LA NAVBAR MOBILE
+   11. PIED DE PAGE (FOOTER) - Version Sombre
    ========================================= */
+.nav-footer {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+  border-top: none !important;
+  padding: 25px 20px !important;
+  margin-top: 40px !important;
+  font-size: 0.85rem;
+}
+.nav-footer a {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+.nav-footer a:hover {
+  color: #cccccc !important;
+}
+
+/* =========================================
+   12. RESPONSIVE MOBILE (regroupé)
+   ========================================= */
+
 @media (max-width: 768px) {
+
+  /* Navbar compacte */
+  .navbar {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    min-height: auto !important;
+  }
+  .navbar-brand {
+    font-size: 1.6rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .navbar-toggler {
+    padding: 6px 10px !important;
+  }
+
+  /* Réorganisation navbar mobile */
   .navbar > .container-fluid,
   .navbar > .navbar-container {
     display: flex !important;
@@ -933,40 +595,119 @@ a:hover .badge-doc {
     justify-content: space-between !important;
     align-items: center !important;
   }
-
-  /* Le nom tout à gauche */
   .navbar-brand {
     order: 1 !important;
-    margin-right: auto !important; /* Pousse les autres éléments vers la droite */
+    margin-right: auto !important;
     margin-left: 10px !important;
   }
-
-  /* La loupe de recherche */
   #quarto-search {
     order: 2 !important;
     margin-right: 15px !important;
   }
-
-  /* Le bouton Plus tout à droite */
   .navbar-toggler {
     order: 3 !important;
     margin-right: 10px !important;
   }
+
+  /* Footer compact */
+  .footer {
+    padding: 15px 0 !important;
+    font-size: 0.85rem !important;
+  }
+  .reveal-text {
+    display: none !important; 
+  }
+  .custom-footer-links {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 25px;
+    margin: 10px 0;
+  }
+  .custom-footer-links a {
+    margin: 0 !important;
+    width: auto !important;
+  }
+  .custom-footer-links i {
+    font-size: 1.5rem !important;
+  }
+
+  /* Filigrane plus discret */
+  body::before {
+    background-size: 800px !important;
+    opacity: 0.10 !important;
+  }
+
+  /* Centrage photo & bio (page About) */
+  #quarto-content .quarto-about-trestles {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  #quarto-content .about-entity {
+    width: 100% !important;
+    padding-right: 0 !important;
+    margin-bottom: 20px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  #quarto-content img.about-image {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    max-width: 140px !important;
+    height: auto !important;
+  }
+  #quarto-content .about-contents {
+    width: 100% !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+  #quarto-content .about-contents h1,
+  #quarto-content .about-contents p {
+    text-align: center !important;
+  }
+
+  /* Footer côte à côte pour les logos malgré la colonne */
+  .footer-center-container {
+    flex-direction: column !important; 
+    gap: 20px !important;
+    text-align: center;
+  }
+  .footer-address {
+    border-right: none;
+    padding-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+    white-space: normal;
+  }
+  .footer-logos {
+    justify-content: center !important;
+  }
+  .footer-logo {
+    height: 45px !important;
+  }
 }
 
+/* =========================================
+   13. HEADER FIXE (position absolue)
+   ========================================= */
+
 #quarto-header {
-    position: absolute !important; /* La détache de l'écran et l'accroche au document */
-    top: 0 !important;             /* La cloue tout en haut de la page */
+    position: absolute !important;
+    top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    transform: none !important;    /* Interdit à Quarto de la faire réapparaître/disparaître */
-    transition: none !important;   /* Désactive les animations */
+    transform: none !important;
+    transition: none !important;
     z-index: 1030 !important;
 }
 
-/* Le trait gris et suppression de l'ombre */
-.navbar {
-    border-bottom: 6px solid #b8b8b8 !important; 
-    box-shadow: none !important; 
+.talk-grid {
+  row-gap: 0.5rem !important;
 }
 
+.talk-details {
+  line-height: 1.3 !important;
+  margin-bottom: 1.5rem !important;
+}

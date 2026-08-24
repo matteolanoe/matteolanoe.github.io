@@ -1,0 +1,24 @@
+lang: fr
+website:
+  navbar:
+    title: "Mattéo Lanoë"
+    background: primary
+    left:
+      - text: "Accueil"
+        href: index.qmd
+      - text: "Enseignement"
+        href: teaching.qmd
+      - text: "Séminaires & Conférences"
+        href: talks.qmd
+    right:
+      - text: "EN"
+        href: ../index.html
+      - icon: envelope
+        href: mailto:matteo.lanoe@sciencespo.fr
+        aria-label: "Mail"
+      - icon: twitter-x
+        href: https://twitter.com/MatteoLanoe_
+        aria-label: "Twitter"
+      - icon: clouds
+        href: https://bsky.app/profile/matteolanoe.bsky.social
+        aria-label: "BlueSky"

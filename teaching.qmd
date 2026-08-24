@@ -17,15 +17,15 @@ Here is an overview of my courses. Click on a course card to reveal the full syl
 <div class="course-details-full">
 
 <div id="lock-quanti" style="text-align: center; padding: 40px 20px;">
-  <i class="bi bi-lock-fill" style="font-size: 2.5rem; color: #1a472a;"></i>
-  <h4 style="margin-top: 15px; color: #333;">Contenu protégé</h4>
-  <p style="color: #666; font-size: 0.95rem; margin-bottom: 20px;">Saisissez le mot de passe pour accéder au syllabus.</p>
+  <i class="bi bi-lock-fill" style="font-size: 2.5rem; color: #1a1a1a;"></i>
+  <h4 style="margin-top: 15px; color: #1a1a1a;">Contenu protégé</h4>
+  <p style="color: #1a1a1a; font-size: 0.95rem; margin-bottom: 20px;">Saisissez le mot de passe pour accéder au syllabus.</p>
   
 <input type="password" id="pwd-quanti" placeholder="Mot de passe..." style="padding: 10px; border: 1px solid #ccc; border-radius: 0; margin-bottom: 15px; width: 200px; text-align: center; font-family: 'Engrez', sans-serif;" onkeypress="if(event.key === 'Enter') checkPwd('quanti', 'quanti')"> <br>
   
-  <button onclick="checkPwd('quanti', 'quanti')" style="background: #1a472a; color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Engrez', sans-serif; font-weight: bold; transition: 0.2s;">Déverrouiller</button>
+  <button onclick="checkPwd('quanti', 'quanti')" style="background: #1a1a1a; color: white; border: none; padding: 10px 25px; cursor: pointer; font-family: 'Engrez', sans-serif; font-weight: bold; transition: 0.2s;">Déverrouiller</button>
   
-  <p id="error-quanti" style="color: #e7001a; display: none; font-size: 0.85rem; margin-top: 15px;">Mot de passe incorrect.</p>
+  <p id="error-quanti" style="color: #1a1a1a; display: none; font-size: 0.85rem; margin-top: 15px;">Mot de passe incorrect.</p>
 </div>
 
 <div id="content-quanti" style="display: none;">

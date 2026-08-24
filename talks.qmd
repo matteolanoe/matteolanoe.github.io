@@ -1,33 +1,74 @@
 ---
-title: "Seminars & Conferences"
+title: "Presentations"
 ---
 
-## 2026
+I regularly present my research on **Long Covid, socialization, dispositions, and social-biological interactions**, as well as related work on health inequalities and illness trajectories. My presentations draw on both qualitative and quantitative approaches to social inquiry.
 
-### Seminar Presentations
+## Seminars
 
-* **Mortality Health and Epidemiology Internal Seminar** (INED, Aubervilliers, February 20)
-* **INED Doctoral Workshop** (INED, Aubervilliers, May 26, Discussion: Ilana Löwy)
+::: {.grid .talk-grid}
 
-### Conferences
+::: {.g-col-12 .g-col-md-2}
+**May 2026**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**Words for Ills: Comment pathologise-t-on un symptôme ?** \
+*INED Doctoral Workshop* \
+INED, Aubervilliers \
+Discussion by Ilana Löwy
+:::
 
-* **The Taming Disease: How Long Covid Crushes Previous Socializations** (American Sociological Association Annual Meeting, New York City, 2026, Sociology of Body and Embodiment Section)
+::: {.g-col-12 .g-col-md-2}
+**Feb 2026**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**Comment le SARS-CoV-2 reste sous la peau ? INCORP-19: Infections, Corps et Parcours des malades post-Covid-19** \
+*Mortality, Health and Epidemiology Internal Seminar* \
+INED, Aubervilliers
+:::
 
-## 2025
+::: {.g-col-12 .g-col-md-2}
+**Nov 2025**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**CRIS Scientific Seminar** \
+*Sciences Po, Paris*
+:::
 
-### Seminar Presentations
+:::
 
-* **CRIS Scientific Seminar** (Sciences Po, Paris, November 28)
+## Conference Presentations
 
-### Conferences
+::: {.grid .talk-grid}
 
-* **Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** (American Sociological Association Annual Meeting, Chicago, 2025, Health & Illness Roundtable)
+::: {.g-col-12 .g-col-md-2}
+**Nov 2026**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**Paths of Declaration and Auto-Diagnosis in Long Covid and its Symptoms: A Multi-Method Study** \
+*4th International Conference on Long Covid, Nice* \
+Poster presentation \
+With Anne Pastorello (epidemiologist, Inserm)
+:::
 
-<div style="margin-left: 40px; margin-top: 10px; margin-bottom: 30px;">
-  <details>
-  <summary>Abstract</summary>
-  <div>
-  Chronic illness research has extensively explored biographical disruptions and identity reconstruction but has often overlooked the role of social background in illness management. This study investigates how class-related attributes shape the ways individuals cope with chronic conditions by examining Long Covid as a case study. Drawing on sociology of socialization methodology, this research shifts from interpretive approaches toward a materialist perspective on illness as a socially differentiated experience.
-  </div>
-  </details>
-</div>
+::: {.g-col-12 .g-col-md-2}
+**Aug 2026**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**The Taming Disease: How Long Covid Crushes Previous Socializations** \
+*American Sociological Association Annual Meeting, New York City* \
+Sociology of Body and Embodiment Section \
+Bodies and Health Rountable
+:::
+
+::: {.g-col-12 .g-col-md-2}
+**Aug 2025**
+:::
+::: {.g-col-12 .g-col-md-10 .talk-details}
+**Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** \
+*American Sociological Association Annual Meeting, Chicago* \
+Student Forum Section \
+Health and Illness Roundtable
+:::
+
+:::

@@ -39,19 +39,15 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Research"
-        href: about.qmd
       - text: "Teaching"
         href: teaching.qmd
-      - text: "Projects"
-        href: projects.qmd
-      - text: "Seminars & Conferences"
+      - text: "Presentations"
         href: talks.qmd
-      - text: "Socials"
-        href: socials.qmd
 
     # MENU DROITE (ICÔNES)
     right:
+      - text: "FR"
+        href: fr/index.html
       - icon: envelope
         href: mailto:matteo.lanoe@sciencespo.fr
         aria-label: "Mail"
@@ -62,23 +58,10 @@ website:
         href: https://bsky.app/profile/matteolanoe.bsky.social
         aria-label: "BlueSky"
 
-  # --- PIED DE PAGE ---
+# --- PIED DE PAGE ---
   page-footer:
     left: "© 2026 Mattéo Lanoë"
-    center: |
-      <div class="footer-center-container">
-      <div class="footer-address">
-      <strong>Mattéo Lanoë</strong><br>
-      Centre de Recherche sur les Inégalités Sociales (CRIS)<br>
-      Sciences Po, 1 place Saint-Thomas d'Aquin<br>
-      75007 Paris, France<br>
-      <a href="mailto:matteo.lanoe@sciencespo.fr">matteo.lanoe@sciencespo.fr</a>
-      </div>
-      <div class="footer-logos">
-      <a href="https://www.sciencespo.fr/" target="_blank"><img src="images/logo-sciencespo.png" alt="Sciences Po" class="footer-logo"></a>
-      <a href="https://www.ined.fr/" target="_blank"><img src="images/logo-ined1.png" alt="INED" class="footer-logo"></a>
-      </div>
-      </div>
+    center: "Centre de Recherche sur les Inégalités Sociales (CRIS)<br>Sciences Po, 1 place Saint-Thomas d'Aquin, 75007 Paris<br>[matteo.lanoe@sciencespo.fr](mailto:matteo.lanoe@sciencespo.fr)"
     right: "Made with [Quarto](https://quarto.org/)"
 
 format:
