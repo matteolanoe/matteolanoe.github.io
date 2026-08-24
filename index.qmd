@@ -23,9 +23,11 @@ Additionally, I contribute to the ERC-funded project Gender and Health Inequalit
 Alongside my doctoral research, I work on political and electoral sociology in the context of my implication in the *Electoral Bulletin of the European Union*. My work has appeared in the *Revue française de science politique*.
 
 ::: {.academic-links}
-[profil CRIS →](https://www.sciencespo.fr/cris/en/directory/lanoe-matteo/){target="_blank"}
+[Version française →](fr/)
 
-[profil Ined →](https://www.ined.fr/en/node/24126){target="_blank"}
+[CRIS profile →](https://www.sciencespo.fr/cris/en/directory/lanoe-matteo/){target="_blank"}
+
+[INED profile →](https://www.ined.fr/en/node/24126){target="_blank"}
 
 [Curriculum Vitae →](../docs/images/CV_Matteo_Lanoe.pdf){target="_blank"}
 :::

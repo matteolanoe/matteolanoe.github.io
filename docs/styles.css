@@ -687,6 +687,20 @@ a:hover .badge-doc {
   .footer-logo {
     height: 45px !important;
   }
+
+  /* Bouton de recherche mobile */
+  .navbar .search-button i,
+  .navbar .search-icon {
+    color: #1a1a1a !important;
+  }
+  
+  #quarto-search .aa-SubmitButton {
+    background-color: transparent !important;
+  }
+  
+  #quarto-search .aa-SubmitIcon {
+    fill: #1a1a1a !important;
+  }
 }
 
 /* =========================================
