@@ -4,71 +4,74 @@ title: "Presentations"
 
 I regularly present my research on **Long Covid, socialization, dispositions, and social-biological interactions**, as well as related work on health inequalities and illness trajectories. My presentations draw on both qualitative and quantitative approaches to social inquiry.
 
+::: {.talks}
+
 ## Seminars
 
-::: {.grid .talk-grid}
+```{=html}
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">May</span><span class="talk-year">2026</span></div>
+  <div class="talk-body">
+    <div class="talk-title">Words for Ills: Comment pathologise-t-on un symptôme ?</div>
+    <div class="talk-event">INED Doctoral Workshop</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> INED, Aubervilliers</div>
+    <div class="talk-note">Discussion by Ilana Löwy</div>
+  </div>
+</div>
 
-::: {.g-col-12 .g-col-md-2}
-**May 2026**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**Words for Ills: Comment pathologise-t-on un symptôme ?** \
-*INED Doctoral Workshop* \
-INED, Aubervilliers \
-Discussion by Ilana Löwy
-:::
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">Feb</span><span class="talk-year">2026</span></div>
+  <div class="talk-body">
+    <div class="talk-title">Comment le SARS-CoV-2 reste sous la peau ? INCORP-19: Infections, Corps et Parcours des malades post-Covid-19</div>
+    <div class="talk-event">Mortality, Health and Epidemiology Internal Seminar</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> INED, Aubervilliers</div>
+  </div>
+</div>
 
-::: {.g-col-12 .g-col-md-2}
-**Feb 2026**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**Comment le SARS-CoV-2 reste sous la peau ? INCORP-19: Infections, Corps et Parcours des malades post-Covid-19** \
-*Mortality, Health and Epidemiology Internal Seminar* \
-INED, Aubervilliers
-:::
-
-::: {.g-col-12 .g-col-md-2}
-**Nov 2025**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**CRIS Scientific Seminar** \
-*Sciences Po, Paris*
-:::
-
-:::
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">Nov</span><span class="talk-year">2025</span></div>
+  <div class="talk-body">
+    <div class="talk-title">CRIS Scientific Seminar</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> Sciences Po, Paris</div>
+  </div>
+</div>
+```
 
 ## Conference Presentations
 
-::: {.grid .talk-grid}
+```{=html}
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">Nov</span><span class="talk-year">2026</span></div>
+  <div class="talk-body">
+    <div class="talk-title">Paths of Declaration and Auto-Diagnosis in Long Covid and its Symptoms: A Multi-Method Study</div>
+    <div class="talk-event">4th International Conference on Long Covid</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> Nice</div>
+    <div class="talk-note">With Anne Pastorello (epidemiologist, Inserm)</div>
+    <div class="talk-tags"><span class="talk-tag">Poster</span><span class="talk-tag talk-tag--upcoming">Upcoming</span></div>
+  </div>
+</div>
 
-::: {.g-col-12 .g-col-md-2}
-**Nov 2026**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**Paths of Declaration and Auto-Diagnosis in Long Covid and its Symptoms: A Multi-Method Study** \
-*4th International Conference on Long Covid, Nice* \
-Poster presentation \
-With Anne Pastorello (epidemiologist, Inserm)
-:::
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">Aug</span><span class="talk-year">2026</span></div>
+  <div class="talk-body">
+    <div class="talk-title">The Taming Disease: How Long Covid Crushes Previous Socializations</div>
+    <div class="talk-event">American Sociological Association Annual Meeting</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> New York City</div>
+    <div class="talk-note">Sociology of Body and Embodiment Section · Bodies and Health Roundtable</div>
+    <div class="talk-tags"><span class="talk-tag">Roundtable</span></div>
+  </div>
+</div>
 
-::: {.g-col-12 .g-col-md-2}
-**Aug 2026**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**The Taming Disease: How Long Covid Crushes Previous Socializations** \
-*American Sociological Association Annual Meeting, New York City* \
-Sociology of Body and Embodiment Section \
-Bodies and Health Rountable
-:::
-
-::: {.g-col-12 .g-col-md-2}
-**Aug 2025**
-:::
-::: {.g-col-12 .g-col-md-10 .talk-details}
-**Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management** \
-*American Sociological Association Annual Meeting, Chicago* \
-Student Forum Section \
-Health and Illness Roundtable
-:::
+<div class="talk">
+  <div class="talk-date"><span class="talk-month">Aug</span><span class="talk-year">2025</span></div>
+  <div class="talk-body">
+    <div class="talk-title">Class, Capital, and Chronic Illness: A Dispositionalist Approach to Long Covid Management</div>
+    <div class="talk-event">American Sociological Association Annual Meeting</div>
+    <div class="talk-meta"><i class="bi bi-geo-alt"></i> Chicago</div>
+    <div class="talk-note">Student Forum Section · Health and Illness Roundtable</div>
+    <div class="talk-tags"><span class="talk-tag">Roundtable</span></div>
+  </div>
+</div>
+```
 
 :::
