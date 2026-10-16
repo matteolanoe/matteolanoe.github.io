@@ -3,25 +3,70 @@ title: ""
 page-layout: full
 ---
 
-:::: {.profile-layout}
+:::::: {.profile-layout}
+
+::: {.profile-header}
+
+```{=html}
+<div class="profile-name" role="heading" aria-level="1">Mattéo Lanoë</div>
+<p class="profile-role">Doctorant en sociologie, Sciences Po Paris (CRIS) et Institut national d'études démographiques (Ined)</p>
+```
+
+:::
+
+::: {.profile-bio}
+
+Welcome and bienvenue ! Je m’appelle Mattéo Lanoë et je suis doctorant en sociologie à [Sciences Po Paris](https://www.sciencespo.fr/departement-sociologie/fr/), rattaché au [Centre de recherche sur les inégalités sociales (CRIS)](https://www.sciencespo.fr/cris/fr/). Je suis également doctorant accueilli à l’[Institut national d’études démographiques (Ined)](https://www.ined.fr/fr), au sein de l’unité Mortalité, santé et épidémiologie. Ma thèse est codirigée en sociologie et en épidémiologie sociale par [Anne Revillard](https://annerevillard.wordpress.com) (Sciences Po) et [Émilie Counil](https://www.ined.fr/fr/recherche/nos-chercheurs/emilie-counil) (Ined), et bénéficie d’un contrat doctoral de l’École de la recherche de Sciences Po (2025-2028).
+
+Je participe également au projet de recherche ERC [Gender and Health Inequalities (Gendhi)](https://gendhi.eu), hébergé à l’Inserm. Mes travaux portent de manière générale sur les inégalités sociales de santé, la socialisation, le corps et l’incorporation, ainsi que le Covid long. Ma recherche doctorale étudie le Covid long à travers le prisme des dispositions et des interactions monde social-pathologies : j’analyse comment les dispositions incorporées et socialement acquises façonnent les trajectoires de maladie, et comment la maladie prolongée peut en retour reconfigurer la socialisation au cours du parcours de vie.
+
+En parallèle de ma thèse, je travaille sur la sociologie politique et électorale dans le cadre de mon implication au sein du *Bulletin des élections de l'Union européenne*. Mes travaux ont notamment été publiés dans la *Revue française de science politique*.
+
+:::
+
+::: {.profile-keywords}
+
+```{=html}
+<div class="keywords-label">Intérêts de recherche</div>
+<div class="keywords-list">
+  <span class="keyword">Covid long</span>
+  <span class="keyword">Inégalités de santé</span>
+  <span class="keyword">Incorporation</span>
+  <span class="keyword">Dispositions</span>
+  <span class="keyword">Socialisation</span>
+  <span class="keyword">Maladie chronique</span>
+  <span class="keyword">Sociologie électorale</span>
+</div>
+```
+
+:::
+
+::::: {.profile-card}
 
 ::: {.profile-photo}
 ![](../images/photo_github_matteolanoe_nw.jpg){.profile-pic}
 :::
 
-::: {.profile-header}
-# Mattéo Lanoë
+::: {.profile-keywords-card}
 
-<p class="profile-role">Doctorant en sociologie, Sciences Po et Institut national d'études démographiques (Ined)</p>
+```{=html}
+<div class="keywords-label">Intérêts de recherche</div>
+<div class="keywords-list">
+  <span class="keyword">Covid long</span>
+  <span class="keyword">Inégalités de santé</span>
+  <span class="keyword">Incorporation</span>
+  <span class="keyword">Dispositions</span>
+  <span class="keyword">Socialisation</span>
+  <span class="keyword">Maladie chronique</span>
+  <span class="keyword">Sociologie électorale</span>
+</div>
+```
+
 :::
 
-::: {.profile-bio}
+:::::
 
-Bienvenue ! Je m’appelle Mattéo Lanoë et je suis doctorant en sociologie à [Sciences Po Paris](https://www.sciencespo.fr/departement-sociologie/fr/) rattaché au Centre de recherche sur les inégalités sociales (CRIS). Je suis également doctorant accueilli à l’[Institut national d’études démographiques (Ined)](https://www.ined.fr/fr), au sein de l’unité Mortalité, santé et épidémiologie. Ma thèse est codirigée en sociologie et en épidémiologie sociale par [Anne Revillard](https://annerevillard.wordpress.com) et [Émilie Counil](https://www.ined.fr/fr/recherche/nos-chercheurs/emilie-counil) (Ined), et bénéficie d’un contrat doctoral de l’École de la recherche de Sciences Po (2025-2028).
-
-Je participe également au projet de recherche ERC [Gender and Health Inequalities (Gendhi)](https://gendhi.eu), hébergé à l’Inserm. Mes travaux portent de manière générale sur les inégalités sociales de santé, la socialisation, le corps et l’incorporation, ainsi que le Covid long. Ma recherche doctorale étudie le Covid long à travers le prisme des dispositions et des interactions monde social-pathologies : j’analyse comment les dispositions incorporées et socialement acquises façonnent les trajectoires de maladie, et comment la maladie prolongée peut en retour reconfigurer la socialisation au cours du parcours de vie.
-
-En parallèle de ma thèse, je travaille sur la sociologie politique et électorale dans le cadre de mon implication au sein du *Bulletin des élections de l'Union européenne*. Mes travaux ont notamment été publiés dans la *Revue française de science politique*.
+::: {.profile-links}
 
 ```{=html}
 <div class="link-group">
@@ -47,7 +92,7 @@ En parallèle de ma thèse, je travaille sur la sociologie politique et élector
 
 :::
 
-::::
+::::::
 
 ::: {.grid}
 
