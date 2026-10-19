@@ -1098,7 +1098,7 @@ a:hover .badge-doc {
 .profile-name {
   margin: 0 0 0.4rem;
   font-family: 'Engrez', sans-serif;
-  font-size: 1.9rem;;
+  font-size: 1.9rem;
   font-weight: 600;
   line-height: 1.1;
   color: #1a1a1a;
@@ -1122,7 +1122,7 @@ a:hover .badge-doc {
   color: inherit;
 }
 
-/* Mobile : sous-titre, texte, carte de visite noire, liens */
+/* Mobile : sous-titre, texte, bande noire pleine largeur, liens */
 @media (max-width: 767.98px) {
   .profile-layout {
     display: flex;
@@ -1145,20 +1145,22 @@ a:hover .badge-doc {
     margin-bottom: 1.4rem;
   }
 
-  /* Mots-clés de bureau masqués, ceux de la carte affichés */
+  /* Mots-clés de bureau masqués, ceux de la bande affichés */
   .profile-keywords { display: none; }
 
-  /* --- Carte de visite --- */
+  /* --- Bande noire pleine largeur --- */
   .profile-card {
     display: grid;
     grid-template-columns: 42% minmax(0, 1fr);
     gap: 14px;
-    align-self: stretch; /* annule le align-self: start de la version bureau */
-    margin: 1.4rem 0 0;
-    padding: 16px;
+    align-self: stretch;
+    box-sizing: border-box;
+    width: 100vw;
+    margin: 1.4rem calc(50% - 50vw) 0; /* déborde des marges de la page jusqu'aux bords de l'écran */
+    padding: 20px 16px;
     background-color: #1a1a1a;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    border-radius: 0;
+    box-shadow: none;
     overflow: hidden;
   }
 
@@ -1169,7 +1171,7 @@ a:hover .badge-doc {
     position: relative;
     min-height: 200px;
     margin: 0;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
   }
   .profile-card .profile-photo p,
@@ -1186,7 +1188,7 @@ a:hover .badge-doc {
     margin: 0;
     object-fit: cover;
     object-position: center 15%;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: none;
   }
 
@@ -1311,4 +1313,31 @@ a:hover .badge-doc {
   font-size: 0.85rem;
   font-weight: 500;
   color: #1a1a1a;
+}
+
+/* =========================================
+   21. NAVBAR : DRAPEAU FRANÇAIS (à la place de "FR")
+   ========================================= */
+
+/* Texte "FR" masqué (toujours lu par les lecteurs d'écran) */
+.navbar-nav .nav-link[href^="fr/"],
+.navbar-nav .nav-link[href^="./fr/"],
+.navbar-nav .nav-link[href*="/fr/"] {
+  font-size: 0 !important;
+  padding: 12px 15px !important;
+}
+
+/* Drapeau bleu / blanc / rouge, en aplats */
+.navbar-nav .nav-link[href^="fr/"]::before,
+.navbar-nav .nav-link[href^="./fr/"]::before,
+.navbar-nav .nav-link[href*="/fr/"]::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 18px;
+  box-sizing: border-box;
+  border: 1px solid rgba(26, 26, 26, 0.18); /* le liseré garde la bande blanche visible sur le beige */
+  border-radius: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%230055A4'/%3E%3Crect x='1' width='1' height='2' fill='%23ffffff'/%3E%3Crect x='2' width='1' height='2' fill='%23EF4135'/%3E%3C/svg%3E") center / cover no-repeat;
 }
