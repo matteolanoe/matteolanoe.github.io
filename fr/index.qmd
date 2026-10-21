@@ -3,7 +3,7 @@ title: ""
 page-layout: full
 ---
 
-:::::: {.profile-layout}
+:::::: {.profile-layout .band .band--a}
 
 ::: {.profile-header}
 
@@ -24,27 +24,10 @@ En parallèle de ma thèse, je travaille sur la sociologie politique et élector
 
 :::
 
-::: {.profile-keywords}
-
-```{=html}
-<div class="keywords-label">Intérêts de recherche</div>
-<div class="keywords-list">
-  <span class="keyword">Covid long</span>
-  <span class="keyword">Inégalités de santé</span>
-  <span class="keyword">Incorporation</span>
-  <span class="keyword">Dispositions</span>
-  <span class="keyword">Socialisation</span>
-  <span class="keyword">Maladie chronique</span>
-  <span class="keyword">Sociologie électorale</span>
-</div>
-```
-
-:::
-
 ::::: {.profile-card}
 
 ::: {.profile-photo}
-![](../images/photo_github_matteolanoe_nw.jpg){.profile-pic}
+![](../images/photo_github_matteolanoe_2026.jpg){.profile-pic}
 :::
 
 ::: {.profile-keywords-card}
@@ -66,7 +49,35 @@ En parallèle de ma thèse, je travaille sur la sociologie politique et élector
 
 :::::
 
-::: {.profile-links}
+::::::
+
+::::: {.band .band--c}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+:::
+
+::: {.g-col-12 .g-col-md-8}
+
+::: {.interests-col}
+
+```{=html}
+<div class="keywords-label">Intérêts de recherche</div>
+<div class="keywords-list">
+  <span class="keyword">Covid long</span>
+  <span class="keyword">Inégalités de santé</span>
+  <span class="keyword">Incorporation</span>
+  <span class="keyword">Dispositions</span>
+  <span class="keyword">Socialisation</span>
+  <span class="keyword">Maladie chronique</span>
+  <span class="keyword">Sociologie électorale</span>
+</div>
+```
+
+:::
+
+::: {.links-col}
 
 ```{=html}
 <div class="link-group">
@@ -92,7 +103,13 @@ En parallèle de ma thèse, je travaille sur la sociologie politique et élector
 
 :::
 
-::::::
+:::
+
+:::
+
+:::::
+
+::::: {.band .band--b}
 
 ::: {.grid}
 
@@ -218,3 +235,5 @@ En parallèle de ma thèse, je travaille sur la sociologie politique et élector
 :::
 
 :::
+
+:::::

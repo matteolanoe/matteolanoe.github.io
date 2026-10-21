@@ -1341,3 +1341,352 @@ a:hover .badge-doc {
   border-radius: 0;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3Crect width='1' height='2' fill='%230055A4'/%3E%3Crect x='1' width='1' height='2' fill='%23ffffff'/%3E%3Crect x='2' width='1' height='2' fill='%23EF4135'/%3E%3C/svg%3E") center / cover no-repeat;
 }
+
+/* =========================================
+   22. PAGE ENTRETIENS (information / FAQ / rendez-vous)
+   ========================================= */
+
+/* Chapeau */
+.info-lead p {
+  max-width: 62ch;
+  margin: 1.2rem 0 0;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+.info-cta {
+  margin-top: 1.4rem;
+}
+
+/* Titres de section : même style que "Publications" et "Presentations" */
+.info-page h2 {
+  margin: 2.8rem 0 1.2rem;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #ddd8cd;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.info-page p,
+.info-page li {
+  line-height: 1.7;
+}
+
+/* "En bref" : filet noir au-dessus de chaque fait, comme les dates des publications */
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 22px;
+}
+.fact {
+  padding-top: 8px;
+  border-top: 2px solid #1a1a1a;
+}
+.fact-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+}
+.fact-value {
+  margin-top: 4px;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: #1a1a1a;
+}
+
+/* Équipe */
+.info-sublabel {
+  margin: 1.4rem 0 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+}
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px 28px;
+}
+.team-name {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.team-role {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  color: #666;
+}
+.team-note {
+  margin: 1.2rem 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Étapes : carrés noirs numérotés, comme la lettrine */
+.steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: step;
+}
+.steps li {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1.4rem 3.2rem;
+  counter-increment: step;
+}
+.steps li:last-child {
+  padding-bottom: 0;
+}
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-weight: 700;
+}
+.steps strong {
+  display: block;
+  color: #1a1a1a;
+}
+
+/* FAQ : réutilise l'accordéon noir du site (section 3) */
+.faq-group-title {
+  margin: 2rem 0 0.2rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+}
+.info-page details > div p {
+  margin: 0 0 0.8rem;
+  line-height: 1.6;
+}
+.info-page details > div p:last-child {
+  margin-bottom: 0;
+}
+.info-page details > div ul {
+  margin: 0.4rem 0 0.8rem;
+}
+
+/* Prise de rendez-vous : bloc noir, boutons qui s'inversent */
+.booking-box {
+  padding: 28px 26px;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+.booking-lead {
+  max-width: 56ch;
+  margin: 0 0 1.3rem;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: #ffffff;
+}
+.booking-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.booking-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+.booking-btn:hover {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+.booking-btn--solid {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+.booking-btn--solid:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+.booking-note {
+  margin: 1.3rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #bdb8ad;
+}
+
+@media (max-width: 767.98px) {
+  .booking-box {
+    padding: 22px 18px;
+  }
+  .booking-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* -----------------------------------------
+   REPÈRES « À COMPLÉTER » : à SUPPRIMER une fois la page finalisée
+   ----------------------------------------- */
+.a-completer,
+a[href$="A-COMPLETER"],
+a[href^="mailto:A-COMPLETER"] {
+  outline: 2px dashed #b32d2e;
+  outline-offset: 2px;
+  background-color: rgba(179, 45, 46, 0.08);
+}
+
+/* =========================================
+   23. BANDES PLEINE LARGEUR (page d'accueil)
+   ========================================= */
+
+/* Les trois teintes, au même endroit pour les modifier facilement.
+   Fond général du site : #f5f2ec.
+   Ordre sur la page : foncée (profil), claire (intérêts + liens), plus foncée (publications + news). */
+:root {
+  --tint-a: #ece6d9;  /* profil */
+  --tint-c: #fdfcf9;  /* intérêts de recherche + profils académiques */
+  --tint-b: #e2dbc9;  /* publications + news */
+}
+
+/* Chaque bande a un fond qui va jusqu'aux bords de l'écran,
+   sans changer la largeur du contenu (box-shadow + clip-path). */
+.band {
+  --band: #f5f2ec;  /* teinte de la bande */
+  --line: #ddd8cd;  /* couleur des filets à l'intérieur de la bande */
+  padding-block: 2.8rem;
+  background-color: var(--band);
+  box-shadow: 0 0 0 100vmax var(--band);
+  clip-path: inset(0 -100vmax);
+}
+
+.band--a { --band: var(--tint-a); --line: #d3cbb9; }
+.band--b { --band: var(--tint-b); --line: #c9c1ac; }
+.band--c { --band: var(--tint-c); --line: #e6e1d5; }
+
+/* Première bande : elle se prolonge vers le haut, derrière la navbar,
+   et la navbar prend sa teinte (plus de rupture de couleur) */
+.band--a {
+  clip-path: inset(-100vmax -100vmax 0 -100vmax);
+}
+body:has(.band--a) .navbar {
+  background-color: var(--tint-a) !important;
+}
+
+/* Grille 12 colonnes (utilisée si besoin) */
+.band-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 1em;
+}
+.band-col {
+  grid-column: 5 / -1;
+}
+
+/* L'espacement vertical est désormais porté par la bande */
+.band .homepage-publications,
+.band .news-feed {
+  margin-top: 0;
+}
+
+/* Filets assortis à la teinte de la bande */
+.band .homepage-section-title,
+.band .link-group-title,
+.band .publication {
+  border-color: var(--line);
+}
+
+/* Petits textes gris un peu plus foncés, pour rester lisibles sur les teintes foncées */
+.band .homepage-section-title,
+.band .link-group-title,
+.band .news-date {
+  color: #555;
+}
+.band--b .news-tag:not(.news-tag--upcoming) {
+  border-color: #a8a08c;
+}
+
+/* News : le dégradé de bas de liste et les marqueurs prennent la teinte de la bande */
+.band .news-scroll-wrap::after {
+  background: linear-gradient(to bottom, transparent, var(--band));
+}
+.band .news-entry::before {
+  background-color: var(--band);
+}
+.band .news-entry:first-child::before {
+  background-color: #1a1a1a;
+}
+
+/* Pas de bande beige entre la dernière bande et le pied de page */
+body:has(.band) .nav-footer {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 767.98px) {
+  .band {
+    padding-block: 2rem;
+  }
+  .band-col {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================
+   24. BANDE « INTÉRÊTS DE RECHERCHE + PROFILS ACADÉMIQUES »
+   ========================================= */
+
+/* Le bloc profil ne contient plus que la photo, le nom et le texte :
+   la grille de bureau passe de 4 à 2 rangées */
+.profile-layout {
+  grid-template-rows: auto 1fr;
+}
+.profile-card {
+  grid-row: 1 / span 2;
+}
+
+/* Les deux blocs sont superposés : intérêts de recherche, puis profils académiques.
+   Les deux titres ont le même style (petites capitales + filet). */
+.interests-col .keywords-label {
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  color: #555;
+}
+.links-col .link-group {
+  margin-top: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  /* Sur téléphone, les mots-clés sont déjà dans la bande noire */
+  .interests-col {
+    display: none;
+  }
+  .links-col .link-group {
+    margin-top: 0;
+  }
+
+  /* La bande noire touche le bas de la bande du profil */
+  .profile-layout.band {
+    padding-bottom: 0;
+  }
+}

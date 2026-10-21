@@ -3,12 +3,12 @@ title: ""
 page-layout: full
 ---
 
-:::::: {.profile-layout}
+:::::: {.profile-layout .band .band--a}
 
 ::: {.profile-header}
 
 ```{=html}
-<div class="profile-name" role="heading" aria-level="0.5">Mattéo Lanoë</div>
+<div class="profile-name" role="heading" aria-level="1">Mattéo Lanoë</div>
 <p class="profile-role">Doctoral Candidate in Sociology, Sciences Po Paris (CRIS) and French Institute for Demographic Studies (INED)</p>
 ```
 
@@ -24,27 +24,10 @@ Alongside my doctoral research, I work on political and electoral sociology in t
 
 :::
 
-::: {.profile-keywords}
-
-```{=html}
-<div class="keywords-label">Research interests</div>
-<div class="keywords-list">
-  <span class="keyword">Long Covid</span>
-  <span class="keyword">Health inequalities</span>
-  <span class="keyword">Embodiment</span>
-  <span class="keyword">Dispositions</span>
-  <span class="keyword">Socialization</span>
-  <span class="keyword">Chronic illness</span>
-  <span class="keyword">Electoral sociology</span>
-</div>
-```
-
-:::
-
 ::::: {.profile-card}
 
 ::: {.profile-photo}
-![](images/photo_github_matteolanoe_nw.jpg){.profile-pic}
+![](images/photo_github_matteolanoe_2026.jpg){.profile-pic}
 :::
 
 ::: {.profile-keywords-card}
@@ -66,7 +49,35 @@ Alongside my doctoral research, I work on political and electoral sociology in t
 
 :::::
 
-::: {.profile-links}
+::::::
+
+::::: {.band .band--c}
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+:::
+
+::: {.g-col-12 .g-col-md-8}
+
+::: {.interests-col}
+
+```{=html}
+<div class="keywords-label">Research interests</div>
+<div class="keywords-list">
+  <span class="keyword">Long Covid</span>
+  <span class="keyword">Health inequalities</span>
+  <span class="keyword">Embodiment</span>
+  <span class="keyword">Dispositions</span>
+  <span class="keyword">Socialization</span>
+  <span class="keyword">Chronic illness</span>
+  <span class="keyword">Electoral sociology</span>
+</div>
+```
+
+:::
+
+::: {.links-col}
 
 ```{=html}
 <div class="link-group">
@@ -92,7 +103,13 @@ Alongside my doctoral research, I work on political and electoral sociology in t
 
 :::
 
-::::::
+:::
+
+:::
+
+:::::
+
+::::: {.band .band--b}
 
 ::: {.grid}
 
@@ -216,3 +233,7 @@ Alongside my doctoral research, I work on political and electoral sociology in t
 ```
 
 :::
+
+:::
+
+:::::

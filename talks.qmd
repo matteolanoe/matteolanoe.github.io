@@ -15,7 +15,7 @@ I regularly present my research on **Long Covid, socialization, dispositions, an
     <div class="talk-title">Words for Ills: Comment pathologise-t-on un symptôme ?</div>
     <div class="talk-event">INED Doctoral Workshop</div>
     <div class="talk-meta"><i class="bi bi-geo-alt"></i> INED, Aubervilliers</div>
-    <div class="talk-note">Discussion by Ilana Löwy</div>
+    <div class="talk-note">Discussion by Ilana Löwy (Inserm)</div>
   </div>
 </div>
 
@@ -43,10 +43,10 @@ I regularly present my research on **Long Covid, socialization, dispositions, an
 <div class="talk">
   <div class="talk-date"><span class="talk-month">Nov</span><span class="talk-year">2026</span></div>
   <div class="talk-body">
-    <div class="talk-title">Paths of Declaration and Auto-Diagnosis in Long Covid and its Symptoms: A Multi-Method Study</div>
+    <div class="talk-title">Paths of Declaration and Self-Diagnosis in Long Covid and its Symptoms: A Multi-Method Study</div>
     <div class="talk-event">4th International Conference on Long Covid</div>
     <div class="talk-meta"><i class="bi bi-geo-alt"></i> Nice</div>
-    <div class="talk-note">With Anne Pastorello (epidemiologist, Inserm)</div>
+    <div class="talk-note">With Anne Pastorello (Post-doc in epidemiology, CRESS, Université Paris Cité/Inserm)</div>
     <div class="talk-tags"><span class="talk-tag">Poster</span><span class="talk-tag talk-tag--upcoming">Upcoming</span></div>
   </div>
 </div>
