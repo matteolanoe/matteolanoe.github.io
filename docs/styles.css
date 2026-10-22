@@ -1651,6 +1651,11 @@ body:has(.band) .nav-footer {
   }
 }
 
+/* Fond de page sous la dernière bande : même teinte, pour supprimer la bande beige avant le pied de page */
+body:has(.band--b) {
+  background-color: var(--tint-b) !important;
+}
+
 /* =========================================
    24. BANDE « INTÉRÊTS DE RECHERCHE + PROFILS ACADÉMIQUES »
    ========================================= */
