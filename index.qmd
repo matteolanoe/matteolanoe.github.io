@@ -32,6 +32,8 @@ Alongside my doctoral research, I work on political and electoral sociology in t
 
 ::: {.profile-photo}
 ![](images/photo_github_matteolanoe_2026.jpg){.profile-pic}
+
+<div class="photo-credit">&copy; Marie Saudubray, Morocco, May 2026</div>
 :::
 
 ::: {.profile-keywords-card}
