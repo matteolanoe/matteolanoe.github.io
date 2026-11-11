@@ -18,9 +18,13 @@ page-layout: full
 
 Welcome and bienvenue! My name is Mattéo Lanoë and I am a PhD candidate in Sociology at [Sciences Po Paris](https://www.sciencespo.fr/departement-sociologie/fr/) based at the [Center for Research on Social Inequalities (CRIS)](https://www.sciencespo.fr/cris/fr/). I am also a resident doctoral fellow at the [French Institute for Demographic Studies (INED)](https://www.ined.fr/en), affiliated with the Mortality, Health, and Epidemiology Research Unit. My doctoral research is co-supervised in sociology and social epidemiology by [Anne Revillard](https://annerevillard.wordpress.com) (Sciences Po) and [Émilie Counil](https://www.ined.fr/fr/recherche/nos-chercheurs/emilie-counil) (INED), and supported by a doctoral fellowship from the Sciences Po School of Research (2025-2028).
 
-Additionally, I contribute to the ERC-funded project [Gender and Health Inequalities (GENDHI)](https://gendhi.eu/en/home/), hosted at Inserm. Broadly, my research interests center on health inequalities, the body and embodiment, socialization, and chronic illness. My dissertation investigates Long Covid through the lens of dispositions and social life-pathologies interactions—examining how socially acquired and embodied dispositions shape illness trajectories, and how prolonged illness in turn reshapes socialization across the life course.
+Additionally, I contribute to the ERC-funded project [Gender and Health Inequalities (GENDHI)](https://gendhi.eu/en/home/), hosted at Inserm.<sup class="fn-ref"><a href="#fn-bio-1" id="fnref-bio-1" aria-label="Note 1">1</a></sup> Broadly, my research interests center on health inequalities, the body and embodiment, socialization, and chronic illness. My dissertation investigates Long Covid through the lens of dispositions and social life-pathologies interactions—examining how socially acquired and embodied dispositions shape illness trajectories, and how prolonged illness in turn reshapes socialization across the life course.
 
 Alongside my doctoral research, I work on political and electoral sociology in the context of my implication in the *Electoral Bulletin of the European Union*. My work has appeared in the *Revue française de science politique*.
+
+<div class="bio-note" id="fn-bio-1">
+  <sup>1</sup> The project is co-led by <a href="https://college-de-france.fr/en/person/nathalie-bajos" target="_blank" rel="noopener">Nathalie Bajos</a> (Inserm, IRIS), <a href="https://cessp.cnrs.fr/-DARMON-Muriel-" target="_blank" rel="noopener">Muriel Darmon</a> (CNRS, CESSP), <a href="https://www.parisschoolofeconomics.eu/en/geoffard-pierre-yves/" target="_blank" rel="noopener">Pierre-Yves Geoffard</a> (CNRS, PSE) and <a href="https://cerpop.inserm.fr/michelle-kelly-irving-biographie" target="_blank" rel="noopener">Michelle Kelly-Irving</a> (Inserm, CERPOP). <a class="fn-back" href="#fnref-bio-1" aria-label="Retour au texte"></a>
+</div>
 
 :::
 

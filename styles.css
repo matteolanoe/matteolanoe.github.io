@@ -1695,3 +1695,43 @@ body:has(.band--b) {
     padding-bottom: 0;
   }
 }
+
+/* =========================================
+   25. NOTE DE BAS DE PARAGRAPHE (introduction)
+   ========================================= */
+
+.profile-bio .fn-ref a {
+  padding: 0 1px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.profile-bio .fn-ref a:hover {
+  text-decoration: underline;
+}
+
+.bio-note {
+  max-width: 68ch;
+  margin: -0.3rem 0 1.1rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #555;
+}
+.bio-note sup {
+  margin-right: 0.3em;
+  font-weight: 700;
+}
+.bio-note .fn-back {
+  margin-left: 0.3em;
+  text-decoration: none;
+}
+
+.bio-note a:not(.fn-back) {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(26, 26, 26, 0.4);
+}
+.bio-note a:not(.fn-back):hover {
+  text-decoration-color: #1a1a1a;
+}
